@@ -1,0 +1,194 @@
+\documentclass[12pt,portuguese,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{luximono}
+\usepackage{amsmath}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\usepackage[applemac]{inputenc}
+
+
+
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+%\usepackage{url}
+\usepackage{fancybox,calc}
+\usepackage{alltt}
+\usepackage{makeidx}
+\usepackage{fancyvrb}
+
+
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+
+
+
+%%% Para o código
+\usepackage{listings}
+\lstloadlanguages{Python,C,Java,Prolog,Lisp}
+
+\lstset{backgroundcolor=\color{yellow},language=Python,captionpos=b,showstringspaces=false,basicstyle=\ttfamily,commentstyle=\color{blue},tabsize=2,breaklines=true}
+
+%% E mais umas coisas
+\usepackage{multirow} % para tabelas
+\usepackage{pifont} % para fontes e símbolos
+\usepackage{marvosym} % para símbolos
+\usepackage{lettrine} % para iniciar o texto de modo especial
+\usepackage{epigraph} % para bocas célebres...
+%\usepackage{chicago}
+
+
+\renewcommand\lstlistingname{Listagem}
+
+\DeclareUrlCommand\email{\urlstyle{rm}}
+% 
+    % \renewcommand\UrlLeft{e-amail:\ }%
+     %\renewcommand\UrlRight{}}
+
+% cores 
+\definecolor{cinza}{rgb}{0.7,0.7,0.7}
+
+% Comecemos!!!
+
+\title{\Large{\textbf{Como fazer?}}}
+
+\author{\textbf{Ernesto J. F. Costa} \\ \email{ernesto@dei.uc.pt}\\Departamento de Engenharia Informática \\ Universidade de Coimbra}
+
+
+\date{\today} 
+
+
+
+
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Este pequeno texto pretende exemplificar o modelo de documento que devem entregar. Identifica as suas sec\c cões principais. Também serve para verem como se podem fazer algumas certas coisas em \LaTeX{}. O vosso documento deve ter tamanho máximo de 15 páginas, podendo este limite apenas ser ultrapassado se, justificadamente, for necessário incluir tabelas e/ou imagens. A entrega deve ser feita até ao final do mês de Maio. Acompanha o texto referido, o programa em suporte magnético, com um pequeno manual do utilizador. Todo o material pode ser enviado por correio electrónico. No entanto, o texto principal tem que ser entregue em papel. Pode ser deixado no meu cacifo de correio.
+\end{abstract}
+
+\epigraph{Ser ou não ser. Eis a questão!}{Shakespeare}
+
+\section{Introdu\c cão}
+
+\lettrine{E}{screver um artigo}, um livro, uma tese, e por aí fora, tem regras. Uma consulta na internet pelas palavras \textit{write paper} fará aparecer vários documentos (ver por exemplo um em \url{http://www.ruf.rice.edu/~bioslabs/tools/report/reportform.html}). Também exitem vários livros sobre o assunto (ver  \cite{davis1997}, \cite{deal2010}, \cite{murray2007}). O que se segue são indica\c cões genéricas sobre o que deve constar em cada sec\c cão. Já agora. Quem quiser iniciar-se ao \LaTeX{} pode ir a \url{http://www.tug.org/} onde encontrará toda a informação necessária \footnote{Para os pregui\c cosos: vou colocar alguns textos introdutórios em pdf na página da cadeira}. Quem quiser saber mais (muito mais \ldots), consulte a bíblia sobre o assunto \cite{mg2004}. Note que \textcolor{red}{\textbf{não}} é obrigado a fazer em \LaTeX{}, mas apenas aconselhado.\\
+
+
+
+\textit{Aqui deve ser descrito qual o tema, a sua importância, os objectivos do trabalho e o modo como o texto está organizado.}
+
+
+\section{Problema} 
+
+\lettrine[lines=2,lraise=0.2]{S}{ó para exemplificar} outro modo de come\c car uma sec\c cão. Claro que não é obrigado a fazer as coisas deste modo. Como hoje é sexta, faz muito calor  e láfora o dia está bonito, deu para masoquisticamente me castigar. Há coisas piores eu sei. Mas há coisas em rela\c cão às quais não consigo resistir. É isso e estar a escrever patetices só para ter texto suficiente para o efeito que pretendo exemplificar sair real\c cado. Ou não \ldots\\\\
+
+\textit{Descrever o problema que vai ser tratado.}
+
+\section{Estado da Arte}
+
+\textit{Acrescentar  aqui uma breve referência aos diferentes modos como o assunto tem sido tratado. Repito: breve! }\\
+
+
+{\textbf{\color{red} As duas  sec\c cões Problema e Estado da Arte podem eventualmente ser fundidas numa só.}}
+
+\section{Metodologia}
+
+\textit{
+Qual a abordagem metodológica seguida. Porque (e como)  foram escolhidos os testes estatísticos? Que experiências foram feitas? Qual a parametriza\c cão?
+}\\
+
+\subsection{Tabelas}
+
+Isto das tabelas em \LaTeX{} pode ser um bom quebra-cabe\c cas \ldots Já existem algumas aplicações que facilitam a vida, mas conte com algum tempo para fazer uma tabela complexa {\Large{\Frowny}}. \\ Veja o exemplo de tabela \ref{tab:ola}.
+
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{|c|cc|cc|cc|cc|} \hline
+\raisebox{-1.5ex}[0cm][0cm]{Tipo} & \multicolumn{8}{c|}{Fun\c cão}\\ \cline{2-9}
+& \multicolumn{2}{c|}{$F_{1}$} & \multicolumn{2}{c|}{$F_{2}$} &\multicolumn{2}{c|}{$F_{3}$} & \multicolumn{2}{c|}{$F_{4}$} \\ \hline 
+Pop & 10  & 100  & 10  & 100 & 10  & 100 & 10  & 100 \\ \hline 
+GA &  2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+EE &  2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+GP &  2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Uma tabela}
+\label{tab:ola}
+\end{table}
+
+Outro modo de obter o mesmo resultado, agora usando o comando \texttt{multirow} é ilustrado na tabela \ref{tab:ola2}. E já agora vamos pôr {\textcolor{green} {cor}} nesta coisa.
+
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{|c|cc|cc|cc|cc|} \hline
+ \multirow{2}{*}{Tipo} & \multicolumn{8}{> {\columncolor{red}}c|}{Fun\c cão}\\ \cline{2-9}
+& \multicolumn{2}{c|}{$F_{1}$} & \multicolumn{2}{c|}{$F_{2}$} &\multicolumn{2}{c|}{$F_{3}$} & \multicolumn{2}{c|}{$F_{4}$} \\ \hline 
+\rowcolor{cinza} Pop & 10  & 100  & 10  & 100 & 10  & 100 & 10  & 100 \\ \hline 
+GA &  2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+EE &  2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+GP &  2 & 3 & 4 & 5 & \multicolumn{1} {>{\columncolor{blue}} c} {\textcolor{white}{6} }& 7 & 8 & 9 \\ \hline
+\end{tabular}
+\end{center}
+\caption{A mesma  tabela}
+\label{tab:ola2}
+\end{table}
+
+% for\c car uma nova página 
+
+\pagebreak[4]
+
+\subsection{Imagens}
+
+Precisa de uma figura?? Não se admire se a figura \ref{fig:dist1} não aparecer exactamente onde a colocou no texto. Tabelas e imagens flutuam no texto havendo no entanto algumas possibilidades de controlar a sua colocação. Às vezes basta apenas alterar a sua dimensão usando o parâmetro \textit{scale}. Se olhar para o texto fonte verá outro modo de controlar o posicionamento.
+
+\begin{figure}[!htbp] % h= here, t= top; b=bottom, != onde for possível
+\begin{center}
+\includegraphics[scale=0.5]{imagens/dist.png}
+\caption{{\bf A minha distribui\c cão}}
+\label{fig:dist1}
+\end{center}
+\end{figure}
+
+\section{Resultados e Discussão}
+
+\textit{
+Aqui aparece um resumo das experiências realizadas e uma discussão do seu significado.
+}
+
+\section{Conclusão}
+
+\textit{
+Terminar é terminar. Retoma-se o objectivo, as conclusões principais, e avan\c ca-se com a indica\c cão do que ficou por fazer e do eventual trabalho futuro \Large{ \Smiley}.
+}
+
+\appendix
+
+\section{O que tiver que ser}
+
+\textit{
+O que não tem sentido colocar no corpo principal do programa mas pode ser importante para a compreensão.
+}
+
+\section{E mais outra coisa}
+
+Quem usar um computador Apple Macintosh encontra em \url{http://www.tug.org/mactex/} o melhor produto para \LaTeX{}. Grátis! Para outras plataformas (Windows, Linux) usar o TeXLive. Informações em \url{http://www.tug.org/texlive/}.
+
+\bibliographystyle{plain}
+% O nome do ficheiro com as referência bibliográficas deve ter a extensão .nib!
+\bibliography{tp}
+
+\end{document}

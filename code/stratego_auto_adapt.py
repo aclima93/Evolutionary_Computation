@@ -7,6 +7,7 @@ Remarks: Not for the faint of heart! Procede at your own risk.
 
 # criar a função run_n_times
 # - tem todos os parâmetros que devem ser analisados estatisticamente
+# --- os parâmetros, segundo o enunciado, terão a ver com um desvio padrão e uma média utilizados aquando da mutação e recombinação
 # - executa a função run n vezes
 # - guarda os resultados e parâmetros de execução num ficheiro
 def run_n_times(num_runs):

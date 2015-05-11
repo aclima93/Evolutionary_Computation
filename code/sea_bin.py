@@ -14,6 +14,7 @@ from operator import itemgetter
 
 import matplotlib.pyplot as plt
 
+
 def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
         sel_survivors, fitness_func):
     # inicializa população: indiv = (cromo,fit)
@@ -45,8 +46,7 @@ def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parent
 
 
 def sea_plot(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
-        sel_survivors, fitness_func):
-
+             sel_survivors, fitness_func):
     all_best = []
     all_average = []
 
@@ -199,8 +199,8 @@ def merito(indiv):
 
 
 # auxiliary
-def display(indiv, phenotype):
-    print('Chromo: %s\nFitness: %s' % (phenotype(indiv[0]), indiv[1]))
+def display(indiv, phenotype, problem):
+    print('Chromo: %s\nFitness: %s' % (phenotype(indiv[0], problem), indiv[1]))
 
 
 def best_pop(populacao):
@@ -209,9 +209,10 @@ def best_pop(populacao):
 
 
 def average_pop(populacao):
-    return sum([fit for crom, fit in populacao])/ len(populacao)
+    return sum([fit for crom, fit in populacao]) / len(populacao)
 
-# -------------------  Problem Specific Definitions    
+
+# -------------------  Problem Specific Definitions
 # One max
 
 def fenotipo(indiv):
@@ -222,7 +223,7 @@ def evaluate(indiv):
     return sum(indiv)
 
 
-
+'''
 if __name__ == '__main__':
     best_1 = sea(50, 100, 100, 0.05, 0.8, tour_sel(3), one_point_cross, muta_bin, sel_survivors_elite(0.02), merito)
     display(best_1, fenotipo)
@@ -232,3 +233,4 @@ if __name__ == '__main__':
 
     best_u = sea(50, 100, 100, 0.05, 0.8, tour_sel(3), uniform_cross, muta_bin, sel_survivors_elite(0.02), merito)
     display(best_u, fenotipo)
+'''

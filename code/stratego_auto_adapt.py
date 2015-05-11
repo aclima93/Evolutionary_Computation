@@ -5,8 +5,21 @@ Remarks: This is mostly a wrapper, but it's ours
 """
 
 from random import *
+from numpy import *
 from kp_1 import *
 
+
+def average_pop(refference_window):
+    # create a 3D np array then average along 0th axis using numpy's mean
+    return numpy.mean( numpy.array(refference_window), axis=0 )
+
+def average_indiv(population):
+    return
+
+def compare_individs(temp1, temp2):
+    s = set(temp2)
+    temp3 = [x for x in temp1 if x not in s]
+    return temp3
 
 """
 tendo em conta a janela de referência, decidir se devem ser alterados os parâmetros:
@@ -15,8 +28,20 @@ tendo em conta a janela de referência, decidir se devem ser alterados os parâm
 - probabilidade de mutação
 """
 # TODO: finish it!
-def auto_adapt_fitness():
-    return
+def auto_adapt_fitness(cur_population, refference_window):
+
+    # get average population from refference_window
+    average_reff_population = average_pop(refference_window)
+
+    # get average individual from average population
+    average_reff_individual = average_indiv(average_reff_population)
+
+    # get average individual from current population
+    average_individual = average_indiv(cur_population)
+
+    # compare average individuals and if very similar increse mutation prob. and decrease crossover prob.
+    return compare_individs(average_reff_individual, average_individual).count()
+
 
 
 """
@@ -25,7 +50,6 @@ tendo em conta a janela de referência, alterar o tamanho da população
 """
 def stratego_next_population(elite):
     def elitism(parents, offspring):
-
         size = len(parents)
         comp_elite = int(size * elite)
         offspring.sort(key=itemgetter(1), reverse=True)
@@ -45,12 +69,13 @@ funcao stratego
 --- variação do tamanho da população, prob. de mutação e prob. de crossover
 """
 def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
-             sel_survivors, fitness_func, refference_window):
+             sel_survivors, fitness_func, refference_window_size, refference_window):
 
     # TODO: cross & mut prob alteration based on refference window
 
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
+
     # avalia população
     populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
@@ -63,7 +88,6 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # ------ Crossover
         progenitores = []
         for i in range(0, size_pop - 1, 2):
-
             cromo_1 = mate_pool[i]
             cromo_2 = mate_pool[i + 1]
             filhos = recombination(cromo_1, cromo_2, prob_cross)
@@ -82,6 +106,11 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # Avalia nova _população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
+        # added new generation to refference_window and remove the oldest (or just append until we have enough)
+        if refference_window.count() == refference_window_size:
+            refference_window.remove(0)
+        refference_window.append(populacao)
+
     return best_pop(populacao)
 
 
@@ -91,8 +120,8 @@ função run
 - devolve os resultados da experiência
 """
 def run(auto_adapt, problem, size_items):
-
-    refference_window = 1  # number previous generations to eb considered for altering the auto-adaptative parameters
+    refference_window_size = 1  # number previous generations to eb considered for altering the auto-adaptative parameters
+    refference_window = []
 
     num_generations = 500
     population_size = 250  # the number of elements influences the effect fo reproduction because the gene pool is bigger
@@ -101,14 +130,15 @@ def run(auto_adapt, problem, size_items):
 
     if not auto_adapt:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        #     mutation, sel_survivors, fitness_func)
+        # mutation, sel_survivors, fitness_func)
         best = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                    one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
     else:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        #     mutation, sel_survivors, fitness_func, refference_window)
+        # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
         best = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
-                        one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem), refference_window)
+                        one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
+                        refference_window_size, refference_window)
 
     return [best, phenotype, problem]
 
@@ -122,7 +152,6 @@ funcao run_n_times
 - guarda os resultados e parâmetros de execução num ficheiro
 """
 def run_n_times(num_runs):
-
     size_items = 10
     max_value = 10
 
@@ -132,8 +161,8 @@ def run_n_times(num_runs):
     for i in range(num_runs):
         problem = generate_uncor(size_items, max_value)
 
-        results_with_auto_adapt.append( run( True, problem, size_items))
-        results_without_auto_adapt.append( run( False, problem, size_items))
+        results_with_auto_adapt.append(run(True, problem, size_items))
+        results_without_auto_adapt.append(run(False, problem, size_items))
 
     return [results_with_auto_adapt, results_without_auto_adapt]
 
@@ -155,7 +184,6 @@ def analyse(data):
 starting point for our algorithm
 """
 if __name__ == '__main__':
-
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     number_of_runs = 1  # TODO: 30  # statistically relevant ammount of runs

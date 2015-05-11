@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24a45f-3bc7-4226-8b04-c73d699e84bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sea_bin.py" afterPath="$PROJECT_DIR$/sea_bin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratego_auto_adapt.py" afterPath="$PROJECT_DIR$/stratego_auto_adapt.py" />
     </list>
     <ignored path="code.iws" />
@@ -58,8 +57,8 @@
       <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23483366" vertical-offset="615" max-vertical-offset="2625">
-              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.46966732" vertical-offset="0" max-vertical-offset="3045">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding>
                 <element signature="e#146#166#0" expanded="true" />
               </folding>
@@ -427,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23483366" vertical-offset="615" max-vertical-offset="2625">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.46966732" vertical-offset="0" max-vertical-offset="3045">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding>
             <element signature="e#146#166#0" expanded="true" />
           </folding>

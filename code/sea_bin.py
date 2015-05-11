@@ -11,7 +11,6 @@ __date__ = 'March 2015'
 
 from random import random, randint, sample, shuffle
 from operator import itemgetter
-
 import matplotlib.pyplot as plt
 
 

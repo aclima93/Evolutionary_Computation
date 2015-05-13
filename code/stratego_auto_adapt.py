@@ -14,7 +14,7 @@ def average_pop(refference_window):
     return numpy.mean( numpy.array(refference_window), axis=0 )
 
 def average_indiv(population):
-    return
+    return numpy.mean( numpy.array(population), axis=0 )
 
 def compare_individs(temp1, temp2):
     s = set(temp2)
@@ -27,7 +27,6 @@ tendo em conta a janela de referência, decidir se devem ser alterados os parâm
 - probabilidade de crossover
 - probabilidade de mutação
 """
-# TODO: finish it!
 def auto_adapt_fitness(cur_population, refference_window):
 
     # get average population from refference_window
@@ -39,8 +38,22 @@ def auto_adapt_fitness(cur_population, refference_window):
     # get average individual from current population
     average_individual = average_indiv(cur_population)
 
-    # compare average individuals and if very similar increse mutation prob. and decrease crossover prob.
-    return compare_individs(average_reff_individual, average_individual).count()
+    # compare average individuals
+    differences = compare_individs(average_reff_individual, average_individual)
+
+    # DEBUG
+    print("\n\n----------------------------------")
+    print("average_reff_population: ")
+    print(average_reff_population)
+    print("average_reff_individual: ")
+    print(average_reff_individual)
+    print("average_individual: ")
+    print(average_individual)
+    print("differences: ")
+    print(differences)
+
+    # return ratio between number of differences and size of current average_individual
+    return len(differences) / len(average_individual)
 
 
 
@@ -49,14 +62,13 @@ Survivals: elitism
 tendo em conta a janela de referência, alterar o tamanho da população
 """
 def stratego_next_population(elite):
+
     def elitism(parents, offspring):
         size = len(parents)
         comp_elite = int(size * elite)
         offspring.sort(key=itemgetter(1), reverse=True)
         parents.sort(key=itemgetter(1), reverse=True)
         new_population = parents[:comp_elite] + offspring[:size - comp_elite]
-
-        # TODO: add or remove individuals to new population based on refference window
 
         return new_population
 
@@ -106,9 +118,20 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # Avalia nova _população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
+        # add or remove individuals to new population based on refference window
+        ratio = auto_adapt_fitness(populacao, refference_window)
+
+        if ratio < 0.25:  # start reversing the crossover and mutation
+
+            if (prob_cross - ratio) > 0.0:
+                prob_cross -= ratio
+
+            if (prob_mut + ratio) < 1.0:
+                prob_mut += ratio
+
         # added new generation to refference_window and remove the oldest (or just append until we have enough)
-        if refference_window.count() == refference_window_size:
-            refference_window.remove(0)
+        if len(refference_window) == refference_window_size:
+            refference_window.remove(refference_window[0])
         refference_window.append(populacao)
 
     return best_pop(populacao)
@@ -120,11 +143,11 @@ função run
 - devolve os resultados da experiência
 """
 def run(auto_adapt, problem, size_items):
-    refference_window_size = 1  # number previous generations to eb considered for altering the auto-adaptative parameters
+    refference_window_size = 1  # number previous generations considered for altering the auto-adaptative parameters
     refference_window = []
 
-    num_generations = 500
-    population_size = 250  # the number of elements influences the effect fo reproduction because the gene pool is bigger
+    num_generations = 10 # 500
+    population_size = 5 # 250
     prob_crossover = 0.80  # resposável por salto grande no início
     prob_mutation = 0.10  # resposável por saltos pequenos no final
 
@@ -152,6 +175,7 @@ funcao run_n_times
 - guarda os resultados e parâmetros de execução num ficheiro
 """
 def run_n_times(num_runs):
+
     size_items = 10
     max_value = 10
 
@@ -184,6 +208,7 @@ def analyse(data):
 starting point for our algorithm
 """
 if __name__ == '__main__':
+
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     number_of_runs = 1  # TODO: 30  # statistically relevant ammount of runs

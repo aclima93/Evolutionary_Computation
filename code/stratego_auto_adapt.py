@@ -8,10 +8,24 @@ from random import *
 from kp_1 import *
 
 
+def debug_print(something):
+
+    # print to console
+    if DEBUG:
+        print(something)
+
+    # store in log file
+    if LOG_OUTPUT:
+        f.write( str(something) )
+        f.write("\n")
+
+    return
+
+
 def average_pop(refference_window, fitness_func):
-
-    # to get an average population get the average ith individual in each population fot the refference window
-
+    """
+    returns the average population based on the ith average individual of all populations
+    """
     num_populations = len(refference_window)
 
     if num_populations > 1:
@@ -24,8 +38,11 @@ def average_pop(refference_window, fitness_func):
     else:
         return refference_window[0]
 
-def average_indiv(population, fitness_func):
 
+def average_indiv(population, fitness_func):
+    """
+    returns the average individual based on all individuals in the population
+    """
     individuals = []
     for indiv, fit in population:
         individuals.append(indiv)
@@ -39,68 +56,76 @@ def average_indiv(population, fitness_func):
 
     # divide by number of individuals in population
     for i in range(len(average_individual)):
-        average_individual[i] = int( average_individual[i] / num_individuals )
+        average_individual[i] = round( average_individual[i] / num_individuals )
 
     return [average_individual, fitness_func(average_individual)]
 
-"""
-compares individuals by differences in genotype
-"""
-def compare_individs(temp1, temp2):
-    s = set(temp2[0])
-    temp3 = [x for x in temp1[0] if x not in s]
-    return temp3
 
-"""
-tendo em conta a janela de referência, decidir se devem ser alterados os parâmetros:
-- tamanho da população (?)
-- probabilidade de crossover
-- probabilidade de mutação
-"""
+def compare_individs(individual1, individual2):
+    """
+    compares individuals by differences in genotype
+    """
+    diffs = 0
+    for i in range(len(individual1)):
+        if individual1[i] != individual2[i]:
+            diffs += 1
+    return diffs
+
+
 def auto_adapt_fitness(cur_population, refference_window, fitness_func):
+    """
+    tendo em conta a janela de referência, decidir se devem ser alterados os parâmetros:
+    - tamanho da população (?)
+    - probabilidade de crossover
+    - probabilidade de mutação
+    """
 
-    print("\n\n----------------------------------")
-    print("cur_population: ")
-    print(cur_population)
-    print("refference_window: ")
-    print(refference_window)
+    """
+    debug_print("\n\n----------------------------------")
+    debug_print("cur_population: ")
+    debug_print(cur_population)
+
+    debug_print("refference_window: ")
+    debug_print(refference_window)
+    """
 
     # get average population from refference_window
     average_reff_population = average_pop(refference_window, fitness_func)
 
-    print("average_reff_population: ")
-    print(average_reff_population)
+    """
+    debug_print("average_reff_population: ")
+    debug_print(average_reff_population)
+    """
 
     # get average individual from average population
     average_reff_individual = average_indiv(average_reff_population, fitness_func)
 
-    print("average_reff_individual: ")
-    print(average_reff_individual)
+    debug_print("average_reff_individual: ")
+    debug_print(average_reff_individual)
 
     # get average individual from current population
     average_individual = average_indiv(cur_population, fitness_func)
 
-    print("average_individual: ")
-    print(average_individual)
+    debug_print("average_individual: ")
+    debug_print(average_individual)
 
     # compare average individuals
     differences = compare_individs(average_reff_individual, average_individual)
 
-    print("num differences: ")
-    print(len(differences))
+    debug_print("num differences: ")
+    debug_print(differences)
 
     # return ratio between number of differences and size of current average_individual
-    return len(differences) / len(average_individual)
+    return differences / len(average_individual[0])
 
 
-
-"""
-Survivals: elitism
-tendo em conta a janela de referência, alterar o tamanho da população
-"""
 def stratego_next_population(elite):
-
     def elitism(parents, offspring):
+        """
+        Survivals: elitism
+        tendo em conta a janela de referência, alterar o tamanho da população
+        """
+        # TODO: yeah... are we still going to do this?
         size = len(parents)
         comp_elite = int(size * elite)
         offspring.sort(key=itemgetter(1), reverse=True)
@@ -112,15 +137,13 @@ def stratego_next_population(elite):
     return elitism
 
 
-"""
-funcao stratego
-- variação da sea fornecida pelo prof. Ernesto mas que aplica os conceitos que estamos a estudar:
---- variação do tamanho da população, prob. de mutação e prob. de crossover
-"""
 def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
              sel_survivors, fitness_func, refference_window_size, refference_window):
-
-    # TODO: cross & mut prob alteration based on refference window
+    """
+    funcao stratego
+    - variação da sea fornecida pelo prof. Ernesto mas que aplica os conceitos que estamos a estudar:
+    --- variação do tamanho da população, prob. de mutação e prob. de crossover
+    """
 
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
@@ -136,9 +159,9 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # Variation
         # ------ Crossover
         progenitores = []
-        for i in range(0, size_pop - 1, 2):
-            cromo_1 = mate_pool[i]
-            cromo_2 = mate_pool[i + 1]
+        for j in range(0, size_pop - 1, 2):
+            cromo_1 = mate_pool[j]
+            cromo_2 = mate_pool[j + 1]
             filhos = recombination(cromo_1, cromo_2, prob_cross)
             progenitores.extend(filhos)
             # ------ Mutation
@@ -163,14 +186,17 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # add or remove individuals to new population based on refference window
         ratio = auto_adapt_fitness(populacao, refference_window, fitness_func)
 
-        if ratio < 0.25:  # start reversing the crossover and mutation
+        debug_print("ratio: ")
+        debug_print(ratio)
 
-            if (prob_cross - ratio) > 0.0:
-                prob_cross -= ratio
+        # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
+        if ratio < THRESHOLD:
 
-            if (prob_mut + ratio) < 1.0:
-                prob_mut += ratio
+            if (prob_cross - CROSSOVER_STEP) > 0.0:
+                prob_cross -= CROSSOVER_STEP
 
+            if (prob_mut + MUTATION_STEP) < 1.0:
+                prob_mut += MUTATION_STEP
 
     return best_pop(populacao)
 
@@ -181,13 +207,14 @@ função run
 - devolve os resultados da experiência
 """
 def run(auto_adapt, problem, size_items):
-    refference_window_size = 3  # number previous generations considered for altering the auto-adaptative parameters
+
+    refference_window_size = WINDOW_SIZE
     refference_window = []
 
-    num_generations = 10 # 500
-    population_size = 5 # 250
-    prob_crossover = 0.80  # resposável por salto grande no início
-    prob_mutation = 0.10  # resposável por saltos pequenos no final
+    num_generations = NUM_GENERATIONS
+    population_size = POPULATION_SIZE
+    prob_crossover = PROB_CROSSOVER
+    prob_mutation = PROB_MUTATION
 
     if not auto_adapt:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
@@ -204,18 +231,17 @@ def run(auto_adapt, problem, size_items):
     return [best, phenotype, problem]
 
 
-"""
-funcao run_n_times
-- tem todos os parâmetros que devem ser analisados estatisticamente
---- os parâmetros, segundo o enunciado, terão a ver com um desvio padrão e uma média utilizados
---- aquando da mutação e recombinação
-- executa a função run n vezes
-- guarda os resultados e parâmetros de execução num ficheiro
-"""
 def run_n_times(num_runs):
-
-    size_items = 10
-    max_value = 10
+    """
+    funcao run_n_times
+    - tem todos os parâmetros que devem ser analisados estatisticamente
+    --- os parâmetros, segundo o enunciado, terão a ver com um desvio padrão e uma média utilizados
+    --- aquando da mutação e recombinação
+    - executa a função run n vezes
+    - guarda os resultados e parâmetros de execução num ficheiro
+    """
+    size_items = NUMBER_OF_ITEMS
+    max_value = MAX_VALUE_ITEM
 
     results_with_auto_adapt = []
     results_without_auto_adapt = []
@@ -229,15 +255,17 @@ def run_n_times(num_runs):
     return [results_with_auto_adapt, results_without_auto_adapt]
 
 
-"""
-função de análise estatística e apresentação de gráficos
-- analisar os melhores resultados e os resultados da média
-- analisar o efeito das alterações nos parâmetros
-"""
-# TODO: finish it!
 def analyse(data):
-    for [best, phenotype, problem] in data:
-        display(best, phenotype, problem)
+    """
+    função de análise estatística e apresentação de gráficos
+    - analisar os melhores resultados e os resultados da média
+    - analisar o efeito das alterações nos parâmetros
+    """
+
+    # TODO: finish it!
+
+    for [best, pheno, problem] in data:
+        display(best, pheno, problem)
 
     return
 
@@ -247,7 +275,24 @@ starting point for our algorithm
 """
 if __name__ == '__main__':
 
+    f = open('output.txt', 'w')
     seed(666)  # random number generation with fixed seed for reproduceable results
+
+    DEBUG = False
+    LOG_OUTPUT = True
+
+    NUM_GENERATIONS = 500  # 500
+    POPULATION_SIZE = 250  # 250
+    PROB_CROSSOVER = 0.80  # resposável por salto grande no início
+    PROB_MUTATION = 0.10  # resposável por saltos pequenos no final
+
+    WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
+    THRESHOLD = 0.25  # below this start reversing the crossover and mutation
+    CROSSOVER_STEP = 0.10
+    MUTATION_STEP = 0.10
+
+    NUMBER_OF_ITEMS = 10  # 10
+    MAX_VALUE_ITEM = 10  # 10
 
     number_of_runs = 1  # TODO: 30  # statistically relevant ammount of runs
 

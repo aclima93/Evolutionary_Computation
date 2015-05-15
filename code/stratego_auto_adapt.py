@@ -5,52 +5,89 @@ Remarks: This is mostly a wrapper, but it's ours
 """
 
 from random import *
-from numpy import *
 from kp_1 import *
 
 
-def average_pop(refference_window):
-    # create a 3D np array then average along 0th axis using numpy's mean
-    return numpy.mean( numpy.array(refference_window), axis=0 )
+def average_pop(refference_window, fitness_func):
 
-def average_indiv(population):
-    return numpy.mean( numpy.array(population), axis=0 )
+    # to get an average population get the average ith individual in each population fot the refference window
 
+    num_populations = len(refference_window)
+
+    if num_populations > 1:
+        average_population = []
+        ith_pairings = list(zip(*refference_window))
+        for ith_pair in ith_pairings:
+            average_population.append(average_indiv(ith_pair, fitness_func))
+        return average_population
+
+    else:
+        return refference_window[0]
+
+def average_indiv(population, fitness_func):
+
+    individuals = []
+    for indiv, fit in population:
+        individuals.append(indiv)
+
+    num_individuals = len(individuals)
+    average_individual = [0] * len(individuals[0])  # individual with only zeros
+    # sum all the solutions
+    for indiv in individuals:
+        for i in range(len(indiv)):
+            average_individual[i] += indiv[i]
+
+    # divide by number of individuals in population
+    for i in range(len(average_individual)):
+        average_individual[i] = int( average_individual[i] / num_individuals )
+
+    return [average_individual, fitness_func(average_individual)]
+
+"""
+compares individuals by differences in genotype
+"""
 def compare_individs(temp1, temp2):
-    s = set(temp2)
-    temp3 = [x for x in temp1 if x not in s]
+    s = set(temp2[0])
+    temp3 = [x for x in temp1[0] if x not in s]
     return temp3
 
 """
 tendo em conta a janela de referência, decidir se devem ser alterados os parâmetros:
-- tamanho da população
+- tamanho da população (?)
 - probabilidade de crossover
 - probabilidade de mutação
 """
-def auto_adapt_fitness(cur_population, refference_window):
+def auto_adapt_fitness(cur_population, refference_window, fitness_func):
+
+    print("\n\n----------------------------------")
+    print("cur_population: ")
+    print(cur_population)
+    print("refference_window: ")
+    print(refference_window)
 
     # get average population from refference_window
-    average_reff_population = average_pop(refference_window)
+    average_reff_population = average_pop(refference_window, fitness_func)
+
+    print("average_reff_population: ")
+    print(average_reff_population)
 
     # get average individual from average population
-    average_reff_individual = average_indiv(average_reff_population)
+    average_reff_individual = average_indiv(average_reff_population, fitness_func)
+
+    print("average_reff_individual: ")
+    print(average_reff_individual)
 
     # get average individual from current population
-    average_individual = average_indiv(cur_population)
+    average_individual = average_indiv(cur_population, fitness_func)
+
+    print("average_individual: ")
+    print(average_individual)
 
     # compare average individuals
     differences = compare_individs(average_reff_individual, average_individual)
 
-    # DEBUG
-    print("\n\n----------------------------------")
-    print("average_reff_population: ")
-    print(average_reff_population)
-    print("average_reff_individual: ")
-    print(average_reff_individual)
-    print("average_individual: ")
-    print(average_individual)
-    print("differences: ")
-    print(differences)
+    print("num differences: ")
+    print(len(differences))
 
     # return ratio between number of differences and size of current average_individual
     return len(differences) / len(average_individual)
@@ -112,6 +149,11 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
             novo_indiv = mutation(indiv, prob_mut)
             descendentes.append((novo_indiv, fitness_func(novo_indiv)))
 
+        # added previous generation to refference_window and remove the oldest (or just append until we have enough)
+        if len(refference_window) == refference_window_size:
+            refference_window.remove(refference_window[0])
+        refference_window.append(populacao)
+
         # New population
         populacao = sel_survivors(populacao, descendentes)
 
@@ -119,7 +161,7 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
         # add or remove individuals to new population based on refference window
-        ratio = auto_adapt_fitness(populacao, refference_window)
+        ratio = auto_adapt_fitness(populacao, refference_window, fitness_func)
 
         if ratio < 0.25:  # start reversing the crossover and mutation
 
@@ -129,10 +171,6 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
             if (prob_mut + ratio) < 1.0:
                 prob_mut += ratio
 
-        # added new generation to refference_window and remove the oldest (or just append until we have enough)
-        if len(refference_window) == refference_window_size:
-            refference_window.remove(refference_window[0])
-        refference_window.append(populacao)
 
     return best_pop(populacao)
 
@@ -143,7 +181,7 @@ função run
 - devolve os resultados da experiência
 """
 def run(auto_adapt, problem, size_items):
-    refference_window_size = 1  # number previous generations considered for altering the auto-adaptative parameters
+    refference_window_size = 3  # number previous generations considered for altering the auto-adaptative parameters
     refference_window = []
 
     num_generations = 10 # 500

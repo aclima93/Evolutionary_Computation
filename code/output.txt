@@ -79,7 +79,7 @@ num differences:
 ratio: 
 0.1
 average_reff_individual: 
-[[0, 0, 1, 1, 0, 1, 1, 0, 1, 1], 0]
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
 average_individual: 
 [[1, 1, 1, 1, 0, 1, 1, 0, 0, 1], 0]
 num differences: 
@@ -95,15 +95,15 @@ num differences:
 ratio: 
 0.1
 average_reff_individual: 
-[[0, 1, 1, 1, 1, 1, 1, 1, 0, 1], 0]
+[[0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 7.13397693167272]
 average_individual: 
 [[0, 1, 0, 1, 0, 1, 0, 0, 1, 1], 0]
 num differences: 
-1
+2
 ratio: 
-0.1
+0.2
 average_reff_individual: 
-[[0, 0, 0, 0, 0, 1, 0, 0, 0, 0], 1.8944223129860118]
+[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
 average_individual: 
 [[1, 1, 0, 1, 0, 1, 1, 1, 0, 0], 0]
 num differences: 
@@ -111,15 +111,15 @@ num differences:
 ratio: 
 0.2
 average_reff_individual: 
-[[0, 1, 0, 1, 1, 1, 1, 0, 0, 1], 0]
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
 average_individual: 
 [[0, 1, 1, 1, 1, 1, 0, 0, 1, 1], 0]
 num differences: 
-1
+2
 ratio: 
-0.1
+0.2
 average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 0, 0, 0, 0], 3.0453087147745515]
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
 average_individual: 
 [[1, 1, 0, 1, 0, 1, 1, 0, 0, 0], 0]
 num differences: 
@@ -127,7 +127,7 @@ num differences:
 ratio: 
 0.2
 average_reff_individual: 
-[[0, 1, 0, 1, 1, 1, 1, 0, 0, 1], 0]
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
 average_individual: 
 [[0, 0, 1, 0, 1, 0, 0, 1, 1, 1], 37.923946408365396]
 num differences: 
@@ -135,7 +135,7 @@ num differences:
 ratio: 
 0.2
 average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
 average_individual: 
 [[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
 num differences: 
@@ -143,282 +143,10 @@ num differences:
 ratio: 
 0.2
 average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
 average_individual: 
 [[1, 0, 1, 0, 1, 0, 0, 1, 1, 1], 0]
 num differences: 
-1
-ratio: 
-0.1
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 0, 0, 1, 0, 1, 1, 0, 0, 0], 10.179285646447271]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
 2
 ratio: 
 0.2
@@ -431,55 +159,7 @@ num differences:
 ratio: 
 0.2
 average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
 [[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-average_individual: 
-[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 0], 19.205716835996036]
-average_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
-num differences: 
-2
-ratio: 
-0.2
-average_reff_individual: 
-[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
 average_individual: 
 [[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
 num differences: 
@@ -3998,3 +3678,8323 @@ num differences:
 1
 ratio: 
 0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 0, 1, 0, 0, 1, 1, 0], 38.09132228070821]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[1, 0, 0, 0, 0, 1, 0, 1, 1, 1], 30.06238653956577]
+average_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 1, 1, 1], 19.903658741694933]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 0, 0, 0, 1, 0, 0, 1, 1, 1], 27.674500464224224]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 1, 1, 0, 1, 1, 1], 36.29651562549047]
+average_individual: 
+[[0, 0, 0, 0, 1, 0, 0, 1, 1, 1], 27.674500464224224]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 0, 0, 0, 1, 0, 0, 1, 1, 1], 27.674500464224224]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 1, 0, 0, 1, 1, 1], 27.674500464224224]
+average_individual: 
+[[0, 1, 0, 1, 1, 1, 0, 1, 1, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 1, 1, 0, 1, 1, 0, 1, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 1, 1, 0, 1, 1, 1], 36.29651562549047]
+average_individual: 
+[[1, 1, 1, 1, 0, 0, 1, 0, 1, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 0, 1, 0, 1, 1, 0, 1, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 1, 0, 0, 1, 1, 1], 27.674500464224224]
+average_individual: 
+[[1, 1, 1, 0, 1, 1, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 1, 0, 1, 0, 0, 0, 1, 1, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 1, 1, 0, 0, 0, 1, 0, 0, 0], 10.545970727445118]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 1, 0, 1, 1, 0, 0, 0, 1, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1.5367126366045905]
+average_individual: 
+[[0, 0, 1, 0, 0, 0, 1, 0, 0, 0], 6.009943707252772]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1.5367126366045905]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 0, 0, 0, 1, 0, 0, 0], 7.546656343857362]
+average_individual: 
+[[0, 1, 1, 0, 0, 0, 1, 0, 0, 1], 18.837404009819487]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 0, 0, 0, 1, 0, 0, 0], 7.546656343857362]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 0, 0, 0, 1, 0, 0, 0], 7.546656343857362]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 0, 0, 0, 1, 0, 0, 0], 7.546656343857362]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 0, 0, 0, 1, 0, 0, 0], 7.546656343857362]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1.5367126366045905]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 1.10862135409911]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 0, 1, 1, 1], 39.29583000907823]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 1, 0, 0, 0], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[1, 0, 0, 1, 0, 1, 1, 0, 1, 0], 34.822529692320806]
+average_individual: 
+[[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], 16.678513947718507]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 0, 1, 0], 44.615894498405304]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 1, 1, 0, 1, 0], 26.157717942923817]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 0, 1, 0], 44.615894498405304]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 0, 0, 0, 1, 1, 1, 0, 1, 0], 34.894260671360065]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 1, 1, 1, 0, 1, 0], 34.894260671360065]
+average_individual: 
+[[1, 1, 1, 0, 1, 1, 1, 0, 0, 0], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 1, 0, 0, 0, 1, 1, 1, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 0, 1, 0], 44.615894498405304]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 1, 0, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 1, 0, 0, 0, 1, 1, 0, 1, 0], 35.87935176996905]
+average_individual: 
+[[1, 0, 1, 1, 1, 1, 0, 1, 1, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 1, 0, 1, 1, 1, 1, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 1, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 0, 1, 1, 0, 1, 1], 44.46983666167371]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 3.2111085753044826]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 1, 0, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 17.25529664110166]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 0, 1, 0], 44.615894498405304]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 17.25529664110166]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 17.25529664110166]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 0, 0, 0, 0, 0, 0, 0, 1], 14.044188065797176]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[1, 0, 0, 1, 0, 0, 0, 0, 0, 1], 17.25529664110166]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[1, 0, 1, 1, 0, 0, 0, 0, 0, 1], 0]
+num differences: 
+1
+ratio: 
+0.1
+average_reff_individual: 
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0]
+average_individual: 
+[[0, 1, 0, 0, 1, 1, 1, 1, 1, 0], 53.510719930731376]
+num differences: 
+2
+ratio: 
+0.2

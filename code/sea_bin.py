@@ -16,8 +16,11 @@ import matplotlib.pyplot as plt
 
 def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
         sel_survivors, fitness_func):
+
+    accumulated_generations = []
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
+    accumulated_generations.append(populacao)
     # avalia população
     populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
@@ -27,9 +30,9 @@ def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parent
         # Variation
         # ------ Crossover
         progenitores = []
-        for i in range(0, size_pop - 1, 2):
-            cromo_1 = mate_pool[i]
-            cromo_2 = mate_pool[i + 1]
+        for j in range(0, size_pop - 1, 2):
+            cromo_1 = mate_pool[j]
+            cromo_2 = mate_pool[j + 1]
             filhos = recombination(cromo_1, cromo_2, prob_cross)
             progenitores.extend(filhos)
             # ------ Mutation
@@ -39,9 +42,10 @@ def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parent
             descendentes.append((novo_indiv, fitness_func(novo_indiv)))
         # New population
         populacao = sel_survivors(populacao, descendentes)
+        accumulated_generations.append(populacao)
         # Avalia nova _população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
-    return best_pop(populacao)
+    return [best_pop(populacao), accumulated_generations]
 
 
 def sea_plot(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
@@ -58,15 +62,15 @@ def sea_plot(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # avalia população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
-        for i in range(numb_generations):
+        for j in range(numb_generations):
             # selecciona progenitores
             mate_pool = sel_parents(populacao)
             # Variation
             # ------ Crossover
             progenitores = []
-            for i in range(0, size_pop - 1, 2):
-                cromo_1 = mate_pool[i]
-                cromo_2 = mate_pool[i + 1]
+            for k in range(0, size_pop - 1, 2):
+                cromo_1 = mate_pool[k]
+                cromo_2 = mate_pool[k + 1]
                 filhos = recombination(cromo_1, cromo_2, prob_cross)
                 progenitores.extend(filhos)
                 # ------ Mutation
@@ -220,16 +224,3 @@ def fenotipo(indiv):
 
 def evaluate(indiv):
     return sum(indiv)
-
-
-'''
-if __name__ == '__main__':
-    best_1 = sea(50, 100, 100, 0.05, 0.8, tour_sel(3), one_point_cross, muta_bin, sel_survivors_elite(0.02), merito)
-    display(best_1, fenotipo)
-
-    best_2 = sea(50, 100, 100, 0.05, 0.8, tour_sel(3), two_points_cross, muta_bin, sel_survivors_elite(0.02), merito)
-    display(best_2, fenotipo)
-
-    best_u = sea(50, 100, 100, 0.05, 0.8, tour_sel(3), uniform_cross, muta_bin, sel_survivors_elite(0.02), merito)
-    display(best_u, fenotipo)
-'''

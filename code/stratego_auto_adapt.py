@@ -6,23 +6,23 @@ Remarks: This is mostly a wrapper, but it's ours
 
 from random import *
 from kp_1 import *
+import matplotlib.pyplot as plt
 
 
 def debug_print(something):
-
     # print to console
     if DEBUG:
         print(something)
 
     # store in log file
     if LOG_OUTPUT:
-        f.write( str(something) )
+        f.write(str(something))
         f.write("\n")
 
     return
 
 
-def average_pop(refference_window, fitness_func):
+def average_reff_pop(refference_window, fitness_func):
     """
     returns the average population based on the ith average individual of all populations
     """
@@ -56,7 +56,7 @@ def average_indiv(population, fitness_func):
 
     # divide by number of individuals in population
     for i in range(len(average_individual)):
-        average_individual[i] = round( average_individual[i] / num_individuals )
+        average_individual[i] = round(average_individual[i] / num_individuals)
 
     return [average_individual, fitness_func(average_individual)]
 
@@ -74,10 +74,10 @@ def compare_individs(individual1, individual2):
 
 def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     """
-    tendo em conta a janela de referência, decidir se devem ser alterados os parâmetros:
-    - tamanho da população (?)
-    - probabilidade de crossover
-    - probabilidade de mutação
+    Analyses the populations stored in the refference window and creates an average population.
+    From this average population we derive an average individual.
+    Then we also derive the average individual for the current population
+    and return the number of differences between them.
     """
 
     """
@@ -90,7 +90,7 @@ def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     """
 
     # get average population from refference_window
-    average_reff_population = average_pop(refference_window, fitness_func)
+    average_reff_population = average_reff_pop(refference_window, fitness_func)
 
     """
     debug_print("average_reff_population: ")
@@ -115,8 +115,7 @@ def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     debug_print("num differences: ")
     debug_print(differences)
 
-    # return ratio between number of differences and size of current average_individual
-    return differences / len(average_individual[0])
+    return differences
 
 
 def stratego_next_population(elite):
@@ -143,10 +142,15 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
     funcao stratego
     - variação da sea fornecida pelo prof. Ernesto mas que aplica os conceitos que estamos a estudar:
     --- variação do tamanho da população, prob. de mutação e prob. de crossover
+    returns the best individual in the final generation as well as all generations and the list of all differences
     """
+
+    accumulated_generations = []
+    accumulated_differences = []
 
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
+    accumulated_generations.append(populacao)
 
     # avalia população
     populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
@@ -179,12 +183,15 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
 
         # New population
         populacao = sel_survivors(populacao, descendentes)
+        accumulated_generations.append(populacao)
 
         # Avalia nova _população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
-        # add or remove individuals to new population based on refference window
-        ratio = auto_adapt_fitness(populacao, refference_window, fitness_func)
+        # add or remove individuals to new population based on the number of differences found
+        num_differences = auto_adapt_fitness(populacao, refference_window, fitness_func)
+        accumulated_differences.append(num_differences)
+        ratio = num_differences / len(populacao[0][0])
 
         debug_print("ratio: ")
         debug_print(ratio)
@@ -198,15 +205,15 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
             if (prob_mut + MUTATION_STEP) < 1.0:
                 prob_mut += MUTATION_STEP
 
-    return best_pop(populacao)
+    return [best_pop(populacao), accumulated_generations, accumulated_differences]
 
 
-"""
-função run
-- executa uma simulação com os parâmetros fornecidos
-- devolve os resultados da experiência
-"""
 def run(auto_adapt, problem, size_items):
+    """
+    função run
+    - executa uma simulação com os parâmetros fornecidos
+    - devolve os resultados da experiência
+    """
 
     refference_window_size = WINDOW_SIZE
     refference_window = []
@@ -219,16 +226,16 @@ def run(auto_adapt, problem, size_items):
     if not auto_adapt:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func)
-        best = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
-                   one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
+        sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
+                       one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
     else:
-        # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
+        # stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
-        best = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
-                        one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
-                        refference_window_size, refference_window)
+        sim_data = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
+                            one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
+                            refference_window_size, refference_window)
 
-    return [best, phenotype, problem]
+    return [sim_data, phenotype, problem]
 
 
 def run_n_times(num_runs):
@@ -247,15 +254,19 @@ def run_n_times(num_runs):
     results_without_auto_adapt = []
 
     for i in range(num_runs):
+        # generate a problem to be solved
         problem = generate_uncor(size_items, max_value)
 
+        # solve the "traditional way"
         results_with_auto_adapt.append(run(True, problem, size_items))
+
+        # solve using our cusotm method, "stratego"
         results_without_auto_adapt.append(run(False, problem, size_items))
 
     return [results_with_auto_adapt, results_without_auto_adapt]
 
 
-def analyse(data):
+def analyse_regular(data):
     """
     função de análise estatística e apresentação de gráficos
     - analisar os melhores resultados e os resultados da média
@@ -264,8 +275,53 @@ def analyse(data):
 
     # TODO: finish it!
 
-    for [best, pheno, problem] in data:
-        display(best, pheno, problem)
+    for sim_data, pheno, problem in data:
+
+        for best, accumulated_generations in sim_data:
+
+            # display(best, pheno, problem)
+
+            # Fitness of individuals in population throughout generations
+            plt.figure()
+            plt.xlabel('Generation')
+            plt.ylabel('Fitness')
+            plt.title('Fitness of individuals in population throughout generations')
+            plt.plot(accumulated_generations, 'g')
+            plt.show()
+
+    return
+
+
+def analyse_auto_adapt(data):
+    """
+    função de análise estatística e apresentação de gráficos
+    - analisar os melhores resultados e os resultados da média
+    - analisar o efeito das alterações nos parâmetros
+    """
+
+    # TODO: finish it!
+
+    for sim_data, pheno, problem in data:
+
+        for best, accumulated_generations, accumulated_differences in sim_data:
+
+            # display(best, pheno, problem)
+
+            # Fitness of individuals in population throughout generations
+            plt.figure()
+            plt.xlabel('Generation')
+            plt.ylabel('Fitness')
+            plt.title('Fitness of individuals in population throughout generations')
+            plt.plot(accumulated_generations, 'g')
+            plt.show()
+
+            # Differences throughout generations
+            plt.figure()
+            plt.xlabel('Generation')
+            plt.ylabel('Number of Differences')
+            plt.title('Number of differences throughout generations')
+            plt.plot(accumulated_differences, 'g')
+            plt.show()
 
     return
 
@@ -279,7 +335,7 @@ if __name__ == '__main__':
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     DEBUG = False
-    LOG_OUTPUT = True
+    LOG_OUTPUT = False
 
     NUM_GENERATIONS = 500  # 500
     POPULATION_SIZE = 250  # 250
@@ -294,12 +350,12 @@ if __name__ == '__main__':
     NUMBER_OF_ITEMS = 10  # 10
     MAX_VALUE_ITEM = 10  # 10
 
-    number_of_runs = 1  # TODO: 30  # statistically relevant ammount of runs
+    NUMBER_OF_RUNS = 3  # TODO: 30  # statistically relevant ammount of runs
 
-    results = run_n_times(number_of_runs)
+    results = run_n_times(NUMBER_OF_RUNS)
 
     print("\n\n----- Analysing results without Auto-Adapt -----")
-    analyse(results[0])
+    analyse_regular(results[0])
 
     print("\n\n----- Analysing results with Auto-Adapt -----")
-    analyse(results[1])
+    analyse_auto_adapt(results[1])

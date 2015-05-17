@@ -279,23 +279,32 @@ def analyse_both(results_with_auto_adapt, results_without_auto_adapt):
     plt.title('Comparison of fitness of best individual throughout generations')
 
     best_fitness_with = []
+    average_fitness_with = []
+
     best_fitness_without = []
+    average_fitness_without = []
 
     for accumulated_generations, pheno, problem in results_without_auto_adapt:
         for population in accumulated_generations:
             best_indiv = population[0]
             best_fitness_without.append(best_indiv[1])
+            average_fitness_without.append(average_pop(population))
 
     for sim_data, pheno, problem in results_with_auto_adapt:
         accumulated_generations = sim_data[0]
         for population in accumulated_generations:
             best_indiv = population[0]
             best_fitness_with.append(best_indiv[1])
+            average_fitness_with.append(average_pop(population))
 
     plt.plot(best_fitness_without, 'g', label="Without Auto-Adaptation")
+    plt.plot(average_fitness_without, 'g.', label="Without Auto-Adaptation")
     plt.plot(best_fitness_with, 'r', label="With Auto-Adaptation")
+    plt.plot(average_fitness_with, 'r.', label="With Auto-Adaptation")
 
-    plt.show()
+    global IMAGE_COUNTER
+    plt.savefig("images/comparison_" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
+    IMAGE_COUNTER += 1
 
     return
 
@@ -319,9 +328,11 @@ def plot_generations(accumulated_generations, title):
         average_fitness.append(average_pop(population))
 
     plt.plot(best_fitness, 'g', label="Best")  # best individual
-    plt.plot(average_fitness, 'ro', label="Average")  # average of individuals
+    plt.plot(average_fitness, 'r.', label="Average")  # average of individuals
 
-    plt.show()
+    global IMAGE_COUNTER
+    plt.savefig("images/" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
+    IMAGE_COUNTER += 1
 
     return
 
@@ -365,8 +376,11 @@ def analyse_auto_adapt(data):
         plt.xlabel('Generation')
         plt.ylabel('Number of Differences')
         plt.title('Number of differences throughout generations')
-        plt.plot(accumulated_differences, 'bo')
-        plt.show()
+        plt.plot(accumulated_differences, 'b.')
+
+        global IMAGE_COUNTER
+        plt.savefig("images/differences_" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
+        IMAGE_COUNTER += 1
 
     return
 
@@ -384,6 +398,8 @@ if __name__ == '__main__':
     DEBUG = False
     LOG_OUTPUT = False
 
+    IMAGE_COUNTER = 1
+
     NUM_GENERATIONS = 500  # 500
     POPULATION_SIZE = 250  # 250
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
@@ -397,7 +413,7 @@ if __name__ == '__main__':
     NUMBER_OF_ITEMS = 10  # 10
     MAX_VALUE_ITEM = 10  # 10
 
-    NUMBER_OF_RUNS = 1  # TODO: 30  # statistically relevant ammount of runs
+    NUMBER_OF_RUNS = 5  # TODO: 30  # statistically relevant ammount of runs
 
     results = run_n_times(NUMBER_OF_RUNS)
 

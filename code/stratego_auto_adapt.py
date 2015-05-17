@@ -183,10 +183,11 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
 
         # New population
         populacao = sel_survivors(populacao, descendentes)
-        accumulated_generations.append(populacao)
-
         # Avalia nova _população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
+
+        # store the population
+        accumulated_generations.append(populacao)
 
         # add or remove individuals to new population based on the number of differences found
         num_differences = auto_adapt_fitness(populacao, refference_window, fitness_func)
@@ -205,7 +206,7 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
             if (prob_mut + MUTATION_STEP) < 1.0:
                 prob_mut += MUTATION_STEP
 
-    return [best_pop(populacao), accumulated_generations, accumulated_differences]
+    return [accumulated_generations, accumulated_differences]
 
 
 def run(auto_adapt, problem, size_items):
@@ -266,6 +267,65 @@ def run_n_times(num_runs):
     return [results_with_auto_adapt, results_without_auto_adapt]
 
 
+def analyse_both(results_with_auto_adapt, results_without_auto_adapt):
+    """
+    Plots the best fitness of individuals in population throughout generations
+    for both algorithms
+    """
+
+    plt.figure()
+    plt.xlabel('Generation')
+    plt.ylabel('Fitness')
+    plt.title('Comparison of fitness of best individual throughout generations')
+
+    best_fitness_with = []
+    best_fitness_without = []
+
+    for accumulated_generations, pheno, problem in results_without_auto_adapt:
+        for population in accumulated_generations:
+            best_indiv = population[0]
+            best_fitness_without.append(best_indiv[1])
+
+    for sim_data, pheno, problem in results_with_auto_adapt:
+        accumulated_generations = sim_data[0]
+        for population in accumulated_generations:
+            best_indiv = population[0]
+            best_fitness_with.append(best_indiv[1])
+
+    plt.plot(best_fitness_without, 'g', label="Without Auto-Adaptation")
+    plt.plot(best_fitness_with, 'r', label="With Auto-Adaptation")
+
+    plt.show()
+
+    return
+
+def plot_generations(accumulated_generations, title):
+    """
+    Plots the best and average fitness of individuals in population throughout generations
+    """
+
+    plt.figure()
+    plt.xlabel('Generation')
+    plt.ylabel('Fitness')
+    plt.title(title)
+
+    best_fitness = []
+    average_fitness = []
+
+    for population in accumulated_generations:
+
+        best_indiv = population[0]
+        best_fitness.append(best_indiv[1])
+        average_fitness.append(average_pop(population))
+
+    plt.plot(best_fitness, 'g', label="Best")  # best individual
+    plt.plot(average_fitness, 'ro', label="Average")  # average of individuals
+
+    plt.show()
+
+    return
+
+
 def analyse_regular(data):
     """
     função de análise estatística e apresentação de gráficos
@@ -273,21 +333,12 @@ def analyse_regular(data):
     - analisar o efeito das alterações nos parâmetros
     """
 
-    # TODO: finish it!
+    for accumulated_generations, pheno, problem in data:
 
-    for sim_data, pheno, problem in data:
+        best = best_pop(accumulated_generations[-1])
+        display(best, pheno, problem)
 
-        for best, accumulated_generations in sim_data:
-
-            # display(best, pheno, problem)
-
-            # Fitness of individuals in population throughout generations
-            plt.figure()
-            plt.xlabel('Generation')
-            plt.ylabel('Fitness')
-            plt.title('Fitness of individuals in population throughout generations')
-            plt.plot(accumulated_generations, 'g')
-            plt.show()
+        plot_generations(accumulated_generations, 'Without Auto-Adaptation')
 
     return
 
@@ -299,35 +350,31 @@ def analyse_auto_adapt(data):
     - analisar o efeito das alterações nos parâmetros
     """
 
-    # TODO: finish it!
-
     for sim_data, pheno, problem in data:
 
-        for best, accumulated_generations, accumulated_differences in sim_data:
+        accumulated_generations = sim_data[0]
+        accumulated_differences = sim_data[1]
 
-            # display(best, pheno, problem)
+        best = best_pop(accumulated_generations[-1])
+        display(best, pheno, problem)
 
-            # Fitness of individuals in population throughout generations
-            plt.figure()
-            plt.xlabel('Generation')
-            plt.ylabel('Fitness')
-            plt.title('Fitness of individuals in population throughout generations')
-            plt.plot(accumulated_generations, 'g')
-            plt.show()
+        plot_generations(accumulated_generations, 'With Auto-Adaptation')
 
-            # Differences throughout generations
-            plt.figure()
-            plt.xlabel('Generation')
-            plt.ylabel('Number of Differences')
-            plt.title('Number of differences throughout generations')
-            plt.plot(accumulated_differences, 'g')
-            plt.show()
+        # Differences throughout generations
+        plt.figure()
+        plt.xlabel('Generation')
+        plt.ylabel('Number of Differences')
+        plt.title('Number of differences throughout generations')
+        plt.plot(accumulated_differences, 'bo')
+        plt.show()
 
     return
 
 
 """
-starting point for our algorithm
+If by any chance you are reading the comments this is the starting point for our algorithm.
+Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha!
+Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
 
@@ -339,8 +386,8 @@ if __name__ == '__main__':
 
     NUM_GENERATIONS = 500  # 500
     POPULATION_SIZE = 250  # 250
-    PROB_CROSSOVER = 0.80  # resposável por salto grande no início
-    PROB_MUTATION = 0.10  # resposável por saltos pequenos no final
+    PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
+    PROB_MUTATION = 0.10  # resposável por variações pequenas no final
 
     WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
     THRESHOLD = 0.25  # below this start reversing the crossover and mutation
@@ -350,12 +397,15 @@ if __name__ == '__main__':
     NUMBER_OF_ITEMS = 10  # 10
     MAX_VALUE_ITEM = 10  # 10
 
-    NUMBER_OF_RUNS = 3  # TODO: 30  # statistically relevant ammount of runs
+    NUMBER_OF_RUNS = 1  # TODO: 30  # statistically relevant ammount of runs
 
     results = run_n_times(NUMBER_OF_RUNS)
 
-    print("\n\n----- Analysing results without Auto-Adapt -----")
-    analyse_regular(results[0])
+    print("\n\n----- Comparing results -----")
+    analyse_both(results[0], results[1])
 
     print("\n\n----- Analysing results with Auto-Adapt -----")
-    analyse_auto_adapt(results[1])
+    analyse_auto_adapt(results[0])
+
+    print("\n\n----- Analysing results without Auto-Adapt -----")
+    analyse_regular(results[1])

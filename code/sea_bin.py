@@ -42,10 +42,11 @@ def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parent
             descendentes.append((novo_indiv, fitness_func(novo_indiv)))
         # New population
         populacao = sel_survivors(populacao, descendentes)
-        accumulated_generations.append(populacao)
         # Avalia nova _população
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
-    return [best_pop(populacao), accumulated_generations]
+        # store the population
+        accumulated_generations.append(populacao)
+    return accumulated_generations
 
 
 def sea_plot(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,

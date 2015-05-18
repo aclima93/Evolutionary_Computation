@@ -224,17 +224,18 @@ def run(auto_adapt, problem, size_items):
     prob_crossover = PROB_CROSSOVER
     prob_mutation = PROB_MUTATION
 
-    if not auto_adapt:
-        # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        # mutation, sel_survivors, fitness_func)
-        sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
-                       one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
-    else:
+    if auto_adapt:
         # stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
         sim_data = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                             one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
                             refference_window_size, refference_window)
+    else:
+        # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
+        # mutation, sel_survivors, fitness_func)
+        sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
+                       one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
+
 
     return [sim_data, phenotype, problem]
 
@@ -258,10 +259,10 @@ def run_n_times(num_runs):
         # generate a problem to be solved
         problem = generate_uncor(size_items, max_value)
 
-        # solve the "traditional way"
+        # solve using our custom method, "stratego"
         results_with_auto_adapt.append(run(True, problem, size_items))
 
-        # solve using our cusotm method, "stratego"
+        # solve the "traditional way"
         results_without_auto_adapt.append(run(False, problem, size_items))
 
     return [results_with_auto_adapt, results_without_auto_adapt]
@@ -297,10 +298,11 @@ def analyse_both(results_with_auto_adapt, results_without_auto_adapt):
             best_fitness_with.append(best_indiv[1])
             average_fitness_with.append(average_pop(population))
 
-    plt.plot(best_fitness_without, 'g', label="Without Auto-Adaptation")
-    plt.plot(average_fitness_without, 'g.', label="Without Auto-Adaptation")
-    plt.plot(best_fitness_with, 'r', label="With Auto-Adaptation")
-    plt.plot(average_fitness_with, 'r.', label="With Auto-Adaptation")
+    plt.plot(best_fitness_without, 'g', label="Best Without AD")
+    plt.plot(average_fitness_without, 'g.', label="Averange Without AD")
+    plt.plot(best_fitness_with, 'r', label="Best With AD")
+    plt.plot(average_fitness_with, 'r.', label="Averange With AD")
+    plt.legend(framealpha=0.5)
 
     global IMAGE_COUNTER
     plt.savefig("images/comparison_" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
@@ -329,7 +331,7 @@ def plot_generations(accumulated_generations, title):
 
     plt.plot(best_fitness, 'g', label="Best")  # best individual
     plt.plot(average_fitness, 'r.', label="Average")  # average of individuals
-
+    plt.legend(framealpha=0.5)
     global IMAGE_COUNTER
     plt.savefig("images/" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
     IMAGE_COUNTER += 1
@@ -377,7 +379,6 @@ def analyse_auto_adapt(data):
         plt.ylabel('Number of Differences')
         plt.title('Number of differences throughout generations')
         plt.plot(accumulated_differences, 'b.')
-
         global IMAGE_COUNTER
         plt.savefig("images/differences_" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
         IMAGE_COUNTER += 1

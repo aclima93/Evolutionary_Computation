@@ -80,8 +80,10 @@ def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     and return the number of differences between them.
     """
 
-    """
     debug_print("\n\n----------------------------------")
+
+    """
+    # too volumous...
     debug_print("cur_population: ")
     debug_print(cur_population)
 
@@ -93,6 +95,7 @@ def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     average_reff_population = average_reff_pop(refference_window, fitness_func)
 
     """
+    # too volumous...
     debug_print("average_reff_population: ")
     debug_print(average_reff_population)
     """
@@ -226,12 +229,12 @@ def run(auto_adapt, problem, size_items):
 
     if not auto_adapt:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        # mutation, sel_survivors, fitness_func)
+        #     mutation, sel_survivors, fitness_func)
         sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                        one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
     else:
         # stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
+        #          mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
         sim_data = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                             one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
                             refference_window_size, refference_window)
@@ -410,8 +413,8 @@ if __name__ == '__main__':
     CROSSOVER_STEP = 0.10
     MUTATION_STEP = 0.10
 
-    NUMBER_OF_ITEMS = 10  # 10
-    MAX_VALUE_ITEM = 10  # 10
+    NUMBER_OF_ITEMS = 30  # 10
+    MAX_VALUE_ITEM = 30  # 10
 
     NUMBER_OF_RUNS = 5  # TODO: 30  # statistically relevant ammount of runs
 

@@ -201,7 +201,7 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         debug_print(ratio)
 
         # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
-        if ratio < ACTIVATION_THRESHOLD:
+        if ratio <= ACTIVATION_THRESHOLD:
             difference_history += 1
 
         if difference_history == DIFFERENCE_TOLERANCE:
@@ -308,7 +308,7 @@ if __name__ == '__main__':
 
     # AD Approach specific parameters
     WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
-    ACTIVATION_THRESHOLD = 0.25  # below this lower bound start reversing the crossover and mutation
+    ACTIVATION_THRESHOLD = 0  # below this lower bound start reversing the crossover and mutation
     DIFFERENCE_TOLERANCE = 10  # number of times that the threshhold must be surmounted before we take action (give the algorithm time to sort itself out)
     CROSSOVER_STEP = 0.10
     MUTATION_STEP = 0.10
@@ -316,6 +316,12 @@ if __name__ == '__main__':
     MUTATION_BOUND = 0.80
 
     PATH = "results/"
+
+    # run our simulations
+    results = run_n_times(NUMBER_OF_RUNS)
+
+    # analyse the results from the simulations
+    analyse_results(PATH, NUMBER_OF_RUNS, results)
 
     # record the simulation's parameters
     dic = {
@@ -337,9 +343,3 @@ if __name__ == '__main__':
         "Mutation upper bound: ": MUTATION_BOUND
     }
     write_dic_to_file(PATH + "simulation_parameters.txt", dic)
-
-    # run our simulations
-    results = run_n_times(NUMBER_OF_RUNS)
-
-    # analyse the results from the simulations
-    analyse_results(PATH, NUMBER_OF_RUNS, results)

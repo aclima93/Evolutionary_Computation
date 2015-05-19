@@ -5,7 +5,6 @@ Remarks: Our proposal of an Auto-Adapting Evolutionary Algorithm
 """
 
 from random import *
-from kp_1 import *
 from analyse import *
 
 
@@ -289,11 +288,14 @@ Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha
 Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
-    f = open('output.txt', 'w')
+
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     DEBUG = False
     LOG_OUTPUT = False
+    f = open('output.txt', 'w')
+    f.close()
+    f = open('output.txt', 'a')
 
     # Problem specific
     NUM_ITEMS = 50  # 50
@@ -306,6 +308,7 @@ if __name__ == '__main__':
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.10  # resposável por variações pequenas no final
 
+    # TODO fine tune these!
     # AD Approach specific parameters
     WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 0  # below this lower bound start reversing the crossover and mutation

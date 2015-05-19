@@ -19,12 +19,6 @@ def analyse_both(path, results_wad, results_woad):
     """
     run_counter = 1
 
-    best_fitness_wad = []
-    average_fitness_wad = []
-
-    best_fitness_woad = []
-    average_fitness_woad = []
-
     # get rid of the useless information for this analysis
     temp = []
     for accumulated_generations, pheno, problem in results_woad:
@@ -39,6 +33,12 @@ def analyse_both(path, results_wad, results_woad):
     clean_results = list(zip(results_woad, results_wad))
 
     for acc_gen_woad, acc_gen_wad in clean_results:
+
+        best_fitness_wad = []
+        average_fitness_wad = []
+
+        best_fitness_woad = []
+        average_fitness_woad = []
 
         for population_woad in acc_gen_woad:
             best_indiv = population_woad[0]
@@ -85,8 +85,10 @@ def plot_generations(path, accumulated_generations, title):
     plt.xlabel('Generation')
     plt.ylabel('Fitness')
     plt.title(title)
+
     plt.plot(best_fitness, 'g', label="Best")  # best individual
     plt.plot(average_fitness, 'r.', label="Average")  # average of individuals
+
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.savefig(path, bbox_inches='tight')
     plt.close()
@@ -100,15 +102,16 @@ def analyse_regular(path, data):
     - analisar os melhores resultados e os resultados da média
     - analisar o efeito das alterações nos parâmetros
     """
+
     run_counter = 1
 
     for accumulated_generations, pheno, problem in data:
 
         # record the results of this simulate in the appropriate directory
         best = best_pop(accumulated_generations[-1])
+
         write_str_to_file(path + "/run_" + str(run_counter) + "/WOAD.txt", display(best, pheno, problem))
         plot_generations(path + "/run_" + str(run_counter) + "/WOAD.png", accumulated_generations, 'Without AD')
-        plt.close()
 
         run_counter += 1
 
@@ -124,6 +127,7 @@ def analyse_auto_adapt(path, data):
     run_counter = 1
 
     for sim_data, pheno, problem in data:
+
         accumulated_generations = sim_data[0]
         accumulated_differences = sim_data[1]
         crossover_probs = sim_data[2]

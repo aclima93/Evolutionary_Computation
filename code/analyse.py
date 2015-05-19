@@ -5,6 +5,7 @@ Remarks: Our proposal of an Auto-Adapting Evolutionary Algorithm
 """
 
 from kp_1 import *
+import numpy as np
 import matplotlib.pyplot as plt
 from copy import deepcopy
 import os
@@ -18,6 +19,12 @@ def analyse_both(path, results_wad, results_woad):
     for both algorithms
     """
     run_counter = 1
+
+    final_best_fitness_wad = []
+    final_average_fitness_wad = []
+
+    final_best_fitness_woad = []
+    final_average_fitness_woad = []
 
     # get rid of the useless information for this analysis
     temp = []
@@ -65,6 +72,48 @@ def analyse_both(path, results_wad, results_woad):
         plt.close()
 
         run_counter += 1
+
+        # store the last best solution
+        final_best_fitness_wad.append(best_fitness_wad[-1])
+        final_average_fitness_wad.append(average_fitness_wad[-1])
+        final_best_fitness_woad.append(best_fitness_woad[-1])
+        final_average_fitness_woad.append(average_fitness_woad[-1])
+
+    # ----
+    # Compare the last best solution of each simulation is for each method
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ind = np.arange(len(final_best_fitness_woad))  # the x locations for the groups
+    width = 0.35  # the width of the bars
+
+    plt.xlabel('Simulation')
+    plt.ylabel('Fitness')
+    plt.title('Comparison of best final individual\'s fitness for all simulations')
+
+    ax.bar(ind, final_best_fitness_woad, width, color='green', label='Best Without AD')
+    ax.bar(ind + width, final_best_fitness_wad, width, color='red', label='Best With AD')
+
+    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    plt.savefig(path + "/final_best.png", bbox_inches='tight')
+    plt.close()
+
+    # ----
+    # Compare the last average solution of each simulation is for each method
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ind = np.arange(len(final_average_fitness_woad))  # the x locations for the groups
+    width = 0.35  # the width of the bars
+
+    plt.xlabel('Simulation')
+    plt.ylabel('Fitness')
+    plt.title('Comparison of average final individual\'s fitness for all simulations')
+
+    ax.bar(ind, final_average_fitness_woad, width, color='green', label='Averange Without AD')
+    ax.bar(ind + width, final_average_fitness_wad, width, color='red', label='Averange With AD')
+
+    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    plt.savefig(path + "/final_average.png", bbox_inches='tight')
+    plt.close()
 
     return
 

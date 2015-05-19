@@ -147,6 +147,9 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
 
     accumulated_generations = []
     accumulated_differences = []
+    crossover_probs = []
+    mutation_probs = []
+    difference_history = 0
 
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
@@ -199,19 +202,28 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
 
         # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
         if ratio < ACTIVATION_THRESHOLD:
+            difference_history += 1
 
-            if (prob_cross - CROSSOVER_STEP) > 0.0:
+        if difference_history == DIFFERENCE_TOLERANCE:
+
+            # reset the counter
+            difference_history = 0
+
+            if (prob_cross - CROSSOVER_STEP) > CROSSOVER_BOUND:
                 prob_cross -= CROSSOVER_STEP
 
-            if (prob_mut + MUTATION_STEP) < 1.0:
+            if (prob_mut + MUTATION_STEP) < MUTATION_BOUND:
                 prob_mut += MUTATION_STEP
 
-    return [accumulated_generations, accumulated_differences]
+        crossover_probs.append(prob_cross)
+        mutation_probs.append(prob_mut)
+
+    return [accumulated_generations, accumulated_differences, crossover_probs, mutation_probs]
 
 
-def run(auto_adapt, problem, size_items):
+def simulate(auto_adapt, problem, size_items):
     """
-    função run
+    função simulate
     - executa uma simulação com os parâmetros fornecidos
     - devolve os resultados da experiência
     """
@@ -226,16 +238,15 @@ def run(auto_adapt, problem, size_items):
 
     if auto_adapt:
         # stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        #          mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
+        # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
         sim_data = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                             one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
                             refference_window_size, refference_window)
     else:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        #     mutation, sel_survivors, fitness_func)
+        # mutation, sel_survivors, fitness_func)
         sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                        one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
-
 
     return [sim_data, phenotype, problem]
 
@@ -246,7 +257,7 @@ def run_n_times(num_runs):
     - tem todos os parâmetros que devem ser analisados estatisticamente
     --- os parâmetros, segundo o enunciado, terão a ver com um desvio padrão e uma média utilizados
     --- aquando da mutação e recombinação
-    - executa a função run n vezes
+    - executa a função simulate n vezes
     - guarda os resultados e parâmetros de execução num ficheiro
     """
     size_items = NUM_ITEMS
@@ -255,16 +266,19 @@ def run_n_times(num_runs):
     results_with_auto_adapt = []
     results_without_auto_adapt = []
 
-    for i in range(num_runs):
+    for ith_run in range(1, num_runs + 1):
+
+        # TODO: time the algorithms to see if there's a significant difference in performance
+        print("Run Number " + str(ith_run))
 
         # generate a problem to be solved
         problem = generate_uncor(size_items, max_value)
 
         # solve using our custom method, "stratego"
-        results_with_auto_adapt.append(run(True, problem, size_items))
+        results_with_auto_adapt.append(simulate(True, problem, size_items))
 
         # solve the "traditional way"
-        results_without_auto_adapt.append(run(False, problem, size_items))
+        results_without_auto_adapt.append(simulate(False, problem, size_items))
 
     return [results_with_auto_adapt, results_without_auto_adapt]
 
@@ -275,7 +289,6 @@ Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha
 Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
-
     f = open('output.txt', 'w')
     seed(666)  # random number generation with fixed seed for reproduceable results
 
@@ -283,11 +296,11 @@ if __name__ == '__main__':
     LOG_OUTPUT = False
 
     # Problem specific
-    NUM_ITEMS = 10  # 10
-    MAX_VALUE_ITEM = 10  # 10
+    NUM_ITEMS = 50  # 50
+    MAX_VALUE_ITEM = 50  # 50
 
-    # The usual EC parameters
-    NUMBER_OF_RUNS = 5  # TODO: 30  # statistically relevant ammount of runs
+    # The usual EA parameters
+    NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
     NUM_GENERATIONS = 500  # 500
     POPULATION_SIZE = 250  # 250
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
@@ -296,23 +309,32 @@ if __name__ == '__main__':
     # AD Approach specific parameters
     WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 0.25  # below this lower bound start reversing the crossover and mutation
+    DIFFERENCE_TOLERANCE = 10  # number of times that the threshhold must be surmounted before we take action (give the algorithm time to sort itself out)
     CROSSOVER_STEP = 0.10
     MUTATION_STEP = 0.10
+    CROSSOVER_BOUND = 0.10
+    MUTATION_BOUND = 0.80
 
     PATH = "results/"
 
     # record the simulation's parameters
     dic = {
+        "\n# Problem specific": " ---------- ",
+        "Bag Capacity: ": NUM_ITEMS,
+        "Max. item value: ": MAX_VALUE_ITEM,
+        "\n# The usual EA parameters": " ---------- ",
         "Num. generations: ": NUM_GENERATIONS,
         "Population size:: ": POPULATION_SIZE,
         "Prob. crossover: ": PROB_CROSSOVER,
         "Prob. mutation: ": PROB_MUTATION,
+        "\n# AD Approach specific parameters": " ---------- ",
         "Refference window size: ": WINDOW_SIZE,
         "Activation threshold: ": ACTIVATION_THRESHOLD,
+        "Difference tolerance: ": DIFFERENCE_TOLERANCE,
         "Crossover step: ": CROSSOVER_STEP,
         "Mutation step: ": MUTATION_STEP,
-        "Bag Capacity: ": NUM_ITEMS,
-        "Max. item value: ": MAX_VALUE_ITEM
+        "Crossover lower bound: ": CROSSOVER_BOUND,
+        "Mutation upper bound: ": MUTATION_BOUND
     }
     write_dic_to_file(PATH + "simulation_parameters.txt", dic)
 

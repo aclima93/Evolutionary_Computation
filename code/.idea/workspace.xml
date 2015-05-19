@@ -2,32 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24a45f-3bc7-4226-8b04-c73d699e84bb" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_1/WAD.png" afterPath="$PROJECT_DIR$/results/run_1/WAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_1/WAD.txt" afterPath="$PROJECT_DIR$/results/run_1/WAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_1/WOAD.png" afterPath="$PROJECT_DIR$/results/run_1/WOAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_1/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_1/WOAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_1/comparison.png" afterPath="$PROJECT_DIR$/results/run_1/comparison.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_1/differences.png" afterPath="$PROJECT_DIR$/results/run_1/differences.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_2/WAD.png" afterPath="$PROJECT_DIR$/results/run_2/WAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_2/WAD.txt" afterPath="$PROJECT_DIR$/results/run_2/WAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_2/WOAD.png" afterPath="$PROJECT_DIR$/results/run_2/WOAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_2/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_2/WOAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_2/differences.png" afterPath="$PROJECT_DIR$/results/run_2/differences.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_3/WAD.png" afterPath="$PROJECT_DIR$/results/run_3/WAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_3/WAD.txt" afterPath="$PROJECT_DIR$/results/run_3/WAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_3/WOAD.png" afterPath="$PROJECT_DIR$/results/run_3/WOAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_3/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_3/WOAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_3/differences.png" afterPath="$PROJECT_DIR$/results/run_3/differences.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_4/WAD.png" afterPath="$PROJECT_DIR$/results/run_4/WAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_4/WAD.txt" afterPath="$PROJECT_DIR$/results/run_4/WAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_4/WOAD.png" afterPath="$PROJECT_DIR$/results/run_4/WOAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_4/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_4/WOAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_4/differences.png" afterPath="$PROJECT_DIR$/results/run_4/differences.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_5/WAD.png" afterPath="$PROJECT_DIR$/results/run_5/WAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_5/WAD.txt" afterPath="$PROJECT_DIR$/results/run_5/WAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_5/WOAD.png" afterPath="$PROJECT_DIR$/results/run_5/WOAD.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_5/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_5/WOAD.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/run_5/differences.png" afterPath="$PROJECT_DIR$/results/run_5/differences.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/run_1/probabilities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/run_2/probabilities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/run_3/probabilities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/run_4/probabilities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/run_5/probabilities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notas_sobre_observações.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/simulation_parameters.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_1/WAD.png" afterPath="$PROJECT_DIR$/results/run_1/WAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_2/WAD.png" afterPath="$PROJECT_DIR$/results/run_2/WAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_3/WAD.png" afterPath="$PROJECT_DIR$/results/run_3/WAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_4/WAD.png" afterPath="$PROJECT_DIR$/results/run_4/WAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_5/WAD.png" afterPath="$PROJECT_DIR$/results/run_5/WAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_1/WOAD.png" afterPath="$PROJECT_DIR$/results/run_1/WOAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_2/WOAD.png" afterPath="$PROJECT_DIR$/results/run_2/WOAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_3/WOAD.png" afterPath="$PROJECT_DIR$/results/run_3/WOAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_4/WOAD.png" afterPath="$PROJECT_DIR$/results/run_4/WOAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_5/WOAD.png" afterPath="$PROJECT_DIR$/results/run_5/WOAD.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_1/comparison.png" afterPath="$PROJECT_DIR$/results/run_1/comparison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_2/comparison.png" afterPath="$PROJECT_DIR$/results/run_2/comparison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_3/comparison.png" afterPath="$PROJECT_DIR$/results/run_3/comparison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_4/comparison.png" afterPath="$PROJECT_DIR$/results/run_4/comparison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_5/comparison.png" afterPath="$PROJECT_DIR$/results/run_5/comparison.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_1/differences.png" afterPath="$PROJECT_DIR$/results/run_1/differences.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_2/differences.png" afterPath="$PROJECT_DIR$/results/run_2/differences.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_3/differences.png" afterPath="$PROJECT_DIR$/results/run_3/differences.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_4/differences.png" afterPath="$PROJECT_DIR$/results/run_4/differences.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_5/differences.png" afterPath="$PROJECT_DIR$/results/run_5/differences.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_1/WAD.txt" afterPath="$PROJECT_DIR$/results/run_1/WAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_2/WAD.txt" afterPath="$PROJECT_DIR$/results/run_2/WAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_3/WAD.txt" afterPath="$PROJECT_DIR$/results/run_3/WAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_4/WAD.txt" afterPath="$PROJECT_DIR$/results/run_4/WAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_5/WAD.txt" afterPath="$PROJECT_DIR$/results/run_5/WAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_1/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_1/WOAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_2/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_2/WOAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_3/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_3/WOAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_4/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_4/WOAD.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/run_5/WOAD.txt" afterPath="$PROJECT_DIR$/results/run_5/WOAD.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analyse.py" afterPath="$PROJECT_DIR$/analyse.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratego_auto_adapt.py" afterPath="$PROJECT_DIR$/stratego_auto_adapt.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -45,7 +56,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$Unnamed.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1431363361688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1432032706685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1432046410246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -59,35 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sea_bin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sea_bin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2905" max-vertical-offset="3510">
-              <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
-              <folding>
-                <element signature="e#167#218#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kp_1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kp_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="2085">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.07045" vertical-offset="0" max-vertical-offset="4935">
-              <caret line="309" column="48" selection-start-line="309" selection-start-column="48" selection-end-line="309" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4376" max-vertical-offset="5265">
+              <caret line="305" column="56" selection-start-line="305" selection-start-column="56" selection-end-line="305" selection-end-column="56" />
               <folding>
                 <element signature="e#162#182#0" expanded="true" />
               </folding>
@@ -95,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/analyse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2564" max-vertical-offset="3075">
-              <caret line="185" column="11" selection-start-line="185" selection-start-column="11" selection-end-line="185" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.39078155" vertical-offset="720" max-vertical-offset="3360">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#162#180#0" expanded="true" />
               </folding>
@@ -117,8 +104,8 @@
       <list>
         <option value="$PROJECT_DIR$/kp_1.py" />
         <option value="$PROJECT_DIR$/sea_bin.py" />
-        <option value="$PROJECT_DIR$/analyse.py" />
         <option value="$PROJECT_DIR$/stratego_auto_adapt.py" />
+        <option value="$PROJECT_DIR$/analyse.py" />
       </list>
     </option>
   </component>
@@ -196,6 +183,11 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RunManager" selected="Python.stratego_auto_adapt">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -283,6 +275,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,9 +299,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
@@ -352,6 +344,20 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,20 +376,6 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="false" name="stratego_auto_adapt" type="PythonConfigurationType" factoryName="Python">
@@ -428,7 +420,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32694763" sideWeight="0.5003579" order="7" side_tool="true" content_ui="tabs" x="0" y="327" width="1439" height="265" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -438,15 +430,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25697923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32694763" sideWeight="0.4996421" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -466,10 +458,52 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sea_bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3510">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#167#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kp_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1574" max-vertical-offset="2085">
+          <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1589" max-vertical-offset="4920">
+          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding>
+            <element signature="e#162#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2504" max-vertical-offset="3015">
+          <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+          <folding>
+            <element signature="e#162#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sea_bin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="3495">
@@ -560,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kp_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="2085">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.4/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33268103" vertical-offset="21340" max-vertical-offset="25365">
@@ -586,30 +610,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sea_bin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2905" max-vertical-offset="3510">
-          <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.3814433" vertical-offset="2734" max-vertical-offset="3510">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding>
             <element signature="e#167#218#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analyse.py">
+    <entry file="file://$PROJECT_DIR$/kp_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2564" max-vertical-offset="3075">
-          <caret line="185" column="11" selection-start-line="185" selection-start-column="11" selection-end-line="185" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.57474226" vertical-offset="1309" max-vertical-offset="2085">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
-            <element signature="e#162#180#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.07045" vertical-offset="0" max-vertical-offset="4935">
-          <caret line="309" column="48" selection-start-line="309" selection-start-column="48" selection-end-line="309" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4376" max-vertical-offset="5265">
+          <caret line="305" column="56" selection-start-line="305" selection-start-column="56" selection-end-line="305" selection-end-column="56" />
           <folding>
             <element signature="e#162#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39078155" vertical-offset="720" max-vertical-offset="3360">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#162#180#0" expanded="true" />
           </folding>
         </state>
       </provider>

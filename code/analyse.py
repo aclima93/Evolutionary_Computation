@@ -9,9 +9,10 @@ import matplotlib.pyplot as plt
 from copy import deepcopy
 import os
 import shutil
+import json
 
 
-def analyse_both(path, results_with_auto_adapt, results_without_auto_adapt):
+def analyse_both(path, results_wad, results_woad):
     """
     Plots the best fitness of individuals in population throughout generations
     for both algorithms
@@ -19,50 +20,50 @@ def analyse_both(path, results_with_auto_adapt, results_without_auto_adapt):
 
     run_counter = 1
 
-    best_fitness_with = []
-    average_fitness_with = []
+    best_fitness_wad = []
+    average_fitness_wad = []
 
-    best_fitness_without = []
-    average_fitness_without = []
+    best_fitness_woad = []
+    average_fitness_woad = []
 
     # get rid of the useless information for this analysis
     temp = []
-    for accumulated_generations, pheno, problem in results_without_auto_adapt:
+    for accumulated_generations, pheno, problem in results_woad:
         temp.append(accumulated_generations)
-    results_without_auto_adapt = deepcopy(temp)
+    results_woad = deepcopy(temp)
 
     temp = []
-    for sim_data, pheno, problem in results_with_auto_adapt:
+    for sim_data, pheno, problem in results_wad:
         temp.append(sim_data[0])
-    results_with_auto_adapt = deepcopy(temp)
+    results_wad = deepcopy(temp)
 
-    # TODO: fazer zip ao results_without_auto_adapt & results_with_auto_adapt
-    # e fazer um plot para cada run
+    clean_results = list( zip(results_woad, results_wad) )
 
-    for accumulated_generations in results_without_auto_adapt:
-        for population in accumulated_generations:
-            best_indiv = population[0]
-            best_fitness_without.append(best_indiv[1])
-            average_fitness_without.append(average_pop(population))
+    for acc_gen_woad, acc_gen_wad in clean_results:
 
-    for accumulated_generations in results_with_auto_adapt:
-        for population in accumulated_generations:
-            best_indiv = population[0]
-            best_fitness_with.append(best_indiv[1])
-            average_fitness_with.append(average_pop(population))
+        for population_woad in acc_gen_woad:
+            best_indiv = population_woad[0]
+            best_fitness_woad.append(best_indiv[1])
+            average_fitness_woad.append(average_pop(population_woad))
 
-    plt.figure()
-    plt.xlabel('Generation')
-    plt.ylabel('Fitness')
-    plt.title('Comparison of fitness of best individual throughout generations')
+        for population_wad in acc_gen_wad:
+            best_indiv = population_wad[0]
+            best_fitness_wad.append(best_indiv[1])
+            average_fitness_wad.append(average_pop(population_wad))
 
-    plt.plot(best_fitness_without, 'g', label="Best Without AD")
-    plt.plot(average_fitness_without, 'g.', label="Averange Without AD")
-    plt.plot(best_fitness_with, 'r', label="Best With AD")
-    plt.plot(average_fitness_with, 'r.', label="Averange With AD")
+        plt.figure()
+        plt.xlabel('Generation')
+        plt.ylabel('Fitness')
+        plt.title('Comparison of fitness of best individual throughout generations')
 
-    plt.legend(framealpha=0.5)
-    plt.savefig(path + "/run_" + str(run_counter) + "/comparison.png", bbox_inches='tight')
+        plt.plot(best_fitness_woad, 'g', label="Best Without AD")
+        plt.plot(average_fitness_woad, 'g.', label="Averange Without AD")
+        plt.plot(best_fitness_wad, 'r', label="Best With AD")
+        plt.plot(average_fitness_wad, 'r.', label="Averange With AD")
+
+        plt.legend(framealpha=0.5)
+        plt.savefig(path + "/run_" + str(run_counter) + "/comparison.png", bbox_inches='tight')
+        run_counter += 1
 
     return
 
@@ -105,7 +106,7 @@ def analyse_regular(path, data):
 
         # recor the results of this run in the appropriate directory
         best = best_pop(accumulated_generations[-1])
-        write_file(path + "/run_" + str(run_counter) + "/WOAD.txt", display(best, pheno, problem))
+        write_str_to_file(path + "/run_" + str(run_counter) + "/WOAD.txt", display(best, pheno, problem))
         plot_generations(path + "/run_" + str(run_counter) + "/WOAD.png", accumulated_generations, 'Without AD')
         run_counter += 1
 
@@ -126,7 +127,7 @@ def analyse_auto_adapt(path, data):
         accumulated_differences = sim_data[1]
 
         best = best_pop(accumulated_generations[-1])
-        write_file(path + "/run_" + str(run_counter) + "/WAD.txt", display(best, pheno, problem))
+        write_str_to_file(path + "/run_" + str(run_counter) + "/WAD.txt", display(best, pheno, problem))
         plot_generations(path + "/run_" + str(run_counter) + "/WAD.png", accumulated_generations, 'With AD')
 
         # Differences throughout generations
@@ -183,9 +184,17 @@ def renew_directories(path, number_of_runs):
 
 
 # Auxiliary
-def write_file(path, content):
+def write_str_to_file(path, content):
 
     f = open(path, "w")
     f.write(content)
+    f.close()
+    return
+
+# Auxiliary
+def write_dic_to_file(path, dic):
+
+    f = open(path, "w")
+    json.dump(dic, f)
     f.close()
     return

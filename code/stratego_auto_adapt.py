@@ -198,7 +198,7 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         debug_print(ratio)
 
         # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
-        if ratio < THRESHOLD:
+        if ratio < ACTIVATION_THRESHOLD:
 
             if (prob_cross - CROSSOVER_STEP) > 0.0:
                 prob_cross -= CROSSOVER_STEP
@@ -249,7 +249,7 @@ def run_n_times(num_runs):
     - executa a função run n vezes
     - guarda os resultados e parâmetros de execução num ficheiro
     """
-    size_items = NUMBER_OF_ITEMS
+    size_items = NUM_ITEMS
     max_value = MAX_VALUE_ITEM
 
     results_with_auto_adapt = []
@@ -282,22 +282,39 @@ if __name__ == '__main__':
     DEBUG = False
     LOG_OUTPUT = False
 
+    # Problem specific
+    NUM_ITEMS = 10  # 10
+    MAX_VALUE_ITEM = 10  # 10
+
+    # The usual EC parameters
+    NUMBER_OF_RUNS = 5  # TODO: 30  # statistically relevant ammount of runs
     NUM_GENERATIONS = 500  # 500
     POPULATION_SIZE = 250  # 250
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.10  # resposável por variações pequenas no final
 
+    # AD Approach specific parameters
     WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
-    THRESHOLD = 0.25  # below this start reversing the crossover and mutation
+    ACTIVATION_THRESHOLD = 0.25  # below this lower bound start reversing the crossover and mutation
     CROSSOVER_STEP = 0.10
     MUTATION_STEP = 0.10
 
-    NUMBER_OF_ITEMS = 10  # 10
-    MAX_VALUE_ITEM = 10  # 10
+    PATH = "results/"
 
-    NUMBER_OF_RUNS = 5  # TODO: 30  # statistically relevant ammount of runs
-
-    PATH = "images/"
+    # record the simulation's parameters
+    dic = {
+        "Num. generations: ": NUM_GENERATIONS,
+        "Population size:: ": POPULATION_SIZE,
+        "Prob. crossover: ": PROB_CROSSOVER,
+        "Prob. mutation: ": PROB_MUTATION,
+        "Refference window size: ": WINDOW_SIZE,
+        "Activation threshold: ": ACTIVATION_THRESHOLD,
+        "Crossover step: ": CROSSOVER_STEP,
+        "Mutation step: ": MUTATION_STEP,
+        "Bag Capacity: ": NUM_ITEMS,
+        "Max. item value: ": MAX_VALUE_ITEM
+    }
+    write_dic_to_file(PATH + "simulation_parameters.txt", dic)
 
     # run our simulations
     results = run_n_times(NUMBER_OF_RUNS)

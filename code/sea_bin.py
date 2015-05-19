@@ -205,6 +205,7 @@ def merito(indiv):
 # auxiliary
 def display(indiv, phenotype, problem):
     print('Chromo: %s\nFitness: %s' % (phenotype(indiv[0], problem), indiv[1]))
+    return "Chromo: " + str(phenotype(indiv[0], problem)) + "\nFitness: " + str(indiv[1])
 
 
 def best_pop(populacao):

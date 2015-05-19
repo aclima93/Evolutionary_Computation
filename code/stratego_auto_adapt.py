@@ -1,12 +1,12 @@
 """
 Topic: Auto-Adaptation in Evolutionary Strategies
 Authors: António Lima & Paulo Pereira
-Remarks: This is mostly a wrapper, but it's ours
+Remarks: Our proposal of an Auto-Adapting Evolutionary Algorithm
 """
 
 from random import *
 from kp_1 import *
-import matplotlib.pyplot as plt
+from analyse import *
 
 
 def debug_print(something):
@@ -226,13 +226,13 @@ def run(auto_adapt, problem, size_items):
 
     if auto_adapt:
         # stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
+        #          mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
         sim_data = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                             one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
                             refference_window_size, refference_window)
     else:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
-        # mutation, sel_survivors, fitness_func)
+        #     mutation, sel_survivors, fitness_func)
         sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                        one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
 
@@ -256,6 +256,7 @@ def run_n_times(num_runs):
     results_without_auto_adapt = []
 
     for i in range(num_runs):
+
         # generate a problem to be solved
         problem = generate_uncor(size_items, max_value)
 
@@ -266,124 +267,6 @@ def run_n_times(num_runs):
         results_without_auto_adapt.append(run(False, problem, size_items))
 
     return [results_with_auto_adapt, results_without_auto_adapt]
-
-
-def analyse_both(results_with_auto_adapt, results_without_auto_adapt):
-    """
-    Plots the best fitness of individuals in population throughout generations
-    for both algorithms
-    """
-
-    plt.figure()
-    plt.xlabel('Generation')
-    plt.ylabel('Fitness')
-    plt.title('Comparison of fitness of best individual throughout generations')
-
-    best_fitness_with = []
-    average_fitness_with = []
-
-    best_fitness_without = []
-    average_fitness_without = []
-
-    for accumulated_generations, pheno, problem in results_without_auto_adapt:
-        for population in accumulated_generations:
-            best_indiv = population[0]
-            best_fitness_without.append(best_indiv[1])
-            average_fitness_without.append(average_pop(population))
-
-    for sim_data, pheno, problem in results_with_auto_adapt:
-        accumulated_generations = sim_data[0]
-        for population in accumulated_generations:
-            best_indiv = population[0]
-            best_fitness_with.append(best_indiv[1])
-            average_fitness_with.append(average_pop(population))
-
-    plt.plot(best_fitness_without, 'g', label="Best Without AD")
-    plt.plot(average_fitness_without, 'g.', label="Averange Without AD")
-    plt.plot(best_fitness_with, 'r', label="Best With AD")
-    plt.plot(average_fitness_with, 'r.', label="Averange With AD")
-    plt.legend(framealpha=0.5)
-
-    global IMAGE_COUNTER
-    plt.savefig("images/comparison_" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
-    IMAGE_COUNTER += 1
-
-    return
-
-def plot_generations(accumulated_generations, title):
-    """
-    Plots the best and average fitness of individuals in population throughout generations
-    """
-
-    plt.figure()
-    plt.xlabel('Generation')
-    plt.ylabel('Fitness')
-    plt.title(title)
-
-    best_fitness = []
-    average_fitness = []
-
-    for population in accumulated_generations:
-
-        best_indiv = population[0]
-        best_fitness.append(best_indiv[1])
-        average_fitness.append(average_pop(population))
-
-    plt.plot(best_fitness, 'g', label="Best")  # best individual
-    plt.plot(average_fitness, 'r.', label="Average")  # average of individuals
-    plt.legend(framealpha=0.5)
-    global IMAGE_COUNTER
-    plt.savefig("images/" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
-    IMAGE_COUNTER += 1
-
-    return
-
-
-def analyse_regular(data):
-    """
-    função de análise estatística e apresentação de gráficos
-    - analisar os melhores resultados e os resultados da média
-    - analisar o efeito das alterações nos parâmetros
-    """
-
-    for accumulated_generations, pheno, problem in data:
-
-        best = best_pop(accumulated_generations[-1])
-        display(best, pheno, problem)
-
-        plot_generations(accumulated_generations, 'Without Auto-Adaptation')
-
-    return
-
-
-def analyse_auto_adapt(data):
-    """
-    função de análise estatística e apresentação de gráficos
-    - analisar os melhores resultados e os resultados da média
-    - analisar o efeito das alterações nos parâmetros
-    """
-
-    for sim_data, pheno, problem in data:
-
-        accumulated_generations = sim_data[0]
-        accumulated_differences = sim_data[1]
-
-        best = best_pop(accumulated_generations[-1])
-        display(best, pheno, problem)
-
-        plot_generations(accumulated_generations, 'With Auto-Adaptation')
-
-        # Differences throughout generations
-        plt.figure()
-        plt.xlabel('Generation')
-        plt.ylabel('Number of Differences')
-        plt.title('Number of differences throughout generations')
-        plt.plot(accumulated_differences, 'b.')
-        global IMAGE_COUNTER
-        plt.savefig("images/differences_" + str(IMAGE_COUNTER) + ".png", bbox_inches='tight')
-        IMAGE_COUNTER += 1
-
-    return
 
 
 """
@@ -398,8 +281,6 @@ if __name__ == '__main__':
 
     DEBUG = False
     LOG_OUTPUT = False
-
-    IMAGE_COUNTER = 1
 
     NUM_GENERATIONS = 500  # 500
     POPULATION_SIZE = 250  # 250
@@ -416,13 +297,10 @@ if __name__ == '__main__':
 
     NUMBER_OF_RUNS = 5  # TODO: 30  # statistically relevant ammount of runs
 
+    PATH = "images/"
+
+    # run our simulations
     results = run_n_times(NUMBER_OF_RUNS)
 
-    print("\n\n----- Comparing results -----")
-    analyse_both(results[0], results[1])
-
-    print("\n\n----- Analysing results with Auto-Adapt -----")
-    analyse_auto_adapt(results[0])
-
-    print("\n\n----- Analysing results without Auto-Adapt -----")
-    analyse_regular(results[1])
+    # analyse the results from the simulations
+    analyse_results(PATH, NUMBER_OF_RUNS, results)

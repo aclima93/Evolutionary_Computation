@@ -8,44 +8,56 @@ from random import *
 from analyse import *
 
 
-def debug_print(something):
-    # print to console
-    if DEBUG:
-        print(something)
-
-    # store in log file
-    if LOG_OUTPUT:
-        f.write(str(something))
-        f.write("\n")
-
-    return
+def best_reff_pop_fit(refference_window):
+    """
+    returns the average best fitness based on all individuals in the refference population
+    """
+    best_fitness = 0
+    for population in refference_window:
+        best_fitness += best_pop(population)
+    return best_fitness / len(refference_window)
 
 
 def average_reff_pop_fit(refference_window):
     """
-    returns the average fitness based on all individuals in the population
+    returns the average fitness based on all individuals in the refference population
     """
     average_fitness = 0
     for population in refference_window:
-        average_fitness += average_pop_fit(population)
+        average_fitness += average_pop(population)
     return average_fitness / len(refference_window)
 
-def average_pop_fit(population):
+
+def AD4_fitness(cur_population, refference_window):
     """
-    returns the average fitness based on all individuals in the population
+    Analyses the populations stored in the refference window and creates a best fitness.
+    Then we also derive the best fitness for the current population and return the difference between them.
     """
-    average_fitness = 0
-    for indiv, fit in population:
-        average_fitness += fit
-    return average_fitness / len(population)
+    return abs( best_pop(cur_population) - best_reff_pop_fit(refference_window) )
 
 def AD2_fitness(cur_population, refference_window):
     """
     Analyses the populations stored in the refference window and creates an average fitness.
-    From this average population we derive an average fitness.
     Then we also derive the average fitness for the current population and return the difference between them.
     """
-    return abs( average_pop_fit(cur_population) - average_reff_pop_fit(refference_window) )
+    return abs( average_pop(cur_population) - average_reff_pop_fit(refference_window) )
+
+
+def best_reff_pop(refference_window):
+    """
+    returns the best individual of all refference populations
+    """
+    best_reff_individuals = []
+    for population in refference_window:
+        best_reff_individuals.append(best_indiv(population))
+    return best_indiv(best_reff_individuals)
+
+
+def best_indiv(population):
+    """
+    returns the best individual in the population
+    """
+    return best_pop(population)
 
 
 def average_reff_pop(refference_window, fitness_func):
@@ -98,6 +110,24 @@ def compare_individs(individual1, individual2):
     return diffs
 
 
+def AD3_fitness(cur_population, refference_window):
+    """
+    Analyses the populations stored in the refference window and retrieves the best individual of all.
+    Then we also fetch the best individual for the current population
+    and return the number of differences between them.
+    """
+
+    # get best individual in population from refference_window
+    best_reff_individual = best_reff_pop(refference_window)
+
+    # get best individual from current population
+    best_individual = best_indiv(cur_population)
+
+    # compare average individuals
+    differences = compare_individs(best_reff_individual, best_individual)
+
+    return differences
+
 def AD1_fitness(cur_population, refference_window, fitness_func):
     """
     Analyses the populations stored in the refference window and creates an average population.
@@ -112,20 +142,11 @@ def AD1_fitness(cur_population, refference_window, fitness_func):
     # get average individual from average population
     average_reff_individual = average_indiv(average_reff_population, fitness_func)
 
-    debug_print("average_reff_individual: ")
-    debug_print(average_reff_individual)
-
     # get average individual from current population
     average_individual = average_indiv(cur_population, fitness_func)
 
-    debug_print("average_individual: ")
-    debug_print(average_individual)
-
     # compare average individuals
     differences = compare_individs(average_reff_individual, average_individual)
-
-    debug_print("num differences: ")
-    debug_print(differences)
 
     return differences
 
@@ -186,15 +207,26 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
         # store the population
         accumulated_generations.append(populacao)
 
-        # add or remove individuals to new population based on differences with the refference window
+        # perform auto-adaptive changes according to refference window
         if ad_type == 1:
             diffs = AD1_fitness(populacao, refference_window, fitness_func)
             accumulated_diffs.append(diffs)
             ratio = diffs / len(populacao[0][0])
-        else:
+
+        elif ad_type == 2:
             ratio = AD2_fitness(populacao, refference_window)
             accumulated_diffs.append(ratio)
 
+        elif ad_type == 3:
+            diffs = AD3_fitness(populacao, refference_window)
+            accumulated_diffs.append(diffs)
+            ratio = diffs / len(populacao[0][0])
+
+        else:  # ad_type == 4:
+            ratio = AD4_fitness(populacao, refference_window)
+            accumulated_diffs.append(ratio)
+
+        # ----
         # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
         if ratio <= ACTIVATION_THRESHOLD:
             difference_history += 1
@@ -312,7 +344,7 @@ if __name__ == '__main__':
     # AD Approach specific parameters
     WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 0  # below this lower bound start reversing the crossover and mutation
-    DIFFERENCE_TOLERANCE = 10  # number of times that the threshhold must be surmounted before we take action (give the algorithm time to sort itself out)
+    DIFFERENCE_TOLERANCE = 3  # number of consecutive times that the threshhold must be surmounted before we take action
     CROSSOVER_STEP = 0.10
     MUTATION_STEP = 0.10
     CROSSOVER_BOUND = 0.10

@@ -24,7 +24,7 @@ def comparison_pie_plot(path, data, txt):
 
     unzipped_data = list(zip(data[0], data[1], data[2]))
     num_sims = len(unzipped_data)
-    sizes = [0, 0, 0]
+    sizes = [0] * len(data)
     for simulation_data in unzipped_data:
         m = max(simulation_data)
         max_indexes = [i for i, j in enumerate(simulation_data) if j == m]
@@ -38,7 +38,7 @@ def comparison_pie_plot(path, data, txt):
     # only "explode" the best slices
     m = max(sizes)
     max_indexes = [i for i, j in enumerate(sizes) if j == m]
-    explode = [0, 0, 0]
+    explode = [0] * len(data)
     for i in max_indexes:
         explode[i] = 0.1
 

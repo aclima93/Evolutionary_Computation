@@ -33,14 +33,18 @@ def AD4_fitness(cur_population, refference_window):
     Analyses the populations stored in the refference window and creates a best fitness.
     Then we also derive the best fitness for the current population and return the difference between them.
     """
-    return abs( best_pop(cur_population) - best_reff_pop_fit(refference_window) )
+    fit1 = best_pop(cur_population)
+    fit2 = best_reff_pop_fit(refference_window)
+    return abs( fit1 - fit2 ) / max(fit1, fit2)
 
 def AD2_fitness(cur_population, refference_window):
     """
     Analyses the populations stored in the refference window and creates an average fitness.
     Then we also derive the average fitness for the current population and return the difference between them.
     """
-    return abs( average_pop(cur_population) - average_reff_pop_fit(refference_window) )
+    fit1 = average_pop(cur_population)
+    fit2 = average_reff_pop_fit(refference_window)
+    return abs( fit1 - fit2 ) / max(fit1, fit2)
 
 
 def best_reff_pop(refference_window):
@@ -293,8 +297,7 @@ def run_n_times(num_runs):
     max_value = MAX_VALUE_ITEM
 
     results_without_ad = []
-    results_with_ad1 = []
-    results_with_ad2 = []
+    results_with_ad = [list(copy.deepcopy([])) for _ in range(NUM_ADS)]
 
     for ith_run in range(1, num_runs + 1):
         # TODO: time the algorithms to see if there's a significant difference in performance

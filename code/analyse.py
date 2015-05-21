@@ -13,6 +13,70 @@ import shutil
 import json
 
 
+def comparison_pie_plot(path, data, txt):
+    """
+    Plots a pie chart comparison of the # of times each AD found
+    the highest best/average final solution for all simulations
+    """
+    # The slices will be ordered and plotted counter-clockwise.
+    labels = 'WOAD', 'AD1', 'AD2'
+    colors = ['green', 'red', 'blue']
+
+    unzipped_data = list(zip(data[0], data[1], data[2]))
+    num_sims = len(unzipped_data)
+    sizes = [0, 0, 0]
+    for simulation_data in unzipped_data:
+        m = max(simulation_data)
+        max_indexes = [i for i, j in enumerate(simulation_data) if j == m]
+        for i in max_indexes:
+            sizes[i] += 1
+
+    # percentages
+    for i in range(len(sizes)):
+        sizes[i] = round((sizes[i] / num_sims) * 100)
+
+    # only "explode" the best slices
+    m = max(sizes)
+    max_indexes = [i for i, j in enumerate(sizes) if j == m]
+    explode = [0, 0, 0]
+    for i in max_indexes:
+        explode[i] = 0.1
+
+    plt.figure()
+    plt.title("Comparison of the # of times each AD found the highest " + txt + " final solution for all simulations")
+
+    plt.pie(sizes, explode=tuple(explode), labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=90)
+
+    plt.axis('equal')  # Set aspect ratio to be equal so that pie is drawn as a circle.
+    plt.savefig(path + "/pie_" + txt + ".png", bbox_inches='tight')
+    plt.close()
+
+    return
+
+def comparison_bar_plot(path, data, txt):
+    """
+    Plots a bar chart comparison of each AD's highest best/average final solution for all simulations
+    """
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ind = np.arange(len(data[0]))  # the x locations for the groups
+    width = 0.2  # the width of the bars
+
+    plt.xlabel('Simulation')
+    plt.ylabel('Fitness')
+    plt.title('Comparison of ' + txt + ' final individual\'s fitness for all simulations')
+
+    ax.bar(ind, data[0], width, color='green', label=txt + ' Without AD')
+    ax.bar(ind + width, data[1], width, color='red', label=txt + ' With AD1')
+    ax.bar(ind + width * 2, data[2], width, color='blue', label=txt + ' With AD2')
+
+    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    plt.savefig(path + "/bar_" + txt + ".png", bbox_inches='tight')
+    plt.close()
+
+    return
+
+
 def analyse_comparing(path, results):
     """
     Plots the best fitness of individuals in population throughout generations
@@ -94,7 +158,7 @@ def analyse_comparing(path, results):
 
         run_counter += 1
 
-        # store the last best solution
+        # store the last best solution'sfitness
         final_best_fitness_woad.append(best_fitness_woad[-1])
         final_average_fitness_woad.append(average_fitness_woad[-1])
 
@@ -106,41 +170,15 @@ def analyse_comparing(path, results):
 
     # ----
     # Compare the last best solution of each simulation is for each method
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    ind = np.arange(len(final_best_fitness_woad))  # the x locations for the groups
-    width = 0.1  # the width of the bars
-
-    plt.xlabel('Simulation')
-    plt.ylabel('Fitness')
-    plt.title('Comparison of best final individual\'s fitness for all simulations')
-
-    ax.bar(ind, final_best_fitness_woad, width, color='green', label='Best Without AD')
-    ax.bar(ind + width, final_best_fitness_wad1, width, color='red', label='Best With AD1')
-    ax.bar(ind + width*2, final_best_fitness_wad2, width, color='blue', label='Best With AD2')
-
-    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-    plt.savefig(path + "/final_best.png", bbox_inches='tight')
-    plt.close()
+    final_data = [final_best_fitness_woad, final_best_fitness_wad1, final_best_fitness_wad2]
+    comparison_bar_plot(path, final_data, "Best")
+    comparison_pie_plot(path, final_data, "Best")
 
     # ----
     # Compare the last average solution of each simulation is for each method
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    ind = np.arange(len(final_average_fitness_woad))  # the x locations for the groups
-    width = 0.1  # the width of the bars
-
-    plt.xlabel('Simulation')
-    plt.ylabel('Fitness')
-    plt.title('Comparison of average final individual\'s fitness for all simulations')
-
-    ax.bar(ind, final_average_fitness_woad, width, color='green', label='Averange Without AD')
-    ax.bar(ind + width, final_average_fitness_wad1, width, color='red', label='Averange With AD1')
-    ax.bar(ind+ width*2, final_average_fitness_wad2, width, color='blue', label='Averange With AD2')
-
-    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-    plt.savefig(path + "/final_average.png", bbox_inches='tight')
-    plt.close()
+    final_data = [final_average_fitness_woad, final_average_fitness_wad1, final_average_fitness_wad2]
+    comparison_bar_plot(path, final_data, "Average")
+    comparison_pie_plot(path, final_data, "Average")
 
     return
 

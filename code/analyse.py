@@ -13,15 +13,19 @@ import shutil
 import json
 
 
-def analyse_both(path, results_wad, results_woad):
+def analyse_comparing(path, results):
     """
     Plots the best fitness of individuals in population throughout generations
     for both algorithms
     """
     run_counter = 1
+    results_woad, results_wad1, results_wad2 = results
 
-    final_best_fitness_wad = []
-    final_average_fitness_wad = []
+    final_best_fitness_wad2 = []
+    final_average_fitness_wad2 = []
+
+    final_best_fitness_wad1 = []
+    final_average_fitness_wad1 = []
 
     final_best_fitness_woad = []
     final_average_fitness_woad = []
@@ -33,16 +37,26 @@ def analyse_both(path, results_wad, results_woad):
     results_woad = deepcopy(temp)
 
     temp = []
-    for sim_data, pheno, problem in results_wad:
+    for sim_data, pheno, problem in results_wad1:
         temp.append(sim_data[0])
-    results_wad = deepcopy(temp)
+    results_wad1 = deepcopy(temp)
 
-    clean_results = list(zip(results_woad, results_wad))
+    temp = []
+    for sim_data, pheno, problem in results_wad2:
+        temp.append(sim_data[0])
+    results_wad2 = deepcopy(temp)
 
-    for acc_gen_woad, acc_gen_wad in clean_results:
+    clean_results = list(zip(results_woad, results_wad1, results_wad2))
 
-        best_fitness_wad = []
-        average_fitness_wad = []
+    for acc_gen_woad, acc_gen_wad1, acc_gen_wad2 in clean_results:
+
+        run_i = str(run_counter)
+
+        best_fitness_wad1 = []
+        average_fitness_wad1 = []
+
+        best_fitness_wad2 = []
+        average_fitness_wad2 = []
 
         best_fitness_woad = []
         average_fitness_woad = []
@@ -52,10 +66,15 @@ def analyse_both(path, results_wad, results_woad):
             best_fitness_woad.append(best_indiv[1])
             average_fitness_woad.append(average_pop(population_woad))
 
-        for population_wad in acc_gen_wad:
-            best_indiv = population_wad[0]
-            best_fitness_wad.append(best_indiv[1])
-            average_fitness_wad.append(average_pop(population_wad))
+        for population_wad1 in acc_gen_wad1:
+            best_indiv = population_wad1[0]
+            best_fitness_wad1.append(best_indiv[1])
+            average_fitness_wad1.append(average_pop(population_wad1))
+
+        for population_wad2 in acc_gen_wad2:
+            best_indiv = population_wad2[0]
+            best_fitness_wad2.append(best_indiv[1])
+            average_fitness_wad2.append(average_pop(population_wad2))
 
         plt.figure()
         plt.xlabel('Generation')
@@ -64,34 +83,41 @@ def analyse_both(path, results_wad, results_woad):
 
         plt.plot(best_fitness_woad, 'g', label="Best Without AD")
         plt.plot(average_fitness_woad, 'g.', label="Averange Without AD")
-        plt.plot(best_fitness_wad, 'r', label="Best With AD")
-        plt.plot(average_fitness_wad, 'r.', label="Averange With AD")
+        plt.plot(best_fitness_wad1, 'r', label="Best With AD1")
+        plt.plot(average_fitness_wad1, 'r.', label="Averange With AD1")
+        plt.plot(best_fitness_wad2, 'b', label="Best With AD2")
+        plt.plot(average_fitness_wad2, 'b.', label="Averange With AD2")
 
         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-        plt.savefig(path + "/run_" + str(run_counter) + "/comparison.png", bbox_inches='tight')
+        plt.savefig(path + "/run_" + run_i + "/comparison.png", bbox_inches='tight')
         plt.close()
 
         run_counter += 1
 
         # store the last best solution
-        final_best_fitness_wad.append(best_fitness_wad[-1])
-        final_average_fitness_wad.append(average_fitness_wad[-1])
         final_best_fitness_woad.append(best_fitness_woad[-1])
         final_average_fitness_woad.append(average_fitness_woad[-1])
+
+        final_best_fitness_wad1.append(best_fitness_wad1[-1])
+        final_average_fitness_wad1.append(average_fitness_wad1[-1])
+
+        final_best_fitness_wad2.append(best_fitness_wad2[-1])
+        final_average_fitness_wad2.append(average_fitness_wad2[-1])
 
     # ----
     # Compare the last best solution of each simulation is for each method
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ind = np.arange(len(final_best_fitness_woad))  # the x locations for the groups
-    width = 0.35  # the width of the bars
+    width = 0.1  # the width of the bars
 
     plt.xlabel('Simulation')
     plt.ylabel('Fitness')
     plt.title('Comparison of best final individual\'s fitness for all simulations')
 
     ax.bar(ind, final_best_fitness_woad, width, color='green', label='Best Without AD')
-    ax.bar(ind + width, final_best_fitness_wad, width, color='red', label='Best With AD')
+    ax.bar(ind + width, final_best_fitness_wad1, width, color='red', label='Best With AD1')
+    ax.bar(ind + width*2, final_best_fitness_wad2, width, color='blue', label='Best With AD2')
 
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.savefig(path + "/final_best.png", bbox_inches='tight')
@@ -102,14 +128,15 @@ def analyse_both(path, results_wad, results_woad):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ind = np.arange(len(final_average_fitness_woad))  # the x locations for the groups
-    width = 0.35  # the width of the bars
+    width = 0.1  # the width of the bars
 
     plt.xlabel('Simulation')
     plt.ylabel('Fitness')
     plt.title('Comparison of average final individual\'s fitness for all simulations')
 
     ax.bar(ind, final_average_fitness_woad, width, color='green', label='Averange Without AD')
-    ax.bar(ind + width, final_average_fitness_wad, width, color='red', label='Averange With AD')
+    ax.bar(ind + width, final_average_fitness_wad1, width, color='red', label='Averange With AD1')
+    ax.bar(ind+ width*2, final_average_fitness_wad2, width, color='blue', label='Averange With AD2')
 
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.savefig(path + "/final_average.png", bbox_inches='tight')
@@ -145,7 +172,7 @@ def plot_generations(path, accumulated_generations, title):
     return
 
 
-def analyse_regular(path, data):
+def analyse_standard(path, data):
     """
     função de análise estatística e apresentação de gráficos
     - analisar os melhores resultados e os resultados da média
@@ -156,26 +183,32 @@ def analyse_regular(path, data):
 
     for accumulated_generations, pheno, problem in data:
 
+        run_i = str(run_counter)
+
         # record the results of this simulate in the appropriate directory
         best = best_pop(accumulated_generations[-1])
 
-        write_str_to_file(path + "/run_" + str(run_counter) + "/WOAD.txt", display(best, pheno, problem))
-        plot_generations(path + "/run_" + str(run_counter) + "/WOAD.png", accumulated_generations, 'Without AD')
+        write_str_to_file(path + "/run_" + run_i + "/WOAD.txt", display(best, pheno, problem))
+        plot_generations(path + "/run_" + run_i + "/WOAD.png", accumulated_generations, 'Without AD')
 
         run_counter += 1
 
     return
 
 
-def analyse_auto_adapt(path, data):
+def analyse_AD(path, data, ad_type):
     """
     função de análise estatística e apresentação de gráficos
     - analisar os melhores resultados e os resultados da média
     - analisar o efeito das alterações nos parâmetros
     """
+
+    ad_i = str(ad_type)
     run_counter = 1
 
     for sim_data, pheno, problem in data:
+
+        run_i = str(run_counter)
 
         accumulated_generations = sim_data[0]
         accumulated_differences = sim_data[1]
@@ -183,8 +216,8 @@ def analyse_auto_adapt(path, data):
         mutation_probs = sim_data[3]
 
         best = best_pop(accumulated_generations[-1])
-        write_str_to_file(path + "/run_" + str(run_counter) + "/WAD.txt", display(best, pheno, problem))
-        plot_generations(path + "/run_" + str(run_counter) + "/WAD.png", accumulated_generations, 'With AD')
+        write_str_to_file(path + "/run_" + run_i + "/AD" + ad_i + ".txt", display(best, pheno, problem))
+        plot_generations(path + "/run_" + run_i + "/AD" + ad_i + ".png", accumulated_generations, 'With AD' + ad_i)
 
         # Differences throughout generations
         plt.figure()
@@ -192,7 +225,7 @@ def analyse_auto_adapt(path, data):
         plt.ylabel('Number of Differences')
         plt.title('Number of differences throughout generations')
         plt.plot(accumulated_differences, 'b.')
-        plt.savefig(path + "/run_" + str(run_counter) + "/differences.png", bbox_inches='tight')
+        plt.savefig(path + "/run_" + run_i + "/differences" + ad_i + ".png", bbox_inches='tight')
         plt.close()
 
         # How the Crossover and Mutation probabilities varied
@@ -204,7 +237,7 @@ def analyse_auto_adapt(path, data):
         plt.plot(mutation_probs, 'r', label="Mutation")
 
         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-        plt.savefig(path + "/run_" + str(run_counter) + "/probabilities.png", bbox_inches='tight')
+        plt.savefig(path + "/run_" + run_i + "/probabilities_AD" + ad_i + ".png", bbox_inches='tight')
         plt.close()
 
         run_counter += 1
@@ -223,15 +256,19 @@ def analyse_results(path, number_of_runs, results):
 
     # Compare results of both methods for all runs
     print("\n\n----- Comparing results -----")
-    analyse_both(path, results[0], results[1])
+    analyse_comparing(path, results)
 
-    # Analyse the results with Auto-Adapt
-    print("\n\n----- Analysing results with Auto-Adapt -----")
-    analyse_auto_adapt(path, results[0])
+    # Analyse the results with Auto-Adapt1
+    print("\n\n----- Analysing results with AD1 -----")
+    analyse_AD(path, results[1], 1)
+
+    # Analyse the results with Auto-Adapt1
+    print("\n\n----- Analysing results with AD2 -----")
+    analyse_AD(path, results[2], 2)
 
     # Analyse the results without Auto-Adapt
-    print("\n\n----- Analysing results without Auto-Adapt -----")
-    analyse_regular(path, results[1])
+    print("\n\n----- Analysing results without AD -----")
+    analyse_standard(path, results[0])
 
 
 def renew_directories(path, number_of_runs):

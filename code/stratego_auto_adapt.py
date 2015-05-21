@@ -21,6 +21,33 @@ def debug_print(something):
     return
 
 
+def average_reff_pop_fit(refference_window):
+    """
+    returns the average fitness based on all individuals in the population
+    """
+    average_fitness = 0
+    for population in refference_window:
+        average_fitness += average_pop_fit(population)
+    return average_fitness / len(refference_window)
+
+def average_pop_fit(population):
+    """
+    returns the average fitness based on all individuals in the population
+    """
+    average_fitness = 0
+    for indiv, fit in population:
+        average_fitness += fit
+    return average_fitness / len(population)
+
+def AD2_fitness(cur_population, refference_window):
+    """
+    Analyses the populations stored in the refference window and creates an average fitness.
+    From this average population we derive an average fitness.
+    Then we also derive the average fitness for the current population and return the difference between them.
+    """
+    return abs( average_pop_fit(cur_population) - average_reff_pop_fit(refference_window) )
+
+
 def average_reff_pop(refference_window, fitness_func):
     """
     returns the average population based on the ith average individual of all populations
@@ -71,7 +98,7 @@ def compare_individs(individual1, individual2):
     return diffs
 
 
-def auto_adapt_fitness(cur_population, refference_window, fitness_func):
+def AD1_fitness(cur_population, refference_window, fitness_func):
     """
     Analyses the populations stored in the refference window and creates an average population.
     From this average population we derive an average individual.
@@ -79,22 +106,8 @@ def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     and return the number of differences between them.
     """
 
-    """
-    debug_print("\n\n----------------------------------")
-    debug_print("cur_population: ")
-    debug_print(cur_population)
-
-    debug_print("refference_window: ")
-    debug_print(refference_window)
-    """
-
     # get average population from refference_window
     average_reff_population = average_reff_pop(refference_window, fitness_func)
-
-    """
-    debug_print("average_reff_population: ")
-    debug_print(average_reff_population)
-    """
 
     # get average individual from average population
     average_reff_individual = average_indiv(average_reff_population, fitness_func)
@@ -117,35 +130,17 @@ def auto_adapt_fitness(cur_population, refference_window, fitness_func):
     return differences
 
 
-def stratego_next_population(elite):
-    def elitism(parents, offspring):
-        """
-        Survivals: elitism
-        tendo em conta a janela de referência, alterar o tamanho da população
-        """
-        # TODO: yeah... are we still going to do this?
-        size = len(parents)
-        comp_elite = int(size * elite)
-        offspring.sort(key=itemgetter(1), reverse=True)
-        parents.sort(key=itemgetter(1), reverse=True)
-        new_population = parents[:comp_elite] + offspring[:size - comp_elite]
-
-        return new_population
-
-    return elitism
-
-
-def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
-             sel_survivors, fitness_func, refference_window_size, refference_window):
+def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
+       sel_survivors, fitness_func, refference_window_size, refference_window):
     """
-    funcao stratego
+    funcao AD
     - variação da sea fornecida pelo prof. Ernesto mas que aplica os conceitos que estamos a estudar:
     --- variação do tamanho da população, prob. de mutação e prob. de crossover
     returns the best individual in the final generation as well as all generations and the list of all differences
     """
 
     accumulated_generations = []
-    accumulated_differences = []
+    accumulated_diffs = []
     crossover_probs = []
     mutation_probs = []
     difference_history = 0
@@ -191,17 +186,20 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         # store the population
         accumulated_generations.append(populacao)
 
-        # add or remove individuals to new population based on the number of differences found
-        num_differences = auto_adapt_fitness(populacao, refference_window, fitness_func)
-        accumulated_differences.append(num_differences)
-        ratio = num_differences / len(populacao[0][0])
-
-        debug_print("ratio: ")
-        debug_print(ratio)
+        # add or remove individuals to new population based on differences with the refference window
+        if ad_type == 1:
+            diffs = AD1_fitness(populacao, refference_window, fitness_func)
+            accumulated_diffs.append(diffs)
+            ratio = diffs / len(populacao[0][0])
+        else:
+            ratio = AD2_fitness(populacao, refference_window)
+            accumulated_diffs.append(ratio)
 
         # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
         if ratio <= ACTIVATION_THRESHOLD:
             difference_history += 1
+        else:
+            difference_history = 0  # reset, must be consecutive
 
         if difference_history == DIFFERENCE_TOLERANCE:
 
@@ -217,10 +215,10 @@ def stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
         crossover_probs.append(prob_cross)
         mutation_probs.append(prob_mut)
 
-    return [accumulated_generations, accumulated_differences, crossover_probs, mutation_probs]
+    return [accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs]
 
 
-def simulate(auto_adapt, problem, size_items):
+def simulate(auto_adapt_type, problem, size_items):
     """
     função simulate
     - executa uma simulação com os parâmetros fornecidos
@@ -235,12 +233,12 @@ def simulate(auto_adapt, problem, size_items):
     prob_crossover = PROB_CROSSOVER
     prob_mutation = PROB_MUTATION
 
-    if auto_adapt:
-        # stratego(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
+    if auto_adapt_type != 0:
+        # AD1(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
-        sim_data = stratego(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
-                            one_point_cross, muta_bin, stratego_next_population(0.02), merito(problem),
-                            refference_window_size, refference_window)
+        sim_data = AD(auto_adapt_type, num_generations, population_size, size_items, prob_mutation, prob_crossover,
+                      tour_sel(3), one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem),
+                      refference_window_size, refference_window)
     else:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func)
@@ -262,24 +260,27 @@ def run_n_times(num_runs):
     size_items = NUM_ITEMS
     max_value = MAX_VALUE_ITEM
 
-    results_with_auto_adapt = []
-    results_without_auto_adapt = []
+    results_without_ad = []
+    results_with_ad1 = []
+    results_with_ad2 = []
 
     for ith_run in range(1, num_runs + 1):
-
         # TODO: time the algorithms to see if there's a significant difference in performance
         print("Run Number " + str(ith_run))
 
         # generate a problem to be solved
         problem = generate_uncor(size_items, max_value)
 
-        # solve using our custom method, "stratego"
-        results_with_auto_adapt.append(simulate(True, problem, size_items))
-
         # solve the "traditional way"
-        results_without_auto_adapt.append(simulate(False, problem, size_items))
+        results_without_ad.append(simulate(0, problem, size_items))
 
-    return [results_with_auto_adapt, results_without_auto_adapt]
+        # solve using our custom method, "AD1"
+        results_with_ad1.append(simulate(1, problem, size_items))
+
+        # solve using our custom method, "AD2"
+        results_with_ad2.append(simulate(2, problem, size_items))
+
+    return [results_without_ad, results_with_ad1, results_with_ad2]
 
 
 """
@@ -288,7 +289,6 @@ Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha
 Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
-
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     DEBUG = False
@@ -303,8 +303,8 @@ if __name__ == '__main__':
 
     # The usual EA parameters
     NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
-    NUM_GENERATIONS = 500  # 500
-    POPULATION_SIZE = 250  # 250
+    NUM_GENERATIONS = 250  # 500
+    POPULATION_SIZE = 100  # 250
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.10  # resposável por variações pequenas no final
 

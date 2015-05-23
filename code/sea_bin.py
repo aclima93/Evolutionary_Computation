@@ -96,11 +96,11 @@ def sea_plot(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_p
 # Representation by binary strings
 
 def gera_pop(size_pop, size_cromo):
-    return [(gera_indiv(size_cromo), 0) for i in range(size_pop)]
+    return [(gera_indiv(size_cromo), 0) for _ in range(size_pop)]
 
 
 def gera_indiv(size_cromo):
-    indiv = [randint(0, 1) for i in range(size_cromo)]
+    indiv = [randint(0, 1) for _ in range(size_cromo)]
     return indiv
 
 
@@ -128,9 +128,9 @@ def one_point_cross(cromo_1, cromo_2, prob_cross):
         pos = randint(0, len(cromo_1))
         f1 = cromo_1[0:pos] + cromo_2[pos:]
         f2 = cromo_2[0:pos] + cromo_1[pos:]
-        return (f1, f2)
+        return f1, f2
     else:
-        return (cromo_1, cromo_2)
+        return cromo_1, cromo_2
 
 
 def two_points_cross(cromo_1, cromo_2, prob_cross):
@@ -141,9 +141,9 @@ def two_points_cross(cromo_1, cromo_2, prob_cross):
         pc1, pc2 = pc
         f1 = cromo_1[:pc1] + cromo_2[pc1:pc2] + cromo_1[pc2:]
         f2 = cromo_2[:pc1] + cromo_1[pc1:pc2] + cromo_2[pc2:]
-        return (f1, f2)
+        return f1, f2
     else:
-        return (cromo_1, cromo_2)
+        return cromo_1, cromo_2
 
 
 def uniform_cross(cromo_1, cromo_2, prob_cross):
@@ -159,9 +159,9 @@ def uniform_cross(cromo_1, cromo_2, prob_cross):
                 f1.append(cromo_2[i])
                 f2.append(cromo_1[i])
 
-        return (f1, f2)
+        return f1, f2
     else:
-        return (cromo_1, cromo_2)
+        return cromo_1, cromo_2
 
 
 # Tournament Selection

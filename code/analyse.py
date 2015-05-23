@@ -141,7 +141,6 @@ def analyse_comparing(path, results, num_ads):
         plt.savefig(path + "run_" + run_i + "/comparison.png", bbox_inches='tight')
         plt.close()
 
-    # FIXME: !!
     # store the last best/average solution's fitness for each AD of each simulation
     for ith_ad in range(num_ads + 1):
         for run_counter in range(len(best_fitness_ad[0])):

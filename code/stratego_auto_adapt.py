@@ -14,7 +14,7 @@ def best_reff_pop_fit(refference_window):
     """
     best_fitness = 0
     for population in refference_window:
-        best_fitness += best_pop(population)
+        best_fitness += best_pop(population)[1]
     return best_fitness / len(refference_window)
 
 
@@ -33,7 +33,7 @@ def AD4_fitness(cur_population, refference_window):
     Analyses the populations stored in the refference window and creates a best fitness.
     Then we also derive the best fitness for the current population and return the difference between them.
     """
-    fit1 = best_pop(cur_population)
+    fit1 = best_pop(cur_population)[1]
     fit2 = best_reff_pop_fit(refference_window)
     return abs( fit1 - fit2 ) / max(fit1, fit2)
 
@@ -251,7 +251,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
         crossover_probs.append(prob_cross)
         mutation_probs.append(prob_mut)
 
-    return [accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs]
+    return accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs
 
 
 def simulate(auto_adapt_type, problem, size_items):
@@ -272,16 +272,16 @@ def simulate(auto_adapt_type, problem, size_items):
     if auto_adapt_type != 0:
         # AD1(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func, refference_window_size, refference_window)
-        sim_data = AD(auto_adapt_type, num_generations, population_size, size_items, prob_mutation, prob_crossover,
+        accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs = AD(auto_adapt_type, num_generations, population_size, size_items, prob_mutation, prob_crossover,
                       tour_sel(3), one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem),
                       refference_window_size, refference_window)
     else:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func)
-        sim_data = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
+        accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs = sea(num_generations, population_size, size_items, prob_mutation, prob_crossover, tour_sel(3),
                        one_point_cross, muta_bin, sel_survivors_elite(0.02), merito(problem))
 
-    return [sim_data, phenotype, problem]
+    return accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs, phenotype, problem
 
 
 def run_n_times(num_runs):
@@ -296,8 +296,12 @@ def run_n_times(num_runs):
     size_items = NUM_ITEMS
     max_value = MAX_VALUE_ITEM
 
-    results_without_ad = []
-    results_with_ad = [list(copy.deepcopy([])) for _ in range(NUM_ADS)]
+    accumulated_generations_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
+    accumulated_diffs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
+    crossover_probs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
+    mutation_probs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
+    phenotype_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
+    problem_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
 
     for ith_run in range(1, num_runs + 1):
         # TODO: time the algorithms to see if there's a significant difference in performance
@@ -306,16 +310,17 @@ def run_n_times(num_runs):
         # generate a problem to be solved
         problem = generate_uncor(size_items, max_value)
 
-        # solve the "traditional way"
-        results_without_ad.append(simulate(0, problem, size_items))
+        # solve using our custom methods, "AD i"
+        for ith_ad in range(NUM_ADS + 1):
+            accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs, phenot, problem = simulate(ith_ad, problem, size_items)
+            accumulated_generations_array[ith_ad].append(accumulated_generations)
+            accumulated_diffs_array[ith_ad].append(accumulated_diffs)
+            crossover_probs_array[ith_ad].append(crossover_probs)
+            mutation_probs_array[ith_ad].append(mutation_probs)
+            phenotype_array[ith_ad].append(phenot)
+            problem_array[ith_ad].append(problem)
 
-        # solve using our custom method, "AD1"
-        results_with_ad1.append(simulate(1, problem, size_items))
-
-        # solve using our custom method, "AD2"
-        results_with_ad2.append(simulate(2, problem, size_items))
-
-    return [results_without_ad, results_with_ad1, results_with_ad2]
+    return [accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array, phenotype_array, problem_array]
 
 
 """
@@ -324,29 +329,27 @@ Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha
 Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
+
     seed(666)  # random number generation with fixed seed for reproduceable results
 
-    DEBUG = False
-    LOG_OUTPUT = False
-    f = open('output.txt', 'w')
-    f.close()
-    f = open('output.txt', 'a')
-
     # Problem specific
-    NUM_ITEMS = 50  # 50
-    MAX_VALUE_ITEM = 50  # 50
+    NUM_ITEMS = 5  # 50
+    MAX_VALUE_ITEM = 5  # 50
 
     # The usual EA parameters
-    NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
-    NUM_GENERATIONS = 250  # 500
-    POPULATION_SIZE = 100  # 250
+    NUMBER_OF_RUNS = 3  # TODO: 30 , statistically relevant ammount of runs
+    NUM_GENERATIONS = 10  # 500
+    POPULATION_SIZE = 10  # 250
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.10  # resposável por variações pequenas no final
 
+    # number of distinct custom appreaches employed besides standard
+    NUM_ADS = 4
+
     # TODO fine tune these!
     # AD Approach specific parameters
-    WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
-    ACTIVATION_THRESHOLD = 0  # below this lower bound start reversing the crossover and mutation
+    WINDOW_SIZE = 3  # number previous generations considered for altering the auto-adaptative parameters
+    ACTIVATION_THRESHOLD = 0.05  # below this lower bound start reversing the crossover and mutation
     DIFFERENCE_TOLERANCE = 3  # number of consecutive times that the threshhold must be surmounted before we take action
     CROSSOVER_STEP = 0.10
     MUTATION_STEP = 0.10
@@ -359,7 +362,7 @@ if __name__ == '__main__':
     results = run_n_times(NUMBER_OF_RUNS)
 
     # analyse the results from the simulations
-    analyse_results(PATH, NUMBER_OF_RUNS, results)
+    analyse_results(PATH, NUMBER_OF_RUNS, NUM_ADS, results)
 
     # record the simulation's parameters
     dic = {

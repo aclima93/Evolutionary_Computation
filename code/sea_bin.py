@@ -46,7 +46,7 @@ def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parent
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
         # store the population
         accumulated_generations.append(populacao)
-    return accumulated_generations
+    return accumulated_generations, [], [], []
 
 
 def sea_plot(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,

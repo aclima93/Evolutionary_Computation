@@ -4,13 +4,16 @@ Authors: António Lima & Paulo Pereira
 Remarks: Our proposal of an Auto-Adapting Evolutionary Algorithm
 """
 
-from kp_1 import *
-import numpy as np
-import matplotlib.pyplot as plt
-from copy import deepcopy
 import os
 import shutil
 import json
+
+from kp_1 import *
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+AD_color = ['g', 'r', 'b', 'c', 'm']
 
 
 def comparison_pie_plot(path, data, txt):
@@ -53,6 +56,7 @@ def comparison_pie_plot(path, data, txt):
 
     return
 
+
 def comparison_bar_plot(path, data, txt):
     """
     Plots a bar chart comparison of each AD's highest best/average final solution for all simulations
@@ -60,15 +64,14 @@ def comparison_bar_plot(path, data, txt):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ind = np.arange(len(data[0]))  # the x locations for the groups
-    width = 0.2  # the width of the bars
+    width = 0.175  # the width of the bars
 
     plt.xlabel('Simulation')
     plt.ylabel('Fitness')
     plt.title('Comparison of ' + txt + ' final individual\'s fitness for all simulations')
 
-    ax.bar(ind, data[0], width, color='green', label=txt + ' Without AD')
-    ax.bar(ind + width, data[1], width, color='red', label=txt + ' With AD1')
-    ax.bar(ind + width * 2, data[2], width, color='blue', label=txt + ' With AD2')
+    for ith_ad in range(len(data)):
+        ax.bar(ind + width * ith_ad, data[ith_ad], width, color=AD_color[ith_ad], label=txt + ' With AD' + str(ith_ad))
 
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.savefig(path + "/bar_" + txt + ".png", bbox_inches='tight')
@@ -77,108 +80,96 @@ def comparison_bar_plot(path, data, txt):
     return
 
 
-def analyse_comparing(path, results):
+def analyse_comparing(path, results, num_ads):
     """
     Plots the best fitness of individuals in population throughout generations
     for both algorithms
     """
-    run_counter = 1
-    results_woad, results_wad1, results_wad2 = results
 
-    final_best_fitness_wad2 = []
-    final_average_fitness_wad2 = []
-
-    final_best_fitness_wad1 = []
-    final_average_fitness_wad1 = []
-
-    final_best_fitness_woad = []
-    final_average_fitness_woad = []
+    final_best_fitness_ad = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    final_average_fitness_ad = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
 
     # get rid of the useless information for this analysis
-    temp = []
-    for accumulated_generations, pheno, problem in results_woad:
-        temp.append(accumulated_generations)
-    results_woad = deepcopy(temp)
+    accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array, phenotype_array, problem_array = results
 
-    temp = []
-    for sim_data, pheno, problem in results_wad1:
-        temp.append(sim_data[0])
-    results_wad1 = deepcopy(temp)
+    best_fitness_ad = []
+    average_fitness_ad = []
 
-    temp = []
-    for sim_data, pheno, problem in results_wad2:
-        temp.append(sim_data[0])
-    results_wad2 = deepcopy(temp)
+    for acc_gen_ad in accumulated_generations_array:
 
-    clean_results = list(zip(results_woad, results_wad1, results_wad2))
+        temp_temp_best_fit = []
+        temp_temp_average_fit = []
 
-    for acc_gen_woad, acc_gen_wad1, acc_gen_wad2 in clean_results:
+        for run_ad in acc_gen_ad:
 
+            temp_best_fit = []
+            temp_average_fit = []
+
+            for generation_ad in run_ad:
+                best_indiv = generation_ad[0]
+                temp_best_fit.append(best_indiv[1])
+                temp_average_fit.append(average_pop(generation_ad))
+
+            temp_temp_best_fit.append(temp_best_fit)
+            temp_temp_average_fit.append(temp_average_fit)
+
+        best_fitness_ad.append(temp_temp_best_fit)
+        average_fitness_ad.append(temp_temp_average_fit)
+
+    temp1 = []
+    temp2 = []
+    for run_counter in range(1, len(best_fitness_ad[0]) + 1):
         run_i = str(run_counter)
-
-        best_fitness_wad1 = []
-        average_fitness_wad1 = []
-
-        best_fitness_wad2 = []
-        average_fitness_wad2 = []
-
-        best_fitness_woad = []
-        average_fitness_woad = []
-
-        for population_woad in acc_gen_woad:
-            best_indiv = population_woad[0]
-            best_fitness_woad.append(best_indiv[1])
-            average_fitness_woad.append(average_pop(population_woad))
-
-        for population_wad1 in acc_gen_wad1:
-            best_indiv = population_wad1[0]
-            best_fitness_wad1.append(best_indiv[1])
-            average_fitness_wad1.append(average_pop(population_wad1))
-
-        for population_wad2 in acc_gen_wad2:
-            best_indiv = population_wad2[0]
-            best_fitness_wad2.append(best_indiv[1])
-            average_fitness_wad2.append(average_pop(population_wad2))
 
         plt.figure()
         plt.xlabel('Generation')
         plt.ylabel('Fitness')
         plt.title('Comparison of individual\'s fitness throughout generations')
 
-        plt.plot(best_fitness_woad, 'g', label="Best Without AD")
-        plt.plot(average_fitness_woad, 'g.', label="Averange Without AD")
-        plt.plot(best_fitness_wad1, 'r', label="Best With AD1")
-        plt.plot(average_fitness_wad1, 'r.', label="Averange With AD1")
-        plt.plot(best_fitness_wad2, 'b', label="Best With AD2")
-        plt.plot(average_fitness_wad2, 'b.', label="Averange With AD2")
+        temp3 = []
+        temp4 = []
+        for ith_ad in range(num_ads + 1):
+            plt.plot(best_fitness_ad[ith_ad][run_counter - 1], AD_color[ith_ad], label="Best With AD" + str(ith_ad))
+            plt.plot(average_fitness_ad[ith_ad][run_counter - 1], AD_color[ith_ad] + '.',
+                     label="Averange With AD" + str(ith_ad))
+            temp3.append(best_fitness_ad[ith_ad][run_counter - 1])
+            temp4.append(average_fitness_ad[ith_ad][run_counter - 1])
+
+        temp1.append(temp3)
+        temp2.append(temp4)
 
         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-        plt.savefig(path + "/run_" + run_i + "/comparison.png", bbox_inches='tight')
+        plt.savefig(path + "run_" + run_i + "/comparison.png", bbox_inches='tight')
         plt.close()
 
-        run_counter += 1
+    print('begin')
+    print(len(temp1))
+    print(len(temp1[0]))
+    print(len(temp1[0][0]))
+    print(temp1[0][0][-1])
 
-        # store the last best solution'sfitness
-        final_best_fitness_woad.append(best_fitness_woad[-1])
-        final_average_fitness_woad.append(average_fitness_woad[-1])
+    # FIXME: !!
+    # store the last best/average solution's fitness for each AD of each simulation
+    for ith_ad in range(num_ads + 1):
+        for run_counter in range(len(best_fitness_ad[0])):
+            final_best_fitness_ad[ith_ad].append(temp1[run_counter][ith_ad][-1])
+            final_average_fitness_ad[ith_ad].append(temp2[run_counter][ith_ad][-1])
 
-        final_best_fitness_wad1.append(best_fitness_wad1[-1])
-        final_average_fitness_wad1.append(average_fitness_wad1[-1])
-
-        final_best_fitness_wad2.append(best_fitness_wad2[-1])
-        final_average_fitness_wad2.append(average_fitness_wad2[-1])
+    """
+    for ith_ad in range(num_ads + 1):
+        final_best_fitness_ad[ith_ad].append(best_fitness_ad[ith_ad][-1])
+        final_average_fitness_ad[ith_ad].append(average_fitness_ad[ith_ad][-1])
+    """
 
     # ----
     # Compare the last best solution of each simulation is for each method
-    final_data = [final_best_fitness_woad, final_best_fitness_wad1, final_best_fitness_wad2]
-    comparison_bar_plot(path, final_data, "Best")
-    comparison_pie_plot(path, final_data, "Best")
+    comparison_bar_plot(path, final_best_fitness_ad, "Best")
+    comparison_pie_plot(path, final_best_fitness_ad, "Best")
 
     # ----
     # Compare the last average solution of each simulation is for each method
-    final_data = [final_average_fitness_woad, final_average_fitness_wad1, final_average_fitness_wad2]
-    comparison_bar_plot(path, final_data, "Average")
-    comparison_pie_plot(path, final_data, "Average")
+    comparison_bar_plot(path, final_average_fitness_ad, "Average")
+    comparison_pie_plot(path, final_average_fitness_ad, "Average")
 
     return
 
@@ -210,30 +201,6 @@ def plot_generations(path, accumulated_generations, title):
     return
 
 
-def analyse_standard(path, data):
-    """
-    função de análise estatística e apresentação de gráficos
-    - analisar os melhores resultados e os resultados da média
-    - analisar o efeito das alterações nos parâmetros
-    """
-
-    run_counter = 1
-
-    for accumulated_generations, pheno, problem in data:
-
-        run_i = str(run_counter)
-
-        # record the results of this simulate in the appropriate directory
-        best = best_pop(accumulated_generations[-1])
-
-        write_str_to_file(path + "/run_" + run_i + "/WOAD.txt", display(best, pheno, problem))
-        plot_generations(path + "/run_" + run_i + "/WOAD.png", accumulated_generations, 'Without AD')
-
-        run_counter += 1
-
-    return
-
-
 def analyse_AD(path, data, ad_type):
     """
     função de análise estatística e apresentação de gráficos
@@ -245,7 +212,6 @@ def analyse_AD(path, data, ad_type):
     run_counter = 1
 
     for sim_data, pheno, problem in data:
-
         run_i = str(run_counter)
 
         accumulated_generations = sim_data[0]
@@ -254,8 +220,9 @@ def analyse_AD(path, data, ad_type):
         mutation_probs = sim_data[3]
 
         best = best_pop(accumulated_generations[-1])
-        write_str_to_file(path + "/run_" + run_i + "/AD" + ad_i + ".txt", display(best, pheno, problem))
-        plot_generations(path + "/run_" + run_i + "/AD" + ad_i + ".png", accumulated_generations, 'With AD' + ad_i)
+        write_str_to_file(path + "/run_" + run_i + "/generations_AD" + ad_i + ".txt", display(best, pheno, problem))
+        plot_generations(path + "/run_" + run_i + "/generations_AD" + ad_i + ".png", accumulated_generations,
+                         'With AD' + ad_i)
 
         # Differences throughout generations
         plt.figure()
@@ -263,7 +230,7 @@ def analyse_AD(path, data, ad_type):
         plt.ylabel('Number of Differences')
         plt.title('Number of differences throughout generations')
         plt.plot(accumulated_differences, 'b.')
-        plt.savefig(path + "/run_" + run_i + "/differences" + ad_i + ".png", bbox_inches='tight')
+        plt.savefig(path + "/run_" + run_i + "/differences_AD" + ad_i + ".png", bbox_inches='tight')
         plt.close()
 
         # How the Crossover and Mutation probabilities varied
@@ -283,7 +250,7 @@ def analyse_AD(path, data, ad_type):
     return
 
 
-def analyse_results(path, number_of_runs, results):
+def analyse_results(path, number_of_runs, number_of_ads, results):
     """
     This method is the pivot point for the analysis of our simulation's results
     including, but not liimited to, the best and average solution throught the
@@ -294,19 +261,12 @@ def analyse_results(path, number_of_runs, results):
 
     # Compare results of both methods for all runs
     print("\n\n----- Comparing results -----")
-    analyse_comparing(path, results)
+    analyse_comparing(path, results, number_of_ads)
 
-    # Analyse the results with Auto-Adapt1
-    print("\n\n----- Analysing results with AD1 -----")
-    analyse_AD(path, results[1], 1)
-
-    # Analyse the results with Auto-Adapt1
-    print("\n\n----- Analysing results with AD2 -----")
-    analyse_AD(path, results[2], 2)
-
-    # Analyse the results without Auto-Adapt
-    print("\n\n----- Analysing results without AD -----")
-    analyse_standard(path, results[0])
+    # Analyse the results of the ith Auto-Adapt method
+    for ith_ad in range(0, number_of_ads + 1):
+        print("\n\n----- Analysing results with AD" + str(ith_ad) + " -----")
+        analyse_AD(path, results[ith_ad], ith_ad)
 
 
 def renew_directories(path, number_of_runs):

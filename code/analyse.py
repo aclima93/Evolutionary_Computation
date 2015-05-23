@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 
 
 AD_color = ['g', 'r', 'b', 'c', 'm']
+AD_labels = 'AD0', 'AD1', 'AD2', 'AD3', 'AD4'
 
 
 def comparison_pie_plot(path, data, txt):
@@ -22,8 +23,6 @@ def comparison_pie_plot(path, data, txt):
     the highest best/average final solution for all simulations
     """
     # The slices will be ordered and plotted counter-clockwise.
-    labels = 'WOAD', 'AD1', 'AD2'
-    colors = ['green', 'red', 'blue']
 
     unzipped_data = list(zip(data[0], data[1], data[2]))
     num_sims = len(unzipped_data)
@@ -48,7 +47,7 @@ def comparison_pie_plot(path, data, txt):
     plt.figure()
     plt.title("Comparison of the # of times each AD found the highest " + txt + " final solution for all simulations")
 
-    plt.pie(sizes, explode=tuple(explode), labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=90)
+    plt.pie(sizes, explode=tuple(explode), labels=AD_labels, colors=AD_color, autopct='%1.1f%%', shadow=True, startangle=0)
 
     plt.axis('equal')  # Set aspect ratio to be equal so that pie is drawn as a circle.
     plt.savefig(path + "/pie_" + txt + ".png", bbox_inches='tight')
@@ -142,24 +141,12 @@ def analyse_comparing(path, results, num_ads):
         plt.savefig(path + "run_" + run_i + "/comparison.png", bbox_inches='tight')
         plt.close()
 
-    print('begin')
-    print(len(temp1))
-    print(len(temp1[0]))
-    print(len(temp1[0][0]))
-    print(temp1[0][0][-1])
-
     # FIXME: !!
     # store the last best/average solution's fitness for each AD of each simulation
     for ith_ad in range(num_ads + 1):
         for run_counter in range(len(best_fitness_ad[0])):
             final_best_fitness_ad[ith_ad].append(temp1[run_counter][ith_ad][-1])
             final_average_fitness_ad[ith_ad].append(temp2[run_counter][ith_ad][-1])
-
-    """
-    for ith_ad in range(num_ads + 1):
-        final_best_fitness_ad[ith_ad].append(best_fitness_ad[ith_ad][-1])
-        final_average_fitness_ad[ith_ad].append(average_fitness_ad[ith_ad][-1])
-    """
 
     # ----
     # Compare the last best solution of each simulation is for each method
@@ -174,7 +161,7 @@ def analyse_comparing(path, results, num_ads):
     return
 
 
-def plot_generations(path, accumulated_generations, title):
+def plot_generations(path, accumulated_generations, title, ith_ad):
     """
     Plots the best and average fitness of individuals in population throughout generations
     """
@@ -191,8 +178,8 @@ def plot_generations(path, accumulated_generations, title):
     plt.ylabel('Fitness')
     plt.title(title)
 
-    plt.plot(best_fitness, 'g', label="Best")  # best individual
-    plt.plot(average_fitness, 'r.', label="Average")  # average of individuals
+    plt.plot(best_fitness, AD_color[ith_ad], label="Best")  # best individual
+    plt.plot(average_fitness, AD_color[ith_ad] + '.', label="Average")  # average of individuals
 
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.savefig(path, bbox_inches='tight')
@@ -201,51 +188,57 @@ def plot_generations(path, accumulated_generations, title):
     return
 
 
-def analyse_AD(path, data, ad_type):
+def analyse_AD(path, data):
     """
     função de análise estatística e apresentação de gráficos
     - analisar os melhores resultados e os resultados da média
     - analisar o efeito das alterações nos parâmetros
     """
 
-    ad_i = str(ad_type)
-    run_counter = 1
+    accumulated_generations_array, accumulated_differences_array, crossover_probs_array, mutation_probs_array, pheno_array, problem_array = data
 
-    for sim_data, pheno, problem in data:
-        run_i = str(run_counter)
+    for ith_ad in range(len(accumulated_generations_array)):
 
-        accumulated_generations = sim_data[0]
-        accumulated_differences = sim_data[1]
-        crossover_probs = sim_data[2]
-        mutation_probs = sim_data[3]
+        ad_i = str(ith_ad)
+        print("\n\n----- Analysing results with AD" + ad_i + " -----")
 
-        best = best_pop(accumulated_generations[-1])
-        write_str_to_file(path + "/run_" + run_i + "/generations_AD" + ad_i + ".txt", display(best, pheno, problem))
-        plot_generations(path + "/run_" + run_i + "/generations_AD" + ad_i + ".png", accumulated_generations,
-                         'With AD' + ad_i)
+        for run_counter in range(len(accumulated_generations_array[ith_ad])):
 
-        # Differences throughout generations
-        plt.figure()
-        plt.xlabel('Generation')
-        plt.ylabel('Number of Differences')
-        plt.title('Number of differences throughout generations')
-        plt.plot(accumulated_differences, 'b.')
-        plt.savefig(path + "/run_" + run_i + "/differences_AD" + ad_i + ".png", bbox_inches='tight')
-        plt.close()
+            run_i = str(run_counter + 1)
+            print("---------- run " + run_i)
 
-        # How the Crossover and Mutation probabilities varied
-        plt.figure()
-        plt.xlabel('Generation')
-        plt.ylabel('Probability')
-        plt.title('Progression of Crossover and Mutation probabilities throughout generations')
-        plt.plot(crossover_probs, 'b', label="Crossover")
-        plt.plot(mutation_probs, 'r', label="Mutation")
+            accumulated_generations = accumulated_generations_array[ith_ad][run_counter]
+            accumulated_differences = accumulated_differences_array[ith_ad][run_counter]
+            crossover_probs = crossover_probs_array[ith_ad][run_counter]
+            mutation_probs = mutation_probs_array[ith_ad][run_counter]
+            pheno = pheno_array[ith_ad][run_counter]
+            problem = problem_array[ith_ad][run_counter]
 
-        plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-        plt.savefig(path + "/run_" + run_i + "/probabilities_AD" + ad_i + ".png", bbox_inches='tight')
-        plt.close()
+            best = best_pop(accumulated_generations[-1])
+            write_str_to_file(path + "/run_" + run_i + "/generations_AD" + ad_i + ".txt", display(best, pheno, problem))
+            plot_generations(path + "/run_" + run_i + "/generations_AD" + ad_i + ".png", accumulated_generations,
+                             'With AD' + ad_i, ith_ad)
 
-        run_counter += 1
+            # Differences throughout generations
+            plt.figure()
+            plt.xlabel('Generation')
+            plt.ylabel('Number of Differences')
+            plt.title('Number of differences throughout generations')
+            plt.plot(accumulated_differences, 'b.')
+            plt.savefig(path + "/run_" + run_i + "/differences_AD" + ad_i + ".png", bbox_inches='tight')
+            plt.close()
+
+            # How the Crossover and Mutation probabilities varied
+            plt.figure()
+            plt.xlabel('Generation')
+            plt.ylabel('Probability')
+            plt.title('Progression of Crossover and Mutation probabilities throughout generations')
+            plt.plot(crossover_probs, 'b', label="Crossover")
+            plt.plot(mutation_probs, 'r', label="Mutation")
+
+            plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+            plt.savefig(path + "/run_" + run_i + "/probabilities_AD" + ad_i + ".png", bbox_inches='tight')
+            plt.close()
 
     return
 
@@ -263,10 +256,8 @@ def analyse_results(path, number_of_runs, number_of_ads, results):
     print("\n\n----- Comparing results -----")
     analyse_comparing(path, results, number_of_ads)
 
-    # Analyse the results of the ith Auto-Adapt method
-    for ith_ad in range(0, number_of_ads + 1):
-        print("\n\n----- Analysing results with AD" + str(ith_ad) + " -----")
-        analyse_AD(path, results[ith_ad], ith_ad)
+    # Analyse the results of the Auto-Adapt methods
+    analyse_AD(path, results)
 
 
 def renew_directories(path, number_of_runs):

@@ -333,13 +333,13 @@ if __name__ == '__main__':
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     # Problem specific
-    NUM_ITEMS = 5  # 50
-    MAX_VALUE_ITEM = 5  # 50
+    NUM_ITEMS = 50  # 50
+    MAX_VALUE_ITEM = 50  # 50
 
     # The usual EA parameters
-    NUMBER_OF_RUNS = 3  # TODO: 30 , statistically relevant ammount of runs
-    NUM_GENERATIONS = 10  # 500
-    POPULATION_SIZE = 10  # 250
+    NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
+    NUM_GENERATIONS = 250  # 500
+    POPULATION_SIZE = 100  # 250
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.10  # resposável por variações pequenas no final
 
@@ -348,7 +348,7 @@ if __name__ == '__main__':
 
     # TODO fine tune these!
     # AD Approach specific parameters
-    WINDOW_SIZE = 3  # number previous generations considered for altering the auto-adaptative parameters
+    WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 0.05  # below this lower bound start reversing the crossover and mutation
     DIFFERENCE_TOLERANCE = 3  # number of consecutive times that the threshhold must be surmounted before we take action
     CROSSOVER_STEP = 0.10

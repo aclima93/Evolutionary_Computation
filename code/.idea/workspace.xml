@@ -2,228 +2,286 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24a45f-3bc7-4226-8b04-c73d699e84bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/bar_Average.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/bar_Best.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/comparison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/comparison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/comparison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/comparison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/comparison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/differences_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/differences_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/differences_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/differences_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/differences_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/differences_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/differences_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/differences_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/differences_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/differences_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/differences_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/differences_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/differences_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/differences_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/differences_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/differences_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/differences_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/differences_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/differences_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/differences_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/differences_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/differences_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/differences_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/differences_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/differences_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/pie_Average.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/pie_Best.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_1/generations_AD4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_2/generations_AD4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_3/generations_AD4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_4/generations_AD4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/run_5/generations_AD4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_10_0_3_0.1_0.1_0.1_0.8/simulation_parameters.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/bar_Average.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/bar_Average.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/bar_Best.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/bar_Best.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/comparison.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/pie_Average.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/pie_Best.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_1/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_2/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/run_3/generations_AD4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/simulation_parameters.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/simulation_parameters.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ACTIVATION_THRESHOLD/observações.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notas_sobre_observações.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bar_Average.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bar_Best.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/comparison.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/differences_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/differences_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/differences_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/differences_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/generations_AD4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/probabilities_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/probabilities_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/probabilities_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_1/probabilities_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/comparison.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/differences_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/differences_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/differences_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/differences_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/generations_AD4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/probabilities_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/probabilities_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/probabilities_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_2/probabilities_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/comparison.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/differences_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/differences_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/differences_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/differences_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/generations_AD4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/probabilities_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/probabilities_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/probabilities_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_3/probabilities_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/comparison.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/differences_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/differences_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/differences_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/differences_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/generations_AD4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/probabilities_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/probabilities_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/probabilities_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_4/probabilities_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/comparison.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/differences_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/differences_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/differences_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/differences_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/generations_AD4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/probabilities_AD1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/probabilities_AD2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/probabilities_AD3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/run_5/probabilities_AD4.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/results/simulation_parameters.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/bar_Average.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/bar_Best.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/pie_Average.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/pie_Best.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/comparison.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/differences_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/differences_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/differences_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/differences_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/differences_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/generations_AD4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_1/probabilities_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/comparison.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/differences_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/differences_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/differences_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/differences_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/differences_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/generations_AD4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_2/probabilities_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/comparison.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/differences_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/differences_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/differences_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/differences_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/differences_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/generations_AD4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_3/probabilities_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/comparison.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/differences_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/differences_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/differences_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/differences_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/differences_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/generations_AD4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_4/probabilities_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/comparison.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/differences_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/differences_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/differences_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/differences_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/differences_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/generations_AD4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_10_0.05_3_0.1_0.1_0.1_0.8/run_5/probabilities_AD4.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/pie_Average.png" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/pie_Average.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/pie_Best.png" afterPath="$PROJECT_DIR$/results_50_10_3_0.05_0.005_0.3_0.1/pie_Best.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_1/differences_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/differences_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_1/probabilities_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_5/probabilities_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_2/differences_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/differences_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_2/probabilities_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_4/probabilities_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_3/differences_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/differences_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_3/probabilities_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_3/probabilities_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_4/differences_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/differences_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_4/probabilities_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_2/probabilities_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_5/differences_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/differences_AD0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/run_5/probabilities_AD0.png" afterPath="$PROJECT_DIR$/results_100_10_3_0.05_0.005_0.3_0.1/run_1/probabilities_AD0.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analyse.py" afterPath="$PROJECT_DIR$/analyse.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sea_bin.py" afterPath="$PROJECT_DIR$/sea_bin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kp_1.py" afterPath="$PROJECT_DIR$/kp_1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratego_auto_adapt.py" afterPath="$PROJECT_DIR$/stratego_auto_adapt.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -240,7 +298,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$Unnamed.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1431363361688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1432420215100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1432806139834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -257,10 +315,22 @@
       <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45957446" vertical-offset="3369" max-vertical-offset="6360">
-              <caret line="239" column="12" selection-start-line="239" selection-start-column="12" selection-end-line="239" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.57746476" vertical-offset="5233" max-vertical-offset="6255">
+              <caret line="368" column="110" selection-start-line="368" selection-start-column="110" selection-end-line="368" selection-end-column="110" />
               <folding>
                 <element signature="e#162#182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analyse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="4485">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#162#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -274,9 +344,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/sea_bin.py" />
         <option value="$PROJECT_DIR$/kp_1.py" />
         <option value="$PROJECT_DIR$/analyse.py" />
-        <option value="$PROJECT_DIR$/sea_bin.py" />
         <option value="$PROJECT_DIR$/stratego_auto_adapt.py" />
       </list>
     </option>
@@ -433,6 +503,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -454,9 +527,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
@@ -502,6 +572,20 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -520,20 +604,6 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="false" name="stratego_auto_adapt" type="PythonConfigurationType" factoryName="Python">
@@ -588,15 +658,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29778096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20901933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822478" sideWeight="0.4996421" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950193" sideWeight="0.5003579" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -622,6 +692,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6390">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#162#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/analyse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4545">
@@ -1005,36 +1085,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sea_bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.638298" vertical-offset="0" max-vertical-offset="3465">
+          <caret line="210" column="50" selection-start-line="210" selection-start-column="50" selection-end-line="210" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kp_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.1991951" vertical-offset="75" max-vertical-offset="2040">
-          <caret line="114" column="33" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.75452715" vertical-offset="450" max-vertical-offset="2055">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analyse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12474849" vertical-offset="3793" max-vertical-offset="4530">
-          <caret line="257" column="51" selection-start-line="257" selection-start-column="51" selection-end-line="257" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="4485">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#162#171#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sea_bin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33199194" vertical-offset="2940" max-vertical-offset="3465">
-          <caret line="209" column="4" selection-start-line="209" selection-start-column="4" selection-end-line="209" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45957446" vertical-offset="3369" max-vertical-offset="6360">
-          <caret line="239" column="12" selection-start-line="239" selection-start-column="12" selection-end-line="239" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.57746476" vertical-offset="5233" max-vertical-offset="6255">
+          <caret line="368" column="110" selection-start-line="368" selection-start-column="110" selection-end-line="368" selection-end-column="110" />
           <folding>
             <element signature="e#162#182#0" expanded="true" />
           </folding>

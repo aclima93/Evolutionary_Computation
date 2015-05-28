@@ -1,9 +1,0 @@
-Tudo o que eu disser deve ser tomado com um toque de sal, mas:
-
-	- Se o a prob. mínima de crossover for 0.10 em vez de 0.0 e a prob. máxima de mutação for 0.8 em vez de 1.0 (ou seja, ficam onde o outro começou)
-	--> os resultados médios pioram substancialmente (curva logarítmica)
-
-	- a introdução da tolerância às diferenças faz com que a variação das probabilidades não seja tão acentuada
-	-- (como era esperado e suposto)
-
-	- nos AD1 e AD2 10 differenças seguidas é demasiaod improvável, temos de baixar

@@ -24,7 +24,7 @@ def comparison_pie_plot(path, data, txt):
     """
     # The slices will be ordered and plotted counter-clockwise.
 
-    unzipped_data = list(zip(data[0], data[1], data[2]))
+    unzipped_data = list(zip(*data))
     num_sims = len(unzipped_data)
     sizes = [0] * len(data)
     for simulation_data in unzipped_data:
@@ -37,17 +37,13 @@ def comparison_pie_plot(path, data, txt):
     for i in range(len(sizes)):
         sizes[i] = round((sizes[i] / num_sims) * 100)
 
-    # only "explode" the best slices
-    m = max(sizes)
-    max_indexes = [i for i, j in enumerate(sizes) if j == m]
-    explode = [0] * len(data)
-    for i in max_indexes:
-        explode[i] = 0.1
+    # "explode" all slices
+    explode = [0.1] * len(data)
 
     plt.figure()
     plt.title("Comparison of the # of times each AD found the highest " + txt + " final solution for all simulations")
 
-    plt.pie(sizes, explode=tuple(explode), labels=AD_labels, colors=AD_color, autopct='%1.1f%%', shadow=True, startangle=0)
+    plt.pie(sizes, explode=tuple(explode), labels=AD_labels, colors=AD_color, autopct='%1.1f%%', shadow=True)
 
     plt.axis('equal')  # Set aspect ratio to be equal so that pie is drawn as a circle.
     plt.savefig(path + "/pie_" + txt + ".png", bbox_inches='tight')
@@ -141,6 +137,7 @@ def analyse_comparing(path, results, num_ads):
         plt.savefig(path + "run_" + run_i + "/comparison.png", bbox_inches='tight')
         plt.close()
 
+    # ----
     # store the last best/average solution's fitness for each AD of each simulation
     for ith_ad in range(num_ads + 1):
         for run_counter in range(len(best_fitness_ad[0])):

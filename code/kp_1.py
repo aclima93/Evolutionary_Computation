@@ -22,7 +22,7 @@ def merito(problem):
 
 def phenotype(indiv, problem):
     """from a binary string to a list of [id,weight,value]."""
-    pheno = [[id, problem['weights'][id], problem['values'][id]] for id in range(len(indiv)) if indiv[id] == 1]
+    pheno = [[id_, problem['weights'][id_], problem['values'][id_]] for id_ in range(len(indiv)) if indiv[id_] == 1]
     return pheno
 
 
@@ -31,19 +31,19 @@ def evaluate_zero(feno, problem):
     total_weight = sum([weight for id_, weight, value in feno])
     if total_weight > problem['capacity']:
         return 0
-    return sum([value for id, weight, value in feno])
+    return sum([value for id_, weight, value in feno])
 
 
 # Data Sets
 def generate_uncor(size_items, max_value):
-    weights = [random.uniform(1, max_value) for i in range(size_items)]
-    values = [random.uniform(1, max_value) for i in range(size_items)]
+    weights = [random.uniform(1, max_value) for _ in range(size_items)]
+    values = [random.uniform(1, max_value) for _ in range(size_items)]
     capacity = int(0.5 * sum(weights))
     return {'weights': weights, 'values': values, 'capacity': capacity}
 
 
 def generate_weak_cor(size_items, max_value, amplitude):
-    weights = [random.uniform(1, max_value) for i in range(size_items)]
+    weights = [random.uniform(1, max_value) for _ in range(size_items)]
     values = []
     for i in range(size_items):
         value = weights[i] + random.uniform(-amplitude, amplitude)
@@ -55,7 +55,7 @@ def generate_weak_cor(size_items, max_value, amplitude):
 
 
 def generate_strong_cor(size_items, max_value, amplitude):
-    weights = [random.uniform(1, max_value) for i in range(size_items)]
+    weights = [random.uniform(1, max_value) for _ in range(size_items)]
     values = [weights[i] + amplitude for i in range(size_items)]
     capacity = int(0.5 * sum(weights))
     return {'weights': weights, 'values': values, 'capacity': capacity}
@@ -119,6 +119,7 @@ def get_weight(indiv, problem):
 def get_value(indiv, problem):
     total_value = sum([problem['values'][gene] for gene in range(len(indiv)) if indiv[gene] == 1])
     return total_value
+
 
 '''
 if __name__ == '__main__':

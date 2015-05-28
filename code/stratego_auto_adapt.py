@@ -127,11 +127,7 @@ def AD3_fitness(cur_population, refference_window):
 
     # get best individual from current population
     best_individual = best_indiv(cur_population)
-    """
-    # compare average individuals
-    differences = compare_individs(best_reff_individual, best_individual)
-    return differences
-    """
+
     fit1 = best_individual[1]
     fit2 = best_reff_individual[1]
     return fit1, fit2
@@ -153,11 +149,7 @@ def AD1_fitness(cur_population, refference_window, fitness_func):
 
     # get average individual from current population
     average_individual = average_indiv(cur_population, fitness_func)
-    """
-    # compare average individuals
-    differences = compare_individs(average_reff_individual, average_individual)
-    return differences
-    """
+
     fit1 = average_individual[1]
     fit2 = average_reff_individual[1]
     return fit1, fit2
@@ -219,44 +211,42 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
         # store the population
         accumulated_generations.append(populacao)
 
-        # perform auto-adaptive changes according to refference window
-        if ad_type == 1:
-            fit1, fit2 = AD1_fitness(populacao, refference_window, fitness_func)
+        # only apply our strategies after the refference_window is full (ignoring the initial abrupt changes)
+        if len(refference_window) == refference_window_size:
 
-        elif ad_type == 2:
-            fit1, fit2 = AD2_fitness(populacao, refference_window)
+            # perform auto-adaptive changes according to refference window
+            if ad_type == 1:
+                fit1, fit2 = AD1_fitness(populacao, refference_window, fitness_func)
 
-        elif ad_type == 3:
-            fit1, fit2 = AD3_fitness(populacao, refference_window)
+            elif ad_type == 2:
+                fit1, fit2 = AD2_fitness(populacao, refference_window)
 
-        else:  # ad_type == 4:
-            fit1, fit2 = AD4_fitness(populacao, refference_window)
+            elif ad_type == 3:
+                fit1, fit2 = AD3_fitness(populacao, refference_window)
 
-        diffs = abs(fit1 - fit2)
-        divisor = max(fit1, fit2)
-        if divisor != 0:
-            ratio = diffs / divisor
-        else:
-            ratio = 0
-        accumulated_diffs.append(diffs)
+            else:  # ad_type == 4:
+                fit1, fit2 = AD4_fitness(populacao, refference_window)
 
-        # ----
-        # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
-        if ratio <= ACTIVATION_THRESHOLD:
-            difference_history += 1
-        else:
-            difference_history = 0  # reset, must be consecutive
+            diffs = abs(fit1 - fit2)
+            accumulated_diffs.append(diffs)
 
-        if difference_history == DIFFERENCE_TOLERANCE:
+            # ----
+            # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
+            if diffs <= ACTIVATION_THRESHOLD:
+                difference_history += 1
+            else:
+                difference_history = 0  # reset, must be consecutive
 
-            # reset the counter
-            difference_history = 0
+            if difference_history == DIFFERENCE_TOLERANCE:
 
-            if (prob_cross - CROSSOVER_STEP) > CROSSOVER_BOUND:
-                prob_cross -= CROSSOVER_STEP
+                # reset the counter, let it build up again
+                difference_history = 0
 
-            if (prob_mut + MUTATION_STEP) < MUTATION_BOUND:
-                prob_mut += MUTATION_STEP
+                if (prob_cross - CROSSOVER_STEP) > CROSSOVER_BOUND:
+                    prob_cross -= CROSSOVER_STEP
+
+                if (prob_mut + MUTATION_STEP) < MUTATION_BOUND:
+                    prob_mut += MUTATION_STEP
 
         crossover_probs.append(prob_cross)
         mutation_probs.append(prob_mut)
@@ -317,6 +307,7 @@ def run_n_times(num_runs):
     """
     size_items = NUM_ITEMS
     max_value = MAX_VALUE_ITEM
+    corr_amplitude = CORR_AMPLITUDE
 
     accumulated_generations_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
     accumulated_diffs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
@@ -329,8 +320,9 @@ def run_n_times(num_runs):
         # TODO: time the algorithms to see if there's a significant difference in performance
         print("Run Number " + str(ith_run))
 
-        # generate a problem to be solved
-        problem = generate_uncor(size_items, max_value)
+        # generate a strongly correlated problem to be solved
+        # (the greater the value, the greater the weight)
+        problem = generate_strong_cor(size_items, max_value, corr_amplitude)
 
         # solve using our custom methods, "AD i"
         for ith_ad in range(NUM_ADS + 1):
@@ -356,28 +348,29 @@ if __name__ == '__main__':
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     # Problem specific
-    NUM_ITEMS = 50  # 50
-    MAX_VALUE_ITEM = 50  # 50
+    NUM_ITEMS = 250  # 250 a 500
+    MAX_VALUE_ITEM = 250  # 250 a 500
+    CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
 
     # The usual EA parameters
     NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
-    NUM_GENERATIONS = 250  # 500
-    POPULATION_SIZE = 100  # 250
+    NUM_GENERATIONS = 250  # 500?
+    POPULATION_SIZE = 100  # 250?
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
-    PROB_MUTATION = 0.10  # resposável por variações pequenas no final
+    PROB_MUTATION = 0.01  # resposável por variações pequenas no final
 
     # number of distinct custom appreaches employed besides standard
     NUM_ADS = 4
 
     # TODO: fine tune these
     # AD Approach specific parameters
-    WINDOW_SIZE = 10  # number previous generations considered for altering the auto-adaptative parameters
-    ACTIVATION_THRESHOLD = 0  # below this lower bound start reversing the crossover and mutation
-    DIFFERENCE_TOLERANCE = 3  # number of consecutive times that the threshhold must be surmounted before we take action
-    CROSSOVER_STEP = 0.01
-    MUTATION_STEP = 0.01
-    CROSSOVER_BOUND = 0.10
-    MUTATION_BOUND = 0.80
+    WINDOW_SIZE = 100  # number previous generations considered for altering the auto-adaptative parameters
+    ACTIVATION_THRESHOLD = 10  # below this lower bound start reversing the crossover and mutation
+    DIFFERENCE_TOLERANCE = 10  # number of consecutive times that the threshhold must be surmounted for effect
+    CROSSOVER_STEP = 0.05
+    MUTATION_STEP = 0.005
+    CROSSOVER_BOUND = 0.30  # lower bound for crossover prob.
+    MUTATION_BOUND = 0.10  # upper bound for mutation prob.
 
     PATH = "results_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) \
            + "_" + str(DIFFERENCE_TOLERANCE) + "_" + str(CROSSOVER_STEP) \

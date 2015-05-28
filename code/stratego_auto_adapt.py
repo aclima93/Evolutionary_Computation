@@ -237,7 +237,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
             else:
                 difference_history = 0  # reset, must be consecutive
 
-            if difference_history == DIFFERENCE_TOLERANCE:
+            if difference_history == CONSECUTIVE_ACTIVATIONS:
 
                 # reset the counter, let it build up again
                 difference_history = 0
@@ -247,6 +247,8 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
 
                 if (prob_mut + MUTATION_STEP) < MUTATION_BOUND:
                     prob_mut += MUTATION_STEP
+        else:
+            accumulated_diffs.append(-1)  # para podermos mostrar o gráfico de todas as probabilidades
 
         crossover_probs.append(prob_cross)
         mutation_probs.append(prob_mut)
@@ -353,8 +355,8 @@ if __name__ == '__main__':
     CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
 
     # The usual EA parameters
-    NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
-    NUM_GENERATIONS = 250  # 500?
+    NUMBER_OF_RUNS = 3  # TODO: 30 , statistically relevant ammount of runs
+    NUM_GENERATIONS = 500  # 500?
     POPULATION_SIZE = 100  # 250?
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.01  # resposável por variações pequenas no final
@@ -366,17 +368,24 @@ if __name__ == '__main__':
     # AD Approach specific parameters
     WINDOW_SIZE = 100  # number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 10  # below this lower bound start reversing the crossover and mutation
-    DIFFERENCE_TOLERANCE = 10  # number of consecutive times that the threshhold must be surmounted for effect
-    CROSSOVER_STEP = 0.05
-    MUTATION_STEP = 0.005
+    CONSECUTIVE_ACTIVATIONS = 5  # number of consecutive times that the threshhold must be surmounted for effect
+    CROSSOVER_STEP = 0.01
+    MUTATION_STEP = 0.001
     CROSSOVER_BOUND = 0.30  # lower bound for crossover prob.
     MUTATION_BOUND = 0.10  # upper bound for mutation prob.
 
-    PATH = "results_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) \
-           + "_" + str(DIFFERENCE_TOLERANCE) + "_" + str(CROSSOVER_STEP) \
+    PATH = str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) \
+           + "_" + str(CONSECUTIVE_ACTIVATIONS) + "_" + str(CROSSOVER_STEP) \
            + "_" + str(MUTATION_STEP) + "_" + str(CROSSOVER_BOUND) \
            + "_" + str(MUTATION_BOUND) \
            + "/"
+
+    if True:
+        PATH = "test/"
+        NUM_GENERATIONS = 500
+        POPULATION_SIZE = 10
+        NUM_ITEMS = 10
+        MAX_VALUE_ITEM = 10
 
     try:
         os.makedirs(PATH)
@@ -402,7 +411,7 @@ if __name__ == '__main__':
         "\n# AD Approach specific parameters": " ---------- ",
         "Refference window size: ": WINDOW_SIZE,
         "Activation threshold: ": ACTIVATION_THRESHOLD,
-        "Difference tolerance: ": DIFFERENCE_TOLERANCE,
+        "Consecutive activations: ": CONSECUTIVE_ACTIVATIONS,
         "Crossover step: ": CROSSOVER_STEP,
         "Mutation step: ": MUTATION_STEP,
         "Crossover lower bound: ": CROSSOVER_BOUND,

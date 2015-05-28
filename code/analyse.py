@@ -114,8 +114,11 @@ def analyse_comparing(path, results, num_ads):
     temp1 = []
     temp2 = []
     for run_counter in range(1, len(best_fitness_ad[0]) + 1):
+
         run_i = str(run_counter)
 
+        # ----
+        # Plot Comparison of fitnesses
         plt.figure()
         plt.xlabel('Generation')
         plt.ylabel('Fitness')
@@ -124,7 +127,8 @@ def analyse_comparing(path, results, num_ads):
         temp3 = []
         temp4 = []
         for ith_ad in range(num_ads + 1):
-            plt.plot(best_fitness_ad[ith_ad][run_counter - 1], AD_color[ith_ad], label="Best With AD" + str(ith_ad))
+            plt.plot(best_fitness_ad[ith_ad][run_counter - 1], AD_color[ith_ad],
+                     label="Best With AD" + str(ith_ad))
             plt.plot(average_fitness_ad[ith_ad][run_counter - 1], AD_color[ith_ad] + '.',
                      label="Averange With AD" + str(ith_ad))
             temp3.append(best_fitness_ad[ith_ad][run_counter - 1])
@@ -134,7 +138,39 @@ def analyse_comparing(path, results, num_ads):
         temp2.append(temp4)
 
         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-        plt.savefig(path + "run_" + run_i + "/comparison.png", bbox_inches='tight')
+        plt.savefig(path + "run_" + run_i + "/comparison_fitness.png", bbox_inches='tight')
+        plt.close()
+
+        # ----
+        # Plot Comparison of Probabilities
+        plt.figure()
+        plt.xlabel('Generation')
+        plt.ylabel('Probability')
+        plt.title('Comparison of Crossover and Mutation probabilities throughout generations')
+
+        for ith_ad in range(num_ads + 1):
+            plt.plot(crossover_probs_array[ith_ad][run_counter - 1], AD_color[ith_ad],
+                     label="Crossover AD" + str(ith_ad))
+            plt.plot(mutation_probs_array[ith_ad][run_counter - 1], AD_color[ith_ad] + '-.',
+                     label="Mutation AD" + str(ith_ad))
+
+        plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+        plt.savefig(path + "/run_" + run_i + "/comparison_probabilities.png", bbox_inches='tight')
+        plt.close()
+
+        # ----
+        # Plot Comparison of Differences
+        plt.figure()
+        plt.xlabel('Generation')
+        plt.ylabel('Probability')
+        plt.title('Comparison of Differences throughout generations')
+
+        for ith_ad in range(num_ads + 1):
+            plt.plot(accumulated_diffs_array[ith_ad][run_counter - 1], AD_color[ith_ad] + '.',
+                     label="AD" + str(ith_ad))
+
+        plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+        plt.savefig(path + "/run_" + run_i + "/comparison_differences.png", bbox_inches='tight')
         plt.close()
 
     # ----
@@ -199,7 +235,6 @@ def analyse_AD(path, data):
         print("\n\n----- Analysing results with AD" + ad_i + " -----")
 
         for run_counter in range(len(accumulated_generations_array[ith_ad])):
-
             run_i = str(run_counter + 1)
             print("---------- run " + run_i)
 
@@ -220,7 +255,7 @@ def analyse_AD(path, data):
             plt.xlabel('Generation')
             plt.ylabel('Number of Differences')
             plt.title('Number of differences throughout generations')
-            plt.plot(accumulated_differences, 'b.')
+            plt.plot(accumulated_differences, AD_color[ith_ad] + '.')
             plt.savefig(path + "/run_" + run_i + "/differences_AD" + ad_i + ".png", bbox_inches='tight')
             plt.close()
 
@@ -229,8 +264,8 @@ def analyse_AD(path, data):
             plt.xlabel('Generation')
             plt.ylabel('Probability')
             plt.title('Progression of Crossover and Mutation probabilities throughout generations')
-            plt.plot(crossover_probs, 'b', label="Crossover")
-            plt.plot(mutation_probs, 'r', label="Mutation")
+            plt.plot(crossover_probs, AD_color[ith_ad], label="Crossover")
+            plt.plot(mutation_probs, AD_color[ith_ad] + '-.', label="Mutation")
 
             plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
             plt.savefig(path + "/run_" + run_i + "/probabilities_AD" + ad_i + ".png", bbox_inches='tight')

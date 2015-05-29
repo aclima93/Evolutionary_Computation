@@ -2,6 +2,13 @@
 Topic: Auto-Adaptation in Evolutionary Strategies
 Authors: António Lima & Paulo Pereira
 Remarks: Our proposal of an Auto-Adapting Evolutionary Algorithm
+Notation Clarifications:
+- AD stands for (Auto-Adaptive)
+- AD0: default implementation provided by professor Ernesto
+- AD1:
+- AD2:
+- AD3:
+- AD4:
 """
 
 from random import *
@@ -28,58 +35,21 @@ def average_reff_pop_fit(refference_window):
     return average_fitness / len(refference_window)
 
 
-def AD4_fitness(cur_population, refference_window):
-    """
-    Analyses the populations stored in the refference window and creates a best fitness.
-    Then we also derive the best fitness for the current population and return the difference between them.
-    """
-    fit1 = best_pop(cur_population)[1]
-    fit2 = best_reff_pop_fit(refference_window)
-    return fit1, fit2
-
-
-def AD2_fitness(cur_population, refference_window):
-    """
-    Analyses the populations stored in the refference window and creates an average fitness.
-    Then we also derive the average fitness for the current population and return the difference between them.
-    """
-    fit1 = average_pop(cur_population)
-    fit2 = average_reff_pop_fit(refference_window)
-    return fit1, fit2
-
-
-def best_reff_pop(refference_window):
-    """
-    returns the best individual of all refference populations
-    """
-    best_reff_individuals = []
-    for population in refference_window:
-        best_reff_individuals.append(best_indiv(population))
-    return best_indiv(best_reff_individuals)
-
-
 def best_indiv(population):
     """
     returns the best individual in the population
     """
     return best_pop(population)
-
-
-def average_reff_pop(refference_window, fitness_func):
     """
-    returns the average population based on the ith average individual of all populations
+    print(population)
+    pop2 = []
+    for i in range(len(population)):
+        pop2.append(list(population[i]))
+    print(pop2)
+    best_individual = best_pop(pop2)
+    print(best_individual)
+    return [best_individual, fitness_func(best_individual)]
     """
-    num_populations = len(refference_window)
-
-    if num_populations > 1:
-        average_population = []
-        ith_pairings = list(zip(*refference_window))
-        for ith_pair in ith_pairings:
-            average_population.append(average_indiv(ith_pair, fitness_func))
-        return average_population
-
-    else:
-        return refference_window[0]
 
 
 def average_indiv(population, fitness_func):
@@ -104,32 +74,66 @@ def average_indiv(population, fitness_func):
     return [average_individual, fitness_func(average_individual)]
 
 
-def compare_individs(individual1, individual2):
+def best_reff_pop(refference_window, fitness_func):
     """
-    compares individuals by differences in genotype
+    returns the best individual of all refference populations
     """
-    diffs = 0
-    for i in range(len(individual1)):
-        if individual1[i] != individual2[i]:
-            diffs += 1
-    return diffs
+    best_population = []
+    ith_pairings = list(zip(*refference_window))
+    for ith_pair in ith_pairings:
+        best_population.append(average_indiv(ith_pair, fitness_func))
+    return best_population
 
 
-def AD3_fitness(cur_population, refference_window):
+def average_reff_pop(refference_window, fitness_func):
+    """
+    returns the average population based on the ith average individual of all populations
+    """
+    average_population = []
+    ith_pairings = list(zip(*refference_window))
+    for ith_pair in ith_pairings:
+        average_population.append(average_indiv(ith_pair, fitness_func))
+    return average_population
+
+
+def AD4_fitness(cur_population, refference_window):
+    """
+    Analyses the populations stored in the refference window and creates a best fitness.
+    Then we also derive the best fitness for the current population and return the difference between them.
+    """
+    fit1 = best_pop(cur_population)[1]
+    fit2 = best_reff_pop_fit(refference_window)
+    return fit1, fit2
+
+
+def AD3_fitness(cur_population, refference_window, fitness_func):
     """
     Analyses the populations stored in the refference window and retrieves the best individual of all.
     Then we also fetch the best individual for the current population
     and return the number of differences between them.
     """
 
-    # get best individual in population from refference_window
-    best_reff_individual = best_reff_pop(refference_window)
+    # get best average population from refference_window
+    best_reff_population = best_reff_pop(refference_window, fitness_func)
+
+    # get average individual from best population
+    best_reff_individual = average_indiv(best_reff_population, fitness_func)
 
     # get best individual from current population
     best_individual = best_indiv(cur_population)
 
     fit1 = best_individual[1]
     fit2 = best_reff_individual[1]
+    return fit1, fit2
+
+
+def AD2_fitness(cur_population, refference_window):
+    """
+    Analyses the populations stored in the refference window and creates an average fitness.
+    Then we also derive the average fitness for the current population and return the difference between them.
+    """
+    fit1 = average_pop(cur_population)  # sim, isto devolve a fitness média de uma população
+    fit2 = average_reff_pop_fit(refference_window)
     return fit1, fit2
 
 
@@ -222,7 +226,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
                 fit1, fit2 = AD2_fitness(populacao, refference_window)
 
             elif ad_type == 3:
-                fit1, fit2 = AD3_fitness(populacao, refference_window)
+                fit1, fit2 = AD3_fitness(populacao, refference_window, fitness_func)
 
             else:  # ad_type == 4:
                 fit1, fit2 = AD4_fitness(populacao, refference_window)
@@ -242,10 +246,10 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
                 # reset the counter, let it build up again
                 difference_history = 0
 
-                if (prob_cross - CROSSOVER_STEP) > CROSSOVER_BOUND:
+                if (prob_cross - CROSSOVER_STEP) >= CROSSOVER_BOUND:
                     prob_cross -= CROSSOVER_STEP
 
-                if (prob_mut + MUTATION_STEP) < MUTATION_BOUND:
+                if (prob_mut + MUTATION_STEP) <= MUTATION_BOUND:
                     prob_mut += MUTATION_STEP
         else:
             accumulated_diffs.append(-1)  # para podermos mostrar o gráfico de todas as probabilidades
@@ -258,9 +262,8 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
 
 def simulate(auto_adapt_type, problem, size_items):
     """
-    função simulate
-    - executa uma simulação com os parâmetros fornecidos
-    - devolve os resultados da experiência
+    Runs one simulation for the provided parameters.
+    Returns the simulation's results
     """
 
     refference_window_size = WINDOW_SIZE
@@ -300,12 +303,9 @@ def simulate(auto_adapt_type, problem, size_items):
 
 def run_n_times(num_runs):
     """
-    funcao run_n_times
-    - tem todos os parâmetros que devem ser analisados estatisticamente
-    --- os parâmetros, segundo o enunciado, terão a ver com um desvio padrão e uma média utilizados
-    --- aquando da mutação e recombinação
-    - executa a função simulate n vezes
-    - guarda os resultados e parâmetros de execução num ficheiro
+    Executes N runs.
+    In each run simulate for all ADs being tested.
+    Return the results of all simulations of all runs.
     """
     size_items = NUM_ITEMS
     max_value = MAX_VALUE_ITEM
@@ -318,9 +318,11 @@ def run_n_times(num_runs):
     phenotype_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
     problem_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
 
+    print("\n\n----- This might take a while, please take a seat -----")
+
     for ith_run in range(1, num_runs + 1):
         # TODO: time the algorithms to see if there's a significant difference in performance
-        print("Run Number " + str(ith_run))
+        print("\n\n---------- run " + str(ith_run))
 
         # generate a strongly correlated problem to be solved
         # (the greater the value, the greater the weight)
@@ -328,6 +330,9 @@ def run_n_times(num_runs):
 
         # solve using our custom methods, "AD i"
         for ith_ad in range(NUM_ADS + 1):
+
+            print("-------------------- AD" + str(ith_ad))
+
             accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs, phenot, problem = simulate(
                 ith_ad, problem, size_items)
             accumulated_generations_array[ith_ad].append(accumulated_generations)
@@ -347,6 +352,7 @@ Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha
 Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
+
     seed(666)  # random number generation with fixed seed for reproduceable results
 
     # Problem specific
@@ -354,15 +360,14 @@ if __name__ == '__main__':
     MAX_VALUE_ITEM = 250  # 250 a 500
     CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
 
-    # The usual EA parameters
+    NUM_ADS = 4  # number of distinct custom appreaches employed besides standard
     NUMBER_OF_RUNS = 3  # TODO: 30 , statistically relevant ammount of runs
-    NUM_GENERATIONS = 500  # 500?
+
+    # The usual EA parameters
+    NUM_GENERATIONS = 1000  # 1000
     POPULATION_SIZE = 100  # 250?
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.01  # resposável por variações pequenas no final
-
-    # number of distinct custom appreaches employed besides standard
-    NUM_ADS = 4
 
     # TODO: fine tune these
     # AD Approach specific parameters
@@ -374,18 +379,12 @@ if __name__ == '__main__':
     CROSSOVER_BOUND = 0.30  # lower bound for crossover prob.
     MUTATION_BOUND = 0.10  # upper bound for mutation prob.
 
-    PATH = str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) \
-           + "_" + str(CONSECUTIVE_ACTIVATIONS) + "_" + str(CROSSOVER_STEP) \
-           + "_" + str(MUTATION_STEP) + "_" + str(CROSSOVER_BOUND) \
-           + "_" + str(MUTATION_BOUND) \
+    # location of saved files
+    PATH = str(NUM_GENERATIONS) + "_" + str(POPULATION_SIZE) + "_" + str(PROB_CROSSOVER) \
+           + "_" + str(PROB_MUTATION) + "_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) \
+           + "_" + str(CONSECUTIVE_ACTIVATIONS) + "_" + str(CROSSOVER_STEP) + "_" + str(MUTATION_STEP) \
+           + "_" + str(CROSSOVER_BOUND) + "_" + str(MUTATION_BOUND) \
            + "/"
-
-    if True:
-        PATH = "test/"
-        NUM_GENERATIONS = 500
-        POPULATION_SIZE = 10
-        NUM_ITEMS = 10
-        MAX_VALUE_ITEM = 10
 
     try:
         os.makedirs(PATH)

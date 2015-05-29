@@ -19,20 +19,14 @@ def best_reff_pop_fit(refference_window):
     """
     returns the average best fitness based on all individuals in the refference population
     """
-    best_fitness = 0
-    for population in refference_window:
-        best_fitness += best_pop(population)[1]
-    return best_fitness / len(refference_window)
+    return sum([best_pop(population)[1] for population in refference_window]) / len(refference_window)
 
 
 def average_reff_pop_fit(refference_window):
     """
     returns the average fitness based on all individuals in the refference population
     """
-    average_fitness = 0
-    for population in refference_window:
-        average_fitness += average_pop(population)
-    return average_fitness / len(refference_window)
+    return sum([average_pop(population) for population in refference_window]) / len(refference_window)
 
 
 def best_indiv(population):
@@ -40,60 +34,42 @@ def best_indiv(population):
     returns the best individual in the population
     """
     return best_pop(population)
-    """
-    print(population)
-    pop2 = []
-    for i in range(len(population)):
-        pop2.append(list(population[i]))
-    print(pop2)
-    best_individual = best_pop(pop2)
-    print(best_individual)
-    return [best_individual, fitness_func(best_individual)]
-    """
 
 
 def average_indiv(population, fitness_func):
     """
     returns the average individual based on all individuals in the population
     """
-    individuals = []
-    for indiv, fit in population:
-        individuals.append(indiv)
+    individuals = [indiv for indiv, fit in population]
 
     num_individuals = len(individuals)
     average_individual = [0] * len(individuals[0])  # individual with only zeros
+    indexes = range(len(individuals[0]))
     # sum all the solutions
     for indiv in individuals:
-        for i in range(len(indiv)):
+        for i in indexes:
             average_individual[i] += indiv[i]
 
     # divide by number of individuals in population
-    for i in range(len(average_individual)):
-        average_individual[i] = round(average_individual[i] / num_individuals)
+    average_individual = [round(average_individual[i] / num_individuals) for i in range(len(average_individual))]
 
     return [average_individual, fitness_func(average_individual)]
 
 
 def best_reff_pop(refference_window, fitness_func):
     """
-    returns the best individual of all refference populations
+    returns the average population based on the ith best individual of all populations
     """
-    best_population = []
     ith_pairings = list(zip(*refference_window))
-    for ith_pair in ith_pairings:
-        best_population.append(average_indiv(ith_pair, fitness_func))
-    return best_population
+    return [average_indiv(ith_pair, fitness_func) for ith_pair in ith_pairings]
 
 
 def average_reff_pop(refference_window, fitness_func):
     """
     returns the average population based on the ith average individual of all populations
     """
-    average_population = []
     ith_pairings = list(zip(*refference_window))
-    for ith_pair in ith_pairings:
-        average_population.append(average_indiv(ith_pair, fitness_func))
-    return average_population
+    return [average_indiv(ith_pair, fitness_func) for ith_pair in ith_pairings]
 
 
 def AD4_fitness(cur_population, refference_window):
@@ -173,6 +149,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
     crossover_probs = []
     mutation_probs = []
     difference_history = 0
+    len_reff_window = len(refference_window)
 
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
@@ -203,9 +180,11 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
             descendentes.append((novo_indiv, fitness_func(novo_indiv)))
 
         # added previous generation to refference_window and remove the oldest (or just append until we have enough)
-        if len(refference_window) == refference_window_size:
+        if len_reff_window == refference_window_size:
             refference_window.remove(refference_window[0])
+            len_reff_window -= 1
         refference_window.append(populacao)
+        len_reff_window += 1
 
         # New population
         populacao = sel_survivors(populacao, descendentes)
@@ -216,7 +195,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
         accumulated_generations.append(populacao)
 
         # only apply our strategies after the refference_window is full (ignoring the initial abrupt changes)
-        if len(refference_window) == refference_window_size:
+        if len_reff_window == refference_window_size:
 
             # perform auto-adaptive changes according to refference window
             if ad_type == 1:
@@ -347,9 +326,9 @@ def run_n_times(num_runs):
 
 
 """
-If by any chance you are reading the comments this is the starting point for our algorithm.
-Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha!
-Get it?! No? Ok. We'll show ourselves out...
+    If by any chance you are reading the comments this is the starting point for our algorithm.
+    Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha!
+    Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
 
@@ -361,7 +340,7 @@ if __name__ == '__main__':
     CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
 
     NUM_ADS = 4  # number of distinct custom appreaches employed besides standard
-    NUMBER_OF_RUNS = 3  # TODO: 30 , statistically relevant ammount of runs
+    NUMBER_OF_RUNS = 30  # TODO: 30 , statistically relevant ammount of runs
 
     # The usual EA parameters
     NUM_GENERATIONS = 1000  # 1000

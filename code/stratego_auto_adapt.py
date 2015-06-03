@@ -61,7 +61,7 @@ def best_reff_pop(refference_window, fitness_func):
     returns the average population based on the ith best individual of all populations
     """
     ith_pairings = list(zip(*refference_window))
-    return [average_indiv(ith_pair, fitness_func) for ith_pair in ith_pairings]
+    return ith_pairings[0]
 
 
 def average_reff_pop(refference_window, fitness_func):
@@ -151,9 +151,18 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
     difference_history = 0
     len_reff_window = len(refference_window)
 
+    # speedup by refferencing faster
+    refference_window_append = refference_window.append
+    refference_window_remove = refference_window.remove
+    accumulated_generations_append = accumulated_generations.append
+    accumulated_diffs_append = accumulated_diffs.append
+    crossover_probs_append = crossover_probs.append
+    mutation_probs_append = mutation_probs.append
+    
+
     # inicializa população: indiv = (cromo,fit)
     populacao = gera_pop(size_pop, size_cromo)
-    accumulated_generations.append(populacao)
+    accumulated_generations_append(populacao)
 
     # avalia população
     populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
@@ -174,16 +183,17 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
             # ------ Mutation
 
         descendentes = []
+        descendentes_append = descendentes.append
 
         for indiv, fit in progenitores:
             novo_indiv = mutation(indiv, prob_mut)
-            descendentes.append((novo_indiv, fitness_func(novo_indiv)))
+            descendentes_append((novo_indiv, fitness_func(novo_indiv)))
 
         # added previous generation to refference_window and remove the oldest (or just append until we have enough)
         if len_reff_window == refference_window_size:
-            refference_window.remove(refference_window[0])
+            refference_window_remove(refference_window[0])
             len_reff_window -= 1
-        refference_window.append(populacao)
+        refference_window_append(populacao)
         len_reff_window += 1
 
         # New population
@@ -192,7 +202,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
         populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]
 
         # store the population
-        accumulated_generations.append(populacao)
+        accumulated_generations_append(populacao)
 
         # only apply our strategies after the refference_window is full (ignoring the initial abrupt changes)
         if len_reff_window == refference_window_size:
@@ -211,7 +221,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
                 fit1, fit2 = AD4_fitness(populacao, refference_window)
 
             diffs = abs(fit1 - fit2)
-            accumulated_diffs.append(diffs)
+            accumulated_diffs_append(diffs)
 
             # ----
             # if the difference ratio falls below the threshhold alter the crossover and mutation probabilities
@@ -231,10 +241,10 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
                 if (prob_mut + MUTATION_STEP) <= MUTATION_BOUND:
                     prob_mut += MUTATION_STEP
         else:
-            accumulated_diffs.append(-1)  # para podermos mostrar o gráfico de todas as probabilidades
+            accumulated_diffs_append(-1)  # para podermos mostrar o gráfico de todas as probabilidades
 
-        crossover_probs.append(prob_cross)
-        mutation_probs.append(prob_mut)
+        crossover_probs_append(prob_cross)
+        mutation_probs_append(prob_mut)
 
     return accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs
 

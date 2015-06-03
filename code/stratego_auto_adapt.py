@@ -11,6 +11,7 @@ Notation Clarifications:
 - AD4:
 """
 
+from time import *
 from random import *
 from analyse import *
 
@@ -61,7 +62,7 @@ def best_reff_pop(refference_window, fitness_func):
     returns the average population based on the ith best individual of all populations
     """
     ith_pairings = list(zip(*refference_window))
-    return ith_pairings[0]
+    return list(ith_pairings[0])
 
 
 def average_reff_pop(refference_window, fitness_func):
@@ -331,8 +332,12 @@ def run_n_times(num_runs):
     mutation_probs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
     phenotype_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
     problem_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
+    timing_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
 
-    print("\n\n----- This might take a while, please take a seat -----")
+    print("-------------------------------------------------------")
+    print("-------------------- ! Warning ! ----------------------")
+    print("----- This might take a while, please take a seat -----")
+    print("-------------------------------------------------------")
 
     for ith_run in range(1, num_runs + 1):
         # TODO: time the algorithms to see if there's a significant difference in performance
@@ -347,17 +352,22 @@ def run_n_times(num_runs):
 
             print("-------------------- AD" + str(ith_ad))
 
+            start_time = time()
             accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs, phenot, problem = simulate(
                 ith_ad, problem, size_items)
+            finish_time = time()
+
             accumulated_generations_array[ith_ad].append(accumulated_generations)
             accumulated_diffs_array[ith_ad].append(accumulated_diffs)
             crossover_probs_array[ith_ad].append(crossover_probs)
             mutation_probs_array[ith_ad].append(mutation_probs)
             phenotype_array[ith_ad].append(phenot)
             problem_array[ith_ad].append(problem)
+            timing_array[ith_ad].append(finish_time - start_time)  # log elapsed time
+
 
     return [accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array,
-            phenotype_array, problem_array]
+            phenotype_array, problem_array, timing_array]
 
 
 """
@@ -375,10 +385,10 @@ if __name__ == '__main__':
     CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
 
     NUM_ADS = 5  # number of distinct custom appreaches employed besides standard
-    NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
+    NUMBER_OF_RUNS = 30  # TODO: 30 , statistically relevant ammount of runs
 
     # The usual EA parameters
-    NUM_GENERATIONS = 250  # 1000
+    NUM_GENERATIONS = 1000  # 1000
     POPULATION_SIZE = 50  # 250?
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.01  # resposável por variações pequenas no final
@@ -394,11 +404,13 @@ if __name__ == '__main__':
     MUTATION_BOUND = 0.10  # upper bound for mutation prob.
 
     # location of saved files
-    PATH = str(NUM_GENERATIONS) + "_" + str(POPULATION_SIZE) + "_" + str(PROB_CROSSOVER) \
-           + "_" + str(PROB_MUTATION) + "_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) \
-           + "_" + str(CONSECUTIVE_ACTIVATIONS) + "_" + str(CROSSOVER_STEP) + "_" + str(MUTATION_STEP) \
-           + "_" + str(CROSSOVER_BOUND) + "_" + str(MUTATION_BOUND) \
-           + "/"
+    PATH = str(NUM_ITEMS) + "_" + str(MAX_VALUE_ITEM) + "_" + str(CORR_AMPLITUDE) \
+        \
+        + "_" + str(NUM_GENERATIONS) + "_" + str(POPULATION_SIZE) + "_" + str(PROB_CROSSOVER) + "_" + str(PROB_MUTATION) \
+        \
+        + "_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) + "_" + str(CONSECUTIVE_ACTIVATIONS) \
+        + "_" + str(CROSSOVER_STEP) + "_" + str(MUTATION_STEP) + "_" + str(CROSSOVER_BOUND) + "_" + str(MUTATION_BOUND) \
+        + "/"
 
     try:
         os.makedirs(PATH)
@@ -416,6 +428,7 @@ if __name__ == '__main__':
         "\n# Problem specific": " ---------- ",
         "Bag Capacity: ": NUM_ITEMS,
         "Max. item value: ": MAX_VALUE_ITEM,
+        "Correlation amplitude: ": CORR_AMPLITUDE,
         "\n# The usual EA parameters": " ---------- ",
         "Num. generations: ": NUM_GENERATIONS,
         "Population size:: ": POPULATION_SIZE,

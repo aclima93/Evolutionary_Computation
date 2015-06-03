@@ -1,5 +1,8 @@
 #! /usr/bin/env python
 
+from __future__ import (division, absolute_import, print_function, unicode_literals)
+from future import *
+
 """
 sea_bin.py
 A very simple EA for binary representation.
@@ -9,6 +12,7 @@ Ernesto Costa Março 2015
 __author__ = 'Ernesto Costa'
 __date__ = 'March 2015'
 
+import numpy as np
 from random import random, randint, sample, shuffle
 from operator import itemgetter
 import matplotlib.pyplot as plt

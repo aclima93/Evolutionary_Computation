@@ -9,8 +9,6 @@ import shutil
 import json
 
 from kp_1 import *
-import numpy as np
-import matplotlib.pyplot as plt
 
 
 AD_color = ['g', 'r', 'b', 'c', 'm', 'y']
@@ -85,7 +83,23 @@ def analyse_comparing(path, results, num_ads):
     final_average_fitness_ad = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
 
     # get rid of the useless information for this analysis
-    accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array, phenotype_array, problem_array = results
+    accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array, phenotype_array, problem_array, timing_array = results
+
+    # ----
+    # Plot Comparison of Timings
+    plt.figure()
+    plt.xlabel('Simulation')
+    plt.ylabel('Time in seconds')
+    plt.title('Comparison of Timings throughout Simulations')
+
+    num_sims = len(timing_array[0])
+
+    for ith_ad in range(num_ads + 1):
+        plt.plot( range(1, num_sims + 1), timing_array[ith_ad], AD_color[ith_ad], label="AD" + str(ith_ad))
+
+    plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    plt.savefig(path + "/comparison_timings.png", bbox_inches='tight')
+    plt.close()
 
     best_fitness_ad = []
     average_fitness_ad = []
@@ -227,7 +241,7 @@ def analyse_AD(path, data):
     - analisar o efeito das alterações nos parâmetros
     """
 
-    accumulated_generations_array, accumulated_differences_array, crossover_probs_array, mutation_probs_array, pheno_array, problem_array = data
+    accumulated_generations_array, accumulated_differences_array, crossover_probs_array, mutation_probs_array, pheno_array, problem_array, timing_array = data
 
     for ith_ad in range(len(accumulated_generations_array)):
 

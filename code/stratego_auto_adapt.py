@@ -72,6 +72,26 @@ def average_reff_pop(refference_window, fitness_func):
     return [average_indiv(ith_pair, fitness_func) for ith_pair in ith_pairings]
 
 
+def AD5_fitness(cur_population, refference_window, fitness_func):
+    """
+    Analyses the populations stored in the refference window and retrieves the best individual of all.
+    Then we also fetch the best individual for the current population
+    and return the number of differences between them.
+    """
+
+    # get best average population from refference_window
+    best_reff_population = best_reff_pop(refference_window, fitness_func)
+
+    # get average individual from best population
+    best_reff_individual = best_indiv(best_reff_population)
+
+    # get best individual from current population
+    best_individual = best_indiv(cur_population)
+
+    fit1 = best_individual[1]
+    fit2 = best_reff_individual[1]
+    return fit1, fit2
+
 def AD4_fitness(cur_population, refference_window):
     """
     Analyses the populations stored in the refference window and creates a best fitness.
@@ -217,8 +237,13 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
             elif ad_type == 3:
                 fit1, fit2 = AD3_fitness(populacao, refference_window, fitness_func)
 
-            else:  # ad_type == 4:
+            elif ad_type == 4:
                 fit1, fit2 = AD4_fitness(populacao, refference_window)
+
+            else:  # ad_type == 5:
+
+                fit1, fit2 = AD5_fitness(populacao, refference_window, fitness_func)
+
 
             diffs = abs(fit1 - fit2)
             accumulated_diffs_append(diffs)
@@ -349,12 +374,12 @@ if __name__ == '__main__':
     MAX_VALUE_ITEM = 250  # 250 a 500
     CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
 
-    NUM_ADS = 4  # number of distinct custom appreaches employed besides standard
-    NUMBER_OF_RUNS = 30  # TODO: 30 , statistically relevant ammount of runs
+    NUM_ADS = 5  # number of distinct custom appreaches employed besides standard
+    NUMBER_OF_RUNS = 5  # TODO: 30 , statistically relevant ammount of runs
 
     # The usual EA parameters
-    NUM_GENERATIONS = 1000  # 1000
-    POPULATION_SIZE = 100  # 250?
+    NUM_GENERATIONS = 250  # 1000
+    POPULATION_SIZE = 50  # 250?
     PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
     PROB_MUTATION = 0.01  # resposável por variações pequenas no final
 

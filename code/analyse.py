@@ -13,8 +13,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-AD_color = ['g', 'r', 'b', 'c', 'm']
-AD_labels = 'AD0', 'AD1', 'AD2', 'AD3', 'AD4'
+AD_color = ['g', 'r', 'b', 'c', 'm', 'y']
+AD_labels = 'AD0', 'AD1', 'AD2', 'AD3', 'AD4', 'AD5'
 
 
 def comparison_pie_plot(path, data, txt):

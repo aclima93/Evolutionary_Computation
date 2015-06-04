@@ -401,36 +401,33 @@ def run_n_times(path, num_runs):
 """
 if __name__ == '__main__':
 
-    SEED_NUM = 666  # random number generation with fixed seed for reproduceable results
-
     # Problem specific
-    NUM_ITEMS = 250  # 250 a 500
-    MAX_VALUE_ITEM = 250  # 250 a 500
+    NUM_ITEMS = 250  # 250 - 500
+    MAX_VALUE_ITEM = 250  # 250 - 500
     CORR_AMPLITUDE = MAX_VALUE_ITEM / 10  # value = weight + amplitude, higher weight means higher value
 
     NUM_ADS = 5  # number of distinct custom appreaches employed besides standard
-    NUMBER_OF_RUNS = 30  # TODO: 30 , statistically relevant ammount of runs
+    NUMBER_OF_RUNS = 30  # 30 | statistically relevant amount fo results
 
     # The usual EA parameters
-    NUM_GENERATIONS = 1000  # 1000
-    POPULATION_SIZE = 50  # 250?
-    PROB_CROSSOVER = 0.80  # resposável por variações grandes no início
-    PROB_MUTATION = 0.01  # resposável por variações pequenas no final
+    NUM_GENERATIONS = 1000  # 800+ | less than 800 may prove insufficient for some ADs
+    POPULATION_SIZE = 50  # 50 - 250 | number of individuals in population
+    PROB_CROSSOVER = 0.80  # 0.75 - 0.85 | responsible for the fast initial convergence
+    PROB_MUTATION = 0.01  # 0.01 - 0.10 | responsible for the small variations in later geneerations
 
-    # TODO: fine tune these
     # AD Approach specific parameters
-    WINDOW_SIZE = 100  # number previous generations considered for altering the auto-adaptative parameters
-    ACTIVATION_THRESHOLD = 10  # below this lower bound start reversing the crossover and mutation
-    CONSECUTIVE_ACTIVATIONS = 5  # number of consecutive times that the threshhold must be surmounted for effect
+    WINDOW_SIZE = 100  # 25 - 100 | number previous generations considered for altering the auto-adaptative parameters
+    ACTIVATION_THRESHOLD = 10  # 0 - 10 | below this comparison lower bound change the crossover and mutation
+    CONSECUTIVE_ACTIVATIONS = 5  # 3 - 7 | number of consecutive times that the threshhold must be surmounted for effect
 
     # Our additional EA parameters
-    CROSSOVER_STEP = 0.01
-    MUTATION_STEP = 0.001
+    CROSSOVER_STEP = 0.01  # how much the crossover prob. decreases after activation
+    MUTATION_STEP = 0.001  # how much the crossover prob. increases after activation
     CROSSOVER_BOUND = 0.30  # lower bound for crossover prob.
     MUTATION_BOUND = 0.10  # upper bound for mutation prob.
 
     # location of saved files
-    PATH = str(NUM_ITEMS) + "_" + str(MAX_VALUE_ITEM) + "_" + str(CORR_AMPLITUDE) \
+    folder_path = str(NUM_ITEMS) + "_" + str(MAX_VALUE_ITEM) + "_" + str(CORR_AMPLITUDE) \
  \
            + "_" + str(NUM_GENERATIONS) + "_" + str(POPULATION_SIZE) + "_" + str(PROB_CROSSOVER) + "_" + str(
         PROB_MUTATION) \
@@ -440,18 +437,18 @@ if __name__ == '__main__':
         MUTATION_BOUND)
 
     try:
-        os.makedirs(PATH)
+        os.makedirs(folder_path)
     except Exception as e:
         print(e)
 
     # setup seed for random number generation repeatability
-    seed(SEED_NUM)
+    seed(666)
 
     # run our simulations
-    run_n_times(PATH, NUMBER_OF_RUNS)
+    run_n_times(folder_path, NUMBER_OF_RUNS)
 
     # analyse the results from the simulations
-    analyse_results(PATH, NUMBER_OF_RUNS, NUM_ADS, NUM_GENERATIONS, NUM_ITEMS)
+    analyse_results(folder_path, NUMBER_OF_RUNS, NUM_ADS, NUM_GENERATIONS, NUM_ITEMS)
 
     # record the simulation's parameters
     dic = {
@@ -473,4 +470,4 @@ if __name__ == '__main__':
         "Crossover lower bound: ": CROSSOVER_BOUND,
         "Mutation upper bound: ": MUTATION_BOUND
     }
-    write_data_to_file(PATH + "simulation_parameters.json", dic)
+    write_data_to_file(folder_path + "/_simulation_parameters.json", dic)

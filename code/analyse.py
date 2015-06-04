@@ -268,7 +268,7 @@ def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_
     - analisar o efeito das alterações nos parâmetros
     """
 
-    for ith_ad in range(number_of_ads):
+    for ith_ad in range(number_of_ads + 1):
 
         ad_i = str(ith_ad)
         print("\n\n----- Analysing results with AD" + ad_i + " -----")

@@ -374,11 +374,13 @@ def run_n_times(path, num_runs):
             print("-------------------- in " + str(finish_time - start_time) + "seconds")
 
             temp = []
+            temp_append = temp.append
             for populacao in accumulated_generations:
                 temp1 = []
+                temp1_append = temp1.append
                 for indiv in populacao:
-                    temp1.append(indiv[1])
-                temp.append(temp1)
+                    temp1_append(indiv[1])
+                temp_append(temp1)
             accumulated_generations = temp
 
             write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.json", accumulated_generations)

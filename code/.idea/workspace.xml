@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24a45f-3bc7-4226-8b04-c73d699e84bb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1000_100_0.8_0.01_100_10_5_0.01_0.001_0.3_0.1.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1000_50_0.8_0.01_100_10_5_0.01_0.001_0.3_0.1.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analyse.py" afterPath="$PROJECT_DIR$/analyse.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sea_bin.py" afterPath="$PROJECT_DIR$/sea_bin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratego_auto_adapt.py" afterPath="$PROJECT_DIR$/stratego_auto_adapt.py" />
     </list>
     <ignored path="code.iws" />
@@ -21,7 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$Unnamed.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1431363361688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1433434994289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1433437680253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5322" max-vertical-offset="7200">
-              <caret line="375" column="0" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5472837" vertical-offset="5353" max-vertical-offset="7230">
+              <caret line="375" column="21" selection-start-line="375" selection-start-column="21" selection-end-line="375" selection-end-column="21" />
               <folding>
                 <element signature="e#398#416#0" expanded="true" />
               </folding>
@@ -47,24 +44,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6938775" vertical-offset="5319" max-vertical-offset="5760">
-              <caret line="246" column="43" selection-start-line="246" selection-start-column="43" selection-end-line="246" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4350" max-vertical-offset="5760">
+              <caret line="270" column="41" selection-start-line="270" selection-start-column="41" selection-end-line="270" selection-end-column="41" />
               <folding>
                 <element signature="e#162#171#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sea_bin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sea_bin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3027" max-vertical-offset="3570">
-              <caret line="213" column="13" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -79,8 +66,8 @@
       <list>
         <option value="$PROJECT_DIR$/kp_1.py" />
         <option value="$PROJECT_DIR$/sea_bin.py" />
-        <option value="$PROJECT_DIR$/stratego_auto_adapt.py" />
         <option value="$PROJECT_DIR$/analyse.py" />
+        <option value="$PROJECT_DIR$/stratego_auto_adapt.py" />
       </list>
     </option>
   </component>
@@ -395,7 +382,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.226199" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822478" sideWeight="0.4996421" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950193" sideWeight="0.5003579" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950193" sideWeight="0.5003579" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -850,28 +837,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sea_bin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3027" max-vertical-offset="3570">
+        <state vertical-scroll-proportion="0.30784708" vertical-offset="3027" max-vertical-offset="3570">
           <caret line="213" column="13" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
+    <entry file="file://$PROJECT_DIR$/analyse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5322" max-vertical-offset="7200">
-          <caret line="375" column="0" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4350" max-vertical-offset="5760">
+          <caret line="270" column="41" selection-start-line="270" selection-start-column="41" selection-end-line="270" selection-end-column="41" />
           <folding>
-            <element signature="e#398#416#0" expanded="true" />
+            <element signature="e#162#171#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analyse.py">
+    <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6938775" vertical-offset="5319" max-vertical-offset="5760">
-          <caret line="246" column="43" selection-start-line="246" selection-start-column="43" selection-end-line="246" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5472837" vertical-offset="5353" max-vertical-offset="7230">
+          <caret line="375" column="21" selection-start-line="375" selection-start-column="21" selection-end-line="375" selection-end-column="21" />
           <folding>
-            <element signature="e#162#171#0" expanded="true" />
+            <element signature="e#398#416#0" expanded="true" />
           </folding>
         </state>
       </provider>

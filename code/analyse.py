@@ -10,6 +10,9 @@ import json
 
 from kp_1 import *
 
+import numpy as np
+import matplotlib.pyplot as plt
+
 
 AD_color = ['g', 'r', 'b', 'c', 'm', 'y']
 AD_labels = 'AD0', 'AD1', 'AD2', 'AD3', 'AD4', 'AD5'
@@ -73,17 +76,41 @@ def comparison_bar_plot(path, data, txt):
     return
 
 
-def analyse_comparing(path, results, num_ads):
+def analyse_comparing(path, number_of_runs, num_ads, number_of_generations, size_cromo):
     """
     Plots the best fitness of individuals in population throughout generations
     for both algorithms
     """
 
+        # load results from disk
+
+    accumulated_generations_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    accumulated_diffs_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    crossover_probs_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    mutation_probs_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    # phenotype_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    # problem_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+    timing_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
+
+    for ith_run in range(number_of_runs):
+
+        run_i = str(ith_run + 1)
+
+        for ith_ad in range(num_ads + 1):
+
+            ad_i = str(ith_ad)
+
+            accumulated_generations_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.txt"))
+            accumulated_diffs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.txt"))
+            crossover_probs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.txt"))
+            mutation_probs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.txt"))
+            # phenotype_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.txt"))
+            # problem_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.txt"))
+            timing_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.txt"))
+
+
     final_best_fitness_ad = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
     final_average_fitness_ad = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
-
-    # get rid of the useless information for this analysis
-    accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array, phenotype_array, problem_array, timing_array = results
 
     # ----
     # Plot Comparison of Timings
@@ -152,7 +179,7 @@ def analyse_comparing(path, results, num_ads):
         temp2.append(temp4)
 
         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-        plt.savefig(path + "run_" + run_i + "/comparison_fitness.png", bbox_inches='tight')
+        plt.savefig(path + "/run_" + run_i + "/comparison_fitness.png", bbox_inches='tight')
         plt.close()
 
         # ----
@@ -196,13 +223,13 @@ def analyse_comparing(path, results, num_ads):
 
     # ----
     # Compare the last best solution of each simulation is for each method
-    comparison_bar_plot(path, final_best_fitness_ad, "Best")
-    comparison_pie_plot(path, final_best_fitness_ad, "Best")
+    comparison_bar_plot(path + "/", final_best_fitness_ad, "Best")
+    comparison_pie_plot(path + "/", final_best_fitness_ad, "Best")
 
     # ----
     # Compare the last average solution of each simulation is for each method
-    comparison_bar_plot(path, final_average_fitness_ad, "Average")
-    comparison_pie_plot(path, final_average_fitness_ad, "Average")
+    comparison_bar_plot(path + "/", final_average_fitness_ad, "Average")
+    comparison_pie_plot(path + "/", final_average_fitness_ad, "Average")
 
     return
 
@@ -234,34 +261,33 @@ def plot_generations(path, accumulated_generations, title, ith_ad):
     return
 
 
-def analyse_AD(path, data):
+def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_cromo):
     """
     função de análise estatística e apresentação de gráficos
     - analisar os melhores resultados e os resultados da média
     - analisar o efeito das alterações nos parâmetros
     """
 
-    accumulated_generations_array, accumulated_differences_array, crossover_probs_array, mutation_probs_array, pheno_array, problem_array, timing_array = data
-
-    for ith_ad in range(len(accumulated_generations_array)):
+    for ith_ad in range(number_of_ads):
 
         ad_i = str(ith_ad)
         print("\n\n----- Analysing results with AD" + ad_i + " -----")
 
-        for run_counter in range(len(accumulated_generations_array[ith_ad])):
+        for run_counter in range(number_of_runs):
             run_i = str(run_counter + 1)
             print("---------- run " + run_i)
 
-            accumulated_generations = accumulated_generations_array[ith_ad][run_counter]
-            accumulated_differences = accumulated_differences_array[ith_ad][run_counter]
-            crossover_probs = crossover_probs_array[ith_ad][run_counter]
-            mutation_probs = mutation_probs_array[ith_ad][run_counter]
-            pheno = pheno_array[ith_ad][run_counter]
-            problem = problem_array[ith_ad][run_counter]
+            accumulated_generations = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.txt")
+            accumulated_differences = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.txt")
+            crossover_probs = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.txt")
+            mutation_probs = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.txt")
+            # pheno = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.txt")
+            # problem = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.txt")
+            # timing = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.txt")
 
-            best = best_pop(accumulated_generations[-1])
-            write_str_to_file(path + "/run_" + run_i + "/generations_AD" + ad_i + ".txt", display(best, pheno, problem))
-            plot_generations(path + "/run_" + run_i + "/generations_AD" + ad_i + ".png", accumulated_generations,
+            write_str_to_file(path + "/run_" + run_i + "/AD" + ad_i + "/generations_best.txt", best_pop(accumulated_generations[-1]))
+
+            plot_generations(path + "/run_" + run_i + "/AD" + ad_i + "/generations_AD.png", accumulated_generations,
                              'With AD' + ad_i, ith_ad)
 
             # Differences throughout generations
@@ -282,30 +308,28 @@ def analyse_AD(path, data):
             plt.plot(mutation_probs, AD_color[ith_ad] + '-.', label="Mutation")
 
             plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-            plt.savefig(path + "/run_" + run_i + "/probabilities_AD" + ad_i + ".png", bbox_inches='tight')
+            plt.savefig(path + "/run_" + run_i + "/AD" + ad_i + "/probabilities.png", bbox_inches='tight')
             plt.close()
 
     return
 
 
-def analyse_results(path, number_of_runs, number_of_ads, results):
+def analyse_results(path, number_of_runs, number_of_ads, number_of_generations, size_cromo):
     """
     This method is the pivot point for the analysis of our simulation's results
     including, but not liimited to, the best and average solution throught the
     generations of each run.
     """
-    # Delete and re-create necessary directories
-    renew_directories(path, number_of_runs)
 
     # Compare results of both methods for all runs
     print("\n\n----- Comparing results -----")
-    analyse_comparing(path, results, number_of_ads)
+    analyse_comparing(path, number_of_runs, number_of_ads, number_of_generations, size_cromo)
 
     # Analyse the results of the Auto-Adapt methods
-    analyse_AD(path, results)
+    analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_cromo)
 
 
-def renew_directories(path, number_of_runs):
+def renew_directories(path, number_of_runs, number_of_ads):
     # delete folders, subfolders and content
     for the_file in os.listdir(path):
         file_path = os.path.join(path, the_file)
@@ -321,13 +345,18 @@ def renew_directories(path, number_of_runs):
     for run_counter in range(1, number_of_runs + 1):
         try:
             os.makedirs(path + "/run_" + str(run_counter))
+            for ad_counter in range(number_of_ads + 1):
+                try:
+                    os.makedirs(path + "/run_" + str(run_counter) + "/data_AD" + str(ad_counter))
+                except Exception as e:
+                    print(e)
         except Exception as e:
             print(e)
 
     return
 
 
-# Auxiliary function
+# Auxiliary data functions
 def write_str_to_file(path, content):
     f = open(path, "w")
     f.write(content)
@@ -335,9 +364,15 @@ def write_str_to_file(path, content):
     return
 
 
-# Auxiliary function
-def write_dic_to_file(path, dic):
+# Auxiliary data functions
+def write_data_to_file(path, data):
     f = open(path, "w")
-    json.dump(dic, f)
+    json.dump(data, f, indent=4, separators=(',', ': '))
     f.close()
     return
+
+def read_data_from_file(path):
+    f = open(path, "w")
+    data = json.loads(f)
+    f.close()
+    return data

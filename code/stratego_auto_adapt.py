@@ -9,7 +9,9 @@ Notation Clarifications:
 - AD2:
 - AD3:
 - AD4:
+- AD5: Tem como referência o best dos bests na janela de referência
 """
+# TODO: preencher isto
 
 from time import *
 from random import *
@@ -93,7 +95,8 @@ def AD5_fitness(cur_population, refference_window, fitness_func):
     fit2 = best_reff_individual[1]
     return fit1, fit2
 
-def AD4_fitness(cur_population, refference_window):
+
+def AD4_fitness(cur_population, refference_window, fitness_func):
     """
     Analyses the populations stored in the refference window and creates a best fitness.
     Then we also derive the best fitness for the current population and return the difference between them.
@@ -124,13 +127,22 @@ def AD3_fitness(cur_population, refference_window, fitness_func):
     return fit1, fit2
 
 
-def AD2_fitness(cur_population, refference_window):
+def AD2_fitness(cur_population, refference_window, fitness_func):
     """
     Analyses the populations stored in the refference window and creates an average fitness.
     Then we also derive the average fitness for the current population and return the difference between them.
     """
-    fit1 = average_pop(cur_population)  # sim, isto devolve a fitness média de uma população
-    fit2 = average_reff_pop_fit(refference_window)
+    # get best average population from refference_window
+    best_reff_population = average_reff_pop(refference_window, fitness_func)
+
+    # get average individual from best population
+    best_reff_individual = best_indiv(best_reff_population)
+
+    # get best individual from current population
+    best_individual = average_indiv(cur_population, fitness_func)
+
+    fit1 = best_individual[1]
+    fit2 = best_reff_individual[1]
     return fit1, fit2
 
 
@@ -157,7 +169,7 @@ def AD1_fitness(cur_population, refference_window, fitness_func):
 
 
 def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
-       sel_survivors, fitness_func, refference_window_size, refference_window):
+       sel_survivors, fitness_func, refference_window_size, refference_window, populacao):
     """
     funcao AD
     - variação da sea fornecida pelo prof. Ernesto mas que aplica os conceitos que estamos a estudar:
@@ -179,10 +191,9 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
     accumulated_diffs_append = accumulated_diffs.append
     crossover_probs_append = crossover_probs.append
     mutation_probs_append = mutation_probs.append
-    
+
 
     # inicializa população: indiv = (cromo,fit)
-    populacao = gera_pop(size_pop, size_cromo)
     accumulated_generations_append(populacao)
 
     # avalia população
@@ -233,18 +244,17 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
                 fit1, fit2 = AD1_fitness(populacao, refference_window, fitness_func)
 
             elif ad_type == 2:
-                fit1, fit2 = AD2_fitness(populacao, refference_window)
+                fit1, fit2 = AD2_fitness(populacao, refference_window, fitness_func)
 
             elif ad_type == 3:
                 fit1, fit2 = AD3_fitness(populacao, refference_window, fitness_func)
 
             elif ad_type == 4:
-                fit1, fit2 = AD4_fitness(populacao, refference_window)
+                fit1, fit2 = AD4_fitness(populacao, refference_window, fitness_func)
 
             else:  # ad_type == 5:
 
                 fit1, fit2 = AD5_fitness(populacao, refference_window, fitness_func)
-
 
             diffs = abs(fit1 - fit2)
             accumulated_diffs_append(diffs)
@@ -275,7 +285,7 @@ def AD(ad_type, numb_generations, size_pop, size_cromo, prob_mut, prob_cross, se
     return accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs
 
 
-def simulate(auto_adapt_type, problem, size_items):
+def simulate(auto_adapt_type, problem, size_items, populacao_inicial):
     """
     Runs one simulation for the provided parameters.
     Returns the simulation's results
@@ -301,7 +311,8 @@ def simulate(auto_adapt_type, problem, size_items):
                                                                                          sel_survivors_elite(0.02),
                                                                                          merito(problem),
                                                                                          refference_window_size,
-                                                                                         refference_window)
+                                                                                         refference_window,
+                                                                                         populacao_inicial)
     else:
         # sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination,
         # mutation, sel_survivors, fitness_func)
@@ -311,78 +322,80 @@ def simulate(auto_adapt_type, problem, size_items):
                                                                                           tour_sel(3),
                                                                                           one_point_cross, muta_bin,
                                                                                           sel_survivors_elite(0.02),
-                                                                                          merito(problem))
+                                                                                          merito(problem),
+                                                                                          populacao_inicial)
 
     return accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs, phenotype, problem
 
 
-def run_n_times(num_runs):
+def run_n_times(path, num_runs):
     """
     Executes N runs.
     In each run simulate for all ADs being tested.
     Return the results of all simulations of all runs.
     """
+
+    # Delete and re-create necessary directories
+    renew_directories(path, num_runs, NUM_ADS)
+
     size_items = NUM_ITEMS
     max_value = MAX_VALUE_ITEM
     corr_amplitude = CORR_AMPLITUDE
 
-    accumulated_generations_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-    accumulated_diffs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-    crossover_probs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-    mutation_probs_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-    phenotype_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-    problem_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-    timing_array = [list(copy.deepcopy([])) for _ in range(NUM_ADS + 1)]
-
-    print("-------------------------------------------------------")
-    print("-------------------- ! Warning ! ----------------------")
-    print("----- This might take a while, please take a seat -----")
-    print("-------------------------------------------------------")
+    print("\n\n\n")
+    print("--------------------------------------------------------")
+    print("-------------------- ! Warning ! -----------------------")
+    print("----- This might take a while, please take a seat, -----")
+    print("----- especially if you don't have PyPy installed. -----")
+    print("--------------------------------------------------------")
 
     for ith_run in range(1, num_runs + 1):
-        # TODO: time the algorithms to see if there's a significant difference in performance
-        print("\n\n---------- run " + str(ith_run))
+
+        run_i = str(ith_run)
+        print("\n\n----- run " + run_i)
 
         # generate a strongly correlated problem to be solved
         # (the greater the value, the greater the weight)
         problem = generate_strong_cor(size_items, max_value, corr_amplitude)
+        populacao_inicial = gera_pop(POPULATION_SIZE, size_items)
 
         # solve using our custom methods, "AD i"
         for ith_ad in range(NUM_ADS + 1):
 
-            print("-------------------- AD" + str(ith_ad))
+            ad_i = str(ith_ad)
+
+            print("---------- AD" + str(ith_ad))
 
             start_time = time()
             accumulated_generations, accumulated_diffs, crossover_probs, mutation_probs, phenot, problem = simulate(
-                ith_ad, problem, size_items)
+                ith_ad, problem, size_items, copy.deepcopy(populacao_inicial))
             finish_time = time()
 
-            accumulated_generations_array[ith_ad].append(accumulated_generations)
-            accumulated_diffs_array[ith_ad].append(accumulated_diffs)
-            crossover_probs_array[ith_ad].append(crossover_probs)
-            mutation_probs_array[ith_ad].append(mutation_probs)
-            phenotype_array[ith_ad].append(phenot)
-            problem_array[ith_ad].append(problem)
-            timing_array[ith_ad].append(finish_time - start_time)  # log elapsed time
+            print("-------------------- in " + str(finish_time - start_time) + "seconds")
 
-
-    return [accumulated_generations_array, accumulated_diffs_array, crossover_probs_array, mutation_probs_array,
-            phenotype_array, problem_array, timing_array]
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.txt", accumulated_generations)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.txt", accumulated_diffs)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.txt", crossover_probs)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.txt", mutation_probs)
+            # write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.txt", phenot)
+            # write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.txt", problem)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.txt", finish_time - start_time)
+    return
 
 
 """
     If by any chance you are reading the comments this is the starting point for our algorithm.
-    Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha!
+    Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha! *awkward silence*
     Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
 
-    seed(666)  # random number generation with fixed seed for reproduceable results
+    SEED_NUM = 666  # random number generation with fixed seed for reproduceable results
 
     # Problem specific
     NUM_ITEMS = 250  # 250 a 500
     MAX_VALUE_ITEM = 250  # 250 a 500
-    CORR_AMPLITUDE = 10  # value = weight + amplitude, higher weight means higher value
+    CORR_AMPLITUDE = MAX_VALUE_ITEM / 10  # value = weight + amplitude, higher weight means higher value
 
     NUM_ADS = 5  # number of distinct custom appreaches employed besides standard
     NUMBER_OF_RUNS = 30  # TODO: 30 , statistically relevant ammount of runs
@@ -398,6 +411,8 @@ if __name__ == '__main__':
     WINDOW_SIZE = 100  # number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 10  # below this lower bound start reversing the crossover and mutation
     CONSECUTIVE_ACTIVATIONS = 5  # number of consecutive times that the threshhold must be surmounted for effect
+
+    # Our additional EA parameters
     CROSSOVER_STEP = 0.01
     MUTATION_STEP = 0.001
     CROSSOVER_BOUND = 0.30  # lower bound for crossover prob.
@@ -405,23 +420,27 @@ if __name__ == '__main__':
 
     # location of saved files
     PATH = str(NUM_ITEMS) + "_" + str(MAX_VALUE_ITEM) + "_" + str(CORR_AMPLITUDE) \
-        \
-        + "_" + str(NUM_GENERATIONS) + "_" + str(POPULATION_SIZE) + "_" + str(PROB_CROSSOVER) + "_" + str(PROB_MUTATION) \
-        \
-        + "_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) + "_" + str(CONSECUTIVE_ACTIVATIONS) \
-        + "_" + str(CROSSOVER_STEP) + "_" + str(MUTATION_STEP) + "_" + str(CROSSOVER_BOUND) + "_" + str(MUTATION_BOUND) \
-        + "/"
+ \
+           + "_" + str(NUM_GENERATIONS) + "_" + str(POPULATION_SIZE) + "_" + str(PROB_CROSSOVER) + "_" + str(
+        PROB_MUTATION) \
+ \
+           + "_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) + "_" + str(CONSECUTIVE_ACTIVATIONS) \
+           + "_" + str(CROSSOVER_STEP) + "_" + str(MUTATION_STEP) + "_" + str(CROSSOVER_BOUND) + "_" + str(
+        MUTATION_BOUND)
 
     try:
         os.makedirs(PATH)
     except Exception as e:
         print(e)
 
+    # setup seed for random number generation repeatability
+    seed(SEED_NUM)
+
     # run our simulations
-    results = run_n_times(NUMBER_OF_RUNS)
+    run_n_times(PATH, NUMBER_OF_RUNS)
 
     # analyse the results from the simulations
-    analyse_results(PATH, NUMBER_OF_RUNS, NUM_ADS, results)
+    analyse_results(PATH, NUMBER_OF_RUNS, NUM_ADS, NUM_GENERATIONS, NUM_ITEMS)
 
     # record the simulation's parameters
     dic = {
@@ -443,4 +462,4 @@ if __name__ == '__main__':
         "Crossover lower bound: ": CROSSOVER_BOUND,
         "Mutation upper bound: ": MUTATION_BOUND
     }
-    write_dic_to_file(PATH + "simulation_parameters.txt", dic)
+    write_data_to_file(PATH + "simulation_parameters.txt", dic)

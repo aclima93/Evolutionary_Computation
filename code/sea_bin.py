@@ -19,11 +19,10 @@ import matplotlib.pyplot as plt
 
 
 def sea(numb_generations, size_pop, size_cromo, prob_mut, prob_cross, sel_parents, recombination, mutation,
-        sel_survivors, fitness_func):
+        sel_survivors, fitness_func, populacao):
 
     accumulated_generations = []
     # inicializa população: indiv = (cromo,fit)
-    populacao = gera_pop(size_pop, size_cromo)
     accumulated_generations.append(populacao)
     # avalia população
     populacao = [(indiv[0], fitness_func(indiv[0])) for indiv in populacao]

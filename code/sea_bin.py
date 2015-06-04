@@ -218,6 +218,9 @@ def best_pop(populacao):
 def average_pop(populacao):
     return sum([fit for crom, fit in populacao]) / len(populacao)
 
+def average_pop2(populacao):
+    return sum([fit for fit in populacao]) / len(populacao)
+
 
 # -------------------  Problem Specific Definitions
 # One max

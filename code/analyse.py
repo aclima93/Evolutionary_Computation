@@ -82,7 +82,7 @@ def analyse_comparing(path, number_of_runs, num_ads, number_of_generations, size
     for both algorithms
     """
 
-        # load results from disk
+    # load results from disk
 
     accumulated_generations_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
     accumulated_diffs_array = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
@@ -100,13 +100,13 @@ def analyse_comparing(path, number_of_runs, num_ads, number_of_generations, size
 
             ad_i = str(ith_ad)
 
-            accumulated_generations_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.txt"))
-            accumulated_diffs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.txt"))
-            crossover_probs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.txt"))
-            mutation_probs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.txt"))
-            # phenotype_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.txt"))
-            # problem_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.txt"))
-            timing_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.txt"))
+            accumulated_generations_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.json"))
+            accumulated_diffs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.json"))
+            crossover_probs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.json"))
+            mutation_probs_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.json"))
+            # phenotype_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.json"))
+            # problem_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.json"))
+            timing_array[ith_ad].append(read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.json"))
 
 
     final_best_fitness_ad = [list(copy.deepcopy([])) for _ in range(num_ads + 1)]
@@ -143,8 +143,8 @@ def analyse_comparing(path, number_of_runs, num_ads, number_of_generations, size
 
             for generation_ad in run_ad:
                 best_indiv = generation_ad[0]
-                temp_best_fit.append(best_indiv[1])
-                temp_average_fit.append(average_pop(generation_ad))
+                temp_best_fit.append(best_indiv)
+                temp_average_fit.append(average_pop2(generation_ad))
 
             temp_temp_best_fit.append(temp_best_fit)
             temp_temp_average_fit.append(temp_average_fit)
@@ -243,8 +243,8 @@ def plot_generations(path, accumulated_generations, title, ith_ad):
 
     for population in accumulated_generations:
         best_indiv = population[0]
-        best_fitness.append(best_indiv[1])
-        average_fitness.append(average_pop(population))
+        best_fitness.append(best_indiv)
+        average_fitness.append(average_pop2(population))
 
     plt.figure()
     plt.xlabel('Generation')
@@ -277,17 +277,17 @@ def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_
             run_i = str(run_counter + 1)
             print("---------- run " + run_i)
 
-            accumulated_generations = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.txt")
-            accumulated_differences = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.txt")
-            crossover_probs = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.txt")
-            mutation_probs = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.txt")
-            # pheno = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.txt")
-            # problem = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.txt")
-            # timing = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.txt")
+            accumulated_generations = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.json")
+            accumulated_differences = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.json")
+            crossover_probs = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.json")
+            mutation_probs = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.json")
+            # pheno = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.json")
+            # problem = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.json")
+            # timing = read_data_from_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.json")
 
-            write_str_to_file(path + "/run_" + run_i + "/AD" + ad_i + "/generations_best.txt", best_pop(accumulated_generations[-1]))
+            write_str_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations_best.json", str(max(accumulated_generations[-1])))
 
-            plot_generations(path + "/run_" + run_i + "/AD" + ad_i + "/generations_AD.png", accumulated_generations,
+            plot_generations(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.png", accumulated_generations,
                              'With AD' + ad_i, ith_ad)
 
             # Differences throughout generations
@@ -296,7 +296,7 @@ def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_
             plt.ylabel('Number of Differences')
             plt.title('Number of differences throughout generations')
             plt.plot(accumulated_differences, AD_color[ith_ad] + '.')
-            plt.savefig(path + "/run_" + run_i + "/differences_AD" + ad_i + ".png", bbox_inches='tight')
+            plt.savefig(path + "/run_" + run_i + "/data_AD" + ad_i + "/differences.png", bbox_inches='tight')
             plt.close()
 
             # How the Crossover and Mutation probabilities varied
@@ -308,7 +308,7 @@ def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_
             plt.plot(mutation_probs, AD_color[ith_ad] + '-.', label="Mutation")
 
             plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-            plt.savefig(path + "/run_" + run_i + "/AD" + ad_i + "/probabilities.png", bbox_inches='tight')
+            plt.savefig(path + "/run_" + run_i + "/data_AD" + ad_i + "/probabilities.png", bbox_inches='tight')
             plt.close()
 
     return
@@ -367,12 +367,13 @@ def write_str_to_file(path, content):
 # Auxiliary data functions
 def write_data_to_file(path, data):
     f = open(path, "w")
-    json.dump(data, f, indent=4, separators=(',', ': '))
+    json.dump(data, f)
     f.close()
     return
 
 def read_data_from_file(path):
-    f = open(path, "w")
-    data = json.loads(f)
-    f.close()
+
+    with open(path) as f:
+        data = json.load(f)
+
     return data

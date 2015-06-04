@@ -373,13 +373,22 @@ def run_n_times(path, num_runs):
 
             print("-------------------- in " + str(finish_time - start_time) + "seconds")
 
-            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.txt", accumulated_generations)
-            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.txt", accumulated_diffs)
-            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.txt", crossover_probs)
-            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.txt", mutation_probs)
-            # write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.txt", phenot)
-            # write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.txt", problem)
-            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.txt", finish_time - start_time)
+            temp = []
+            for populacao in accumulated_generations:
+                temp1 = []
+                for indiv in populacao:
+                    temp1.append(indiv[1])
+                temp.append(temp1)
+            accumulated_generations = temp
+
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/generations.json", accumulated_generations)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/diffs.json", accumulated_diffs)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/crossover.json", crossover_probs)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/mutation.json", mutation_probs)
+            # write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/phenot.json", phenot)
+            # write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/problem.json", problem)
+            write_data_to_file(path + "/run_" + run_i + "/data_AD" + ad_i + "/time.json", finish_time - start_time)
+            
     return
 
 
@@ -462,4 +471,4 @@ if __name__ == '__main__':
         "Crossover lower bound: ": CROSSOVER_BOUND,
         "Mutation upper bound: ": MUTATION_BOUND
     }
-    write_data_to_file(PATH + "simulation_parameters.txt", dic)
+    write_data_to_file(PATH + "simulation_parameters.json", dic)

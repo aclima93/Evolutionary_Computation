@@ -330,6 +330,7 @@ def analyse_results(path, number_of_runs, number_of_ads, number_of_generations, 
 
 
 def renew_directories(path, number_of_runs, number_of_ads):
+
     # delete folders, subfolders and content
     for the_file in os.listdir(path):
         file_path = os.path.join(path, the_file)
@@ -342,6 +343,11 @@ def renew_directories(path, number_of_runs, number_of_ads):
             print(e)
 
     # create folders and subfolders
+    try:
+        os.makedirs(path)
+    except Exception as e:
+        print(e)
+
     for run_counter in range(1, number_of_runs + 1):
         try:
             os.makedirs(path + "/run_" + str(run_counter))

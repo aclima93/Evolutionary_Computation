@@ -5,11 +5,11 @@ Remarks: Our proposal of an Auto-Adapting Evolutionary Algorithm
 Notation Clarifications:
 - AD stands for (Auto-Adaptive)
 - AD0: default implementation provided by professor Ernesto
-- AD1:
-- AD2:
-- AD3:
-- AD4:
-- AD5: Tem como referência o best dos bests na janela de referência
+- AD1: Average Pop -> Average Indiv Vs Average Indiv
+- AD2: Average Pop -> Best Indiv Vs Average Indiv
+- AD3: Best Pop -> Average Vs Best
+- AD4: Best Fits -> Average Fit Vs Best Fit
+- AD5: Best Pop -> Best Indiv Vs Best Indiv
 """
 # TODO: preencher isto
 
@@ -82,10 +82,10 @@ def AD5_fitness(cur_population, refference_window, fitness_func):
     and return the number of differences between them.
     """
 
-    # get best average population from refference_window
+    # get best best population from refference_window
     best_reff_population = best_reff_pop(refference_window, fitness_func)
 
-    # get average individual from best population
+    # get best individual from best population
     best_reff_individual = best_indiv(best_reff_population)
 
     # get best individual from current population
@@ -132,13 +132,13 @@ def AD2_fitness(cur_population, refference_window, fitness_func):
     Analyses the populations stored in the refference window and creates an average fitness.
     Then we also derive the average fitness for the current population and return the difference between them.
     """
-    # get best average population from refference_window
+    # get average population from refference_window
     best_reff_population = average_reff_pop(refference_window, fitness_func)
 
-    # get average individual from best population
+    # get average individual from average population
     best_reff_individual = best_indiv(best_reff_population)
 
-    # get best individual from current population
+    # get average individual from current population
     best_individual = average_indiv(cur_population, fitness_func)
 
     fit1 = best_individual[1]
@@ -335,6 +335,9 @@ def run_n_times(path, num_runs):
     Return the results of all simulations of all runs.
     """
 
+    # setup seed for random number generation repeatability
+    seed(666)
+
     # Delete and re-create necessary directories
     renew_directories(path, num_runs, NUM_ADS)
 
@@ -435,14 +438,6 @@ if __name__ == '__main__':
            + "_" + str(WINDOW_SIZE) + "_" + str(ACTIVATION_THRESHOLD) + "_" + str(CONSECUTIVE_ACTIVATIONS) \
            + "_" + str(CROSSOVER_STEP) + "_" + str(MUTATION_STEP) + "_" + str(CROSSOVER_BOUND) + "_" + str(
         MUTATION_BOUND)
-
-    try:
-        os.makedirs(folder_path)
-    except Exception as e:
-        print(e)
-
-    # setup seed for random number generation repeatability
-    seed(666)
 
     # run our simulations
     run_n_times(folder_path, NUMBER_OF_RUNS)

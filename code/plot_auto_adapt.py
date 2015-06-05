@@ -261,7 +261,7 @@ def plot_generations(path, accumulated_generations, title, ith_ad):
     return
 
 
-def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_cromo):
+def plot_AD(path, number_of_runs, number_of_ads, number_of_generations, size_cromo):
     """
     função de análise estatística e apresentação de gráficos
     - analisar os melhores resultados e os resultados da média
@@ -314,7 +314,7 @@ def analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_
     return
 
 
-def analyse_results(path, number_of_runs, number_of_ads, number_of_generations, size_cromo):
+def plot_results(path, number_of_runs, number_of_ads, number_of_generations, size_cromo):
     """
     This method is the pivot point for the analysis of our simulation's results
     including, but not liimited to, the best and average solution throught the
@@ -326,7 +326,7 @@ def analyse_results(path, number_of_runs, number_of_ads, number_of_generations, 
     analyse_comparing(path, number_of_runs, number_of_ads, number_of_generations, size_cromo)
 
     # Analyse the results of the Auto-Adapt methods
-    analyse_AD(path, number_of_runs, number_of_ads, number_of_generations, size_cromo)
+    plot_AD(path, number_of_runs, number_of_ads, number_of_generations, size_cromo)
 
 
 def renew_directories(path, number_of_runs, number_of_ads):

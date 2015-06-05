@@ -11,11 +11,10 @@ Notation Clarifications:
 - AD4: Best Fits -> Average Fit Vs Best Fit
 - AD5: Best Pop -> Best Indiv Vs Best Indiv
 """
-# TODO: preencher isto
 
 from time import *
 from random import *
-from analyse import *
+from plot_auto_adapt import *
 
 
 def best_reff_pop_fit(refference_window):
@@ -443,7 +442,7 @@ if __name__ == '__main__':
     run_n_times(folder_path, NUMBER_OF_RUNS)
 
     # analyse the results from the simulations
-    analyse_results(folder_path, NUMBER_OF_RUNS, NUM_ADS, NUM_GENERATIONS, NUM_ITEMS)
+    plot_results(folder_path, NUMBER_OF_RUNS, NUM_ADS, NUM_GENERATIONS, NUM_ITEMS)
 
     # record the simulation's parameters
     dic = {

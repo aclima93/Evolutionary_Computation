@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24a45f-3bc7-4226-8b04-c73d699e84bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CODE_README.txt" afterPath="$PROJECT_DIR$/CODE_README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stratego_auto_adapt.py" afterPath="$PROJECT_DIR$/stratego_auto_adapt.py" />
     </list>
     <ignored path="code.iws" />
@@ -18,7 +17,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$Unnamed.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1431363361688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1433458339882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$stratego_auto_adapt.coverage" NAME="stratego_auto_adapt Coverage Results" MODIFIED="1433500021351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="stratego_auto_adapt.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.55332" vertical-offset="3133" max-vertical-offset="7185">
-              <caret line="426" column="59" selection-start-line="426" selection-start-column="59" selection-end-line="426" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.7585513" vertical-offset="5893" max-vertical-offset="7185">
+              <caret line="418" column="20" selection-start-line="418" selection-start-column="20" selection-end-line="418" selection-end-column="20" />
               <folding>
                 <element signature="e#398#416#0" expanded="true" />
               </folding>
@@ -854,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stratego_auto_adapt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.55332" vertical-offset="3133" max-vertical-offset="7185">
-          <caret line="426" column="59" selection-start-line="426" selection-start-column="59" selection-end-line="426" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.7585513" vertical-offset="5893" max-vertical-offset="7185">
+          <caret line="418" column="20" selection-start-line="418" selection-start-column="20" selection-end-line="418" selection-end-column="20" />
           <folding>
             <element signature="e#398#416#0" expanded="true" />
           </folding>

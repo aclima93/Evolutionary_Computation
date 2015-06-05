@@ -395,9 +395,9 @@ def run_n_times(path, num_runs):
 
 
 """
-    If by any chance you are reading the comments this is the starting point for our algorithm.
-    Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha! *awkward silence*
-    Get it?! No? Ok. We'll show ourselves out...
+If by any chance you are reading the comments this is the starting point for our algorithm.
+Enjoy your trip! But be warned, we're constantly _evolving_ our skills. Ha ha ha! *awkward silence*
+Get it?! No? Ok. We'll show ourselves out...
 """
 if __name__ == '__main__':
 
@@ -416,7 +416,7 @@ if __name__ == '__main__':
     PROB_MUTATION = 0.01  # 0.01 - 0.10 | responsible for the small variations in later geneerations
 
     # AD Approach specific parameters
-    WINDOW_SIZE = 100  # 25 - 100 | number previous generations considered for altering the auto-adaptative parameters
+    WINDOW_SIZE = 25  # 25 - 100 | number previous generations considered for altering the auto-adaptative parameters
     ACTIVATION_THRESHOLD = 10  # 0 - 10 | below this comparison lower bound change the crossover and mutation
     CONSECUTIVE_ACTIVATIONS = 5  # 3 - 7 | number of consecutive times that the threshhold must be surmounted for effect
 
